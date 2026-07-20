@@ -1,0 +1,50 @@
+name: Vaga Radar
+
+on:
+  # Cron usa UTC. Joao Pessoa e UTC-3.
+  # 11,13,15,17,19,21,23,01 UTC = 08,10,12,14,16,18,20,22 no seu horario.
+  schedule:
+    - cron: "0 11,13,15,17,19,21,23,1 * * *"
+  # Permite rodar manualmente pelo botao na aba Actions.
+  workflow_dispatch:
+
+# Necessario para o workflow conseguir commitar o historico de volta.
+permissions:
+  contents: write
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Rodar o radar
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          USE_AI: ${{ vars.USE_AI || 'false' }}
+          NOTA_MINIMA: ${{ vars.NOTA_MINIMA || '6' }}
+        run: python src/main.py
+
+      - name: Salvar o historico de vagas vistas
+        run: |
+          git config user.name "vaga-radar-bot"
+          git config user.email "actions@github.com"
+          git add vagas_vistas.json
+          if git diff --staged --quiet; then
+            echo "Nada mudou no historico."
+          else
+            git commit -m "historico: atualiza vagas vistas [skip ci]"
+            git push
+          fi
