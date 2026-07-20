@@ -8,7 +8,7 @@ import os
 # LIGA / DESLIGA A CAMADA DE IA
 # Comece com "false". Quando entender o fluxo, mude para "true".
 # ---------------------------------------------------------------------------
-USE_AI = os.getenv("USE_AI", "false").lower() == "true"
+USE_AI = os.getenv("USE_AI", "true").lower() == "true"
 
 # Nota minima (0-10) dada pela IA para a vaga ser notificada.
 NOTA_MINIMA = int(os.getenv("NOTA_MINIMA", "6"))
