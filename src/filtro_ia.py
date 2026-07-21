@@ -110,8 +110,13 @@ def avaliar(vaga):
         motivo = str(analise.get("motivo", "")).strip() or "sem motivo informado"
         return max(0, min(10, nota)), motivo
 
+    except requests.HTTPError as erro:
+        # Fail-open: erro de rede nao pode custar uma vaga boa. Loga o
+        # corpo da resposta pra dar pra saber o motivo real (chave
+        # invalida, sem credito, modelo indisponivel etc.).
+        print(f"    [IA] {erro} - corpo: {erro.response.text[:300]}")
+        return 10, f"IA indisponivel ({type(erro).__name__}), vaga liberada"
     except Exception as erro:
-        # Fail-open: erro de rede nao pode custar uma vaga boa.
         return 10, f"IA indisponivel ({type(erro).__name__}), vaga liberada"
 
 
