@@ -155,6 +155,17 @@ def buscar_todas():
             vistos.add(vaga["id"])
             todas.append(vaga)
 
+    # Fonte nacional via GitHub Issues (comunidade dev brasileira)
+    try:
+        import fontes_github
+        for vaga in fontes_github.buscar():
+            if vaga["id"] in vistos:
+                continue
+            vistos.add(vaga["id"])
+            todas.append(vaga)
+    except Exception as erro:
+        print(f"  GitHub Vagas: FALHOU ({type(erro).__name__}: {erro})")
+
     # Fonte extra: alertas por e-mail. Importado aqui dentro para que um
     # problema neste modulo nao impeca o resto do programa de rodar.
     if config.EMAIL_ATIVO:

@@ -252,8 +252,8 @@ FONTES = [
 # ---------------------------------------------------------------------------
 EMAIL_ATIVO = os.getenv("EMAIL_ATIVO", "false").lower() == "true"
 
-EMAIL_USUARIO = os.getenv("EMAIL_USUARIO", "paulinhovictor852@gmail.com")
-EMAIL_SENHA_APP = os.getenv("EMAIL_SENHA_APP", "***SENHA_APP_REMOVIDA***")
+EMAIL_USUARIO = os.getenv("EMAIL_USUARIO", "")
+EMAIL_SENHA_APP = os.getenv("EMAIL_SENHA_APP", "")
 
 # Pasta a ser lida. "INBOX" e a caixa de entrada.
 # Se voce criar um filtro no Gmail que joga os alertas numa label
@@ -292,6 +292,10 @@ MAX_POR_EXECUCAO = 10
 # ---------------------------------------------------------------------------
 # SEGREDOS - nunca escreva valores aqui, use variaveis de ambiente
 # ---------------------------------------------------------------------------
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "***TOKEN_TELEGRAM_REMOVIDO***")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "***CHAT_ID_REMOVIDO***")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
+
+# Opcional: aumenta o limite de chamadas a API do GitHub (60 -> 5000 req/h).
+# No GitHub Actions, o secret automatico GITHUB_TOKEN ja serve para isso.
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
