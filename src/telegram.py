@@ -18,6 +18,11 @@ def _escapar(texto):
     return html.escape(str(texto), quote=False)
 
 
+def _escapar_atributo(texto):
+    """Para dentro de href="...": tambem precisa escapar aspas."""
+    return html.escape(str(texto), quote=True)
+
+
 def _montar_mensagem(vaga):
     linhas = [
         f"<b>{_escapar(vaga['titulo'])}</b>",
@@ -30,7 +35,25 @@ def _montar_mensagem(vaga):
         linhas.append(f"⭐ Nota {vaga['nota']}/10 — {_escapar(vaga.get('motivo', ''))}")
 
     linhas.append("")
-    linhas.append(f'<a href="{_escapar(vaga["url"])}">Ver vaga e se candidatar</a>')
+    linhas.append(f'<a href="{_escapar_atributo(vaga["url"])}">Ver vaga e se candidatar</a>')
+
+    return "\n".join(linhas)
+
+
+def _montar_mensagem_simples(vaga):
+    """Sem tags HTML - usada quando o Telegram rejeita a versao formatada."""
+    linhas = [
+        vaga["titulo"],
+        f"Empresa: {vaga['empresa']}",
+        f"Local: {vaga['local']}",
+        f"Fonte: {vaga['fonte']}",
+    ]
+
+    if "nota" in vaga:
+        linhas.append(f"Nota {vaga['nota']}/10 - {vaga.get('motivo', '')}")
+
+    linhas.append("")
+    linhas.append(vaga["url"])
 
     return "\n".join(linhas)
 
@@ -51,6 +74,17 @@ def enviar_vaga(vaga):
 
     try:
         resposta = requests.post(url, json=corpo, timeout=TIMEOUT)
+        if resposta.status_code == 400:
+            # Provavelmente o HTML da mensagem ficou malformado (titulo/URL
+            # com caractere inesperado). Tenta de novo como texto puro para
+            # nao perder a vaga so por causa da formatacao.
+            print(f"    HTML rejeitado pelo Telegram ({resposta.text[:200]}), tentando sem formatacao")
+            corpo_simples = {
+                "chat_id": config.TELEGRAM_CHAT_ID,
+                "text": _montar_mensagem_simples(vaga),
+                "disable_web_page_preview": False,
+            }
+            resposta = requests.post(url, json=corpo_simples, timeout=TIMEOUT)
         resposta.raise_for_status()
         return True
     except Exception as erro:
