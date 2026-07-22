@@ -272,7 +272,7 @@ def buscar():
             if not links:
                 continue
 
-            plataforma = _identificar_plataforma(remetente, links)
+            plataforma = _identificar_plataforma(remetente, [url for url, _ in links])
             data_publicacao = _extrair_data_publicacao(mensagem)
 
             # Um alerta traz varias vagas. Cada link vira um candidato,
