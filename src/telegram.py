@@ -108,7 +108,9 @@ def enviar_vaga(vaga):
         resposta.raise_for_status()
         return True
     except Exception as erro:
-        print(f"    falha ao enviar '{vaga['titulo'][:40]}': {erro}")
+        # Nao loga str(erro): para erros de requests, a mensagem inclui a
+        # URL completa, que carrega o token do bot no path.
+        print(f"    falha ao enviar '{vaga['titulo'][:40]}': {type(erro).__name__}")
         return False
 
 

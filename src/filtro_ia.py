@@ -134,7 +134,9 @@ def avaliar(vaga):
         # Fail-open: erro de rede ou de cota nao pode custar uma vaga boa.
         # Loga o corpo da resposta pra dar pra saber o motivo real (chave
         # invalida, cota gratuita esgotada, modelo indisponivel etc.).
-        print(f"    [IA] {erro} - corpo: {erro.response.text[:300]}")
+        # Nao loga str(erro): o requests inclui a URL completa na mensagem,
+        # e a URL desta API carrega a chave como query param.
+        print(f"    [IA] HTTP {erro.response.status_code} - corpo: {erro.response.text[:300]}")
         return 10, f"IA indisponivel ({type(erro).__name__}), vaga liberada"
     except Exception as erro:
         return 10, f"IA indisponivel ({type(erro).__name__}), vaga liberada"
