@@ -57,103 +57,32 @@ de volta no repositório.
 
 ---
 
-## Passo a passo de instalação
+## Como funciona por dentro
 
-### 1. Criar o bot do Telegram
+Este README documenta a arquitetura para quem quiser entender as decisões
+técnicas (recrutadores, portfólio) — não é um tutorial de "clone e use":
+o código é de um projeto pessoal, com direitos reservados (veja a Licença
+no fim).
 
-1. Abra o Telegram e procure por **@BotFather**
-2. Envie `/newbot`
-3. Escolha um nome e um username terminado em `bot`
-4. Ele devolve um **token** parecido com `7891234567:AAF...` — guarde
-
-### 2. Descobrir seu chat ID
-
-1. Mande qualquer mensagem para o bot que você acabou de criar
-2. Abra no navegador (trocando `SEU_TOKEN`):
-   `https://api.telegram.org/botSEU_TOKEN/getUpdates`
-3. Procure por `"chat":{"id":123456789` — esse número é seu **chat ID**
-
-Se vier vazio, mande outra mensagem para o bot e recarregue.
-
-### 3. Rodar na sua máquina primeiro
-
-```bash
-git clone https://github.com/SEU_USUARIO/vaga-radar.git
-cd vaga-radar
-pip install -r requirements.txt
-```
-
-**Teste as fontes antes de qualquer coisa:**
-
-```bash
-python src/testar_fontes.py
-```
-
-Isso mostra, fonte por fonte, se o feed respondeu e quantas vagas saíram.
-Se alguma falhar, comente ela na lista `FONTES` do `src/config.py` — feeds
-públicos mudam de endereço e de formato sem aviso.
-
-**Depois rode o radar completo:**
-
-```bash
-export TELEGRAM_TOKEN="seu_token"
-export TELEGRAM_CHAT_ID="seu_chat_id"
-python src/main.py
-```
-
-No Windows (PowerShell), troque `export` por `$env:TELEGRAM_TOKEN="..."`.
-
-### 4. Ajustar os filtros
-
-Abra `src/config.py` e edite:
-
-- `PALAVRAS_OBRIGATORIAS` — a vaga precisa ter pelo menos uma
-- `PALAVRAS_BLOQUEADAS` — qualquer uma derruba a vaga
-- `PERFIL` — o texto que a IA usa para julgar
-
-Rode algumas vezes e veja o que passa. É normal ajustar por uma semana.
-
-### 5. Subir para o GitHub Actions
-
-No repositório, vá em **Settings → Secrets and variables → Actions**.
-
-Em **Secrets**, adicione:
-
-| Nome | Valor |
-|---|---|
-| `TELEGRAM_TOKEN` | o token do BotFather |
-| `TELEGRAM_CHAT_ID` | seu chat ID |
-| `GEMINI_API_KEY` | sua chave gratuita do Google AI Studio (só se for usar IA) |
-
-Em **Variables**, adicione:
-
-| Nome | Valor |
-|---|---|
-| `USE_AI` | `false` no começo |
-| `NOTA_MINIMA` | `6` |
-| `DIAS_MAX_VAGA` | `30` (não notifica vaga publicada há mais tempo que isso) |
-
-Faça push. Vá na aba **Actions**, escolha "Vaga Radar" e clique em
-**Run workflow** para testar manualmente. Depois disso ele roda sozinho
-de 2 em 2 horas, das 8h às 22h (horário de João Pessoa).
-
-### 6. Ligar a camada de IA
-
-1. Crie uma chave gratuita em [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
-   (conta Google, sem cartão de crédito)
-2. Adicione a chave como secret `GEMINI_API_KEY` no repositório
-3. Mude a variável `USE_AI` para `true`
-
-Custo: zero. O modelo usado é o `gemini-3.5-flash-lite`, que está na
-cota gratuita do Google AI Studio. Se a cota gratuita for excedida em
-algum dia de pico, a camada falha "aberta" (a vaga é liberada em vez de
-descartada) — veja o comentário no topo de `filtro_ia.py`.
-
----
+- **Telegram**: bot próprio via @BotFather; token e chat ID ficam como
+  secrets do GitHub Actions, nunca no código.
+- **Filtros**: duas camadas configuráveis em `src/config.py` — palavras-
+  chave (barata, roda primeiro) e um perfil em texto livre que a camada
+  de IA usa para julgar contexto e senioridade.
+- **IA**: Google Gemini (Flash-Lite, camada gratuita), chamado só no que
+  sobra da camada 1 — não compensa gastar chamada de IA pra descartar
+  vaga fora da área.
+- **Execução**: GitHub Actions com cron, sem servidor e sem banco de
+  dados — o histórico é um JSON que o próprio workflow commita de volta.
+- **Fonte extra por e-mail**: lê alertas do Indeed/LinkedIn/Gupy via
+  IMAP (essas plataformas não têm feed público), autenticando com senha
+  de app do Gmail — revogável a qualquer momento, nunca a senha principal
+  da conta.
 
 ## Como ler os logs
 
-A aba **Actions** mostra a saída de cada execução:
+A aba **Actions** mostra a saída de cada execução, contando quantas
+vagas entraram e saíram de cada camada de filtro:
 
 ```
 [1/6] Buscando nas fontes...
@@ -170,77 +99,13 @@ A aba **Actions** mostra a saída de cada execução:
     descartadas por nenhuma palavra-chave da sua stack: 100
 ```
 
-Se "aprovadas" der sempre 0, seus filtros estão apertados demais.
-Se der 50, estão frouxos demais.
+## Segurança do workflow
 
----
-
-## Fonte extra: alertas por e-mail
-
-LinkedIn e Gupy não têm feed público, mas mandam alertas por e-mail.
-Ler a própria caixa é legítimo e costuma ser a fonte mais rica de todas.
-
-### Configurar o Gmail
-
-1. Ative a **verificação em duas etapas** na sua conta Google
-2. Vá em `myaccount.google.com/apppasswords`
-3. Gere uma senha de app (16 caracteres) e guarde
-
-**Senha de app é revogável** a qualquer momento sem trocar sua senha
-principal. Nunca use a senha normal da conta aqui.
-
-### Testar
-
-```bash
-export EMAIL_USUARIO="seuemail@gmail.com"
-export EMAIL_SENHA_APP="abcd efgh ijkl mnop"
-python src/testar_email.py
-```
-
-A etapa 5 do diagnóstico é a mais importante: ela lista os domínios que
-realmente aparecem na sua caixa. Compare com `EMAIL_REMETENTES` no
-`config.py` e adicione os que faltarem.
-
-### Ligar
-
-```bash
-export EMAIL_ATIVO="true"
-python src/main.py
-```
-
-### Dica: filtrar por label
-
-Crie no Gmail um filtro que marca os alertas de vaga com a label `Vagas`.
-Depois, no `config.py`, troque `EMAIL_PASTA` para `"Vagas"`. Fica muito
-mais rápido e preciso do que varrer a caixa inteira.
-
-### Hotmail / Outlook
-
-A Microsoft desativou IMAP com senha em contas pessoais — só funciona via
-OAuth2, que é bem mais trabalhoso. **Solução prática:** configure no
-Outlook um encaminhamento automático dos e-mails de vaga para o Gmail e
-leia tudo por um canal só.
-
-### Sobre rodar isso no GitHub Actions
-
-Por padrão, colocar credencial de e-mail pessoal em secrets de
-repositório é um risco maior que um token de bot: quem tiver acesso de
-escrita ao repositório pode extrair o segredo, e em repositório
-**público** um fork malicioso com workflow alterado é vetor real - o
-fork roda com o secret se o workflow disparar em `pull_request` (ou
-similar) vindo do fork.
-
-Este repositório é **público**, mas o `radar.yml` só dispara em
-`schedule` e `workflow_dispatch` - nenhum dos dois é acionável por um
-fork de terceiro. Isso fecha o vetor principal: alguém pode ver e
-copiar o workflow, mas não consegue fazer ele rodar com acesso aos
-seus secrets. Ainda assim, dois cuidados valem a pena:
-
-1. Nunca adicione gatilho `pull_request` ou `pull_request_target` nesse
-   workflow sem revisar esse risco de novo
-2. Se preferir eliminar a superfície de risco de vez, rode a parte de
-   e-mail só na sua máquina (não no Actions) ou use um Gmail dedicado
-   que só recebe encaminhamento dos alertas
+Repositório público, mas o `radar.yml` só dispara em `schedule` e
+`workflow_dispatch` — nenhum dos dois é acionável por um fork de
+terceiro, então secrets (Telegram, Gemini, senha de app do e-mail) não
+ficam expostos a um fork malicioso via `pull_request`. Esse gatilho
+nunca deve ser adicionado ao workflow sem revisar esse risco de novo.
 
 ## Ideias para a v2
 
