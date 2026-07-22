@@ -23,10 +23,24 @@ import email.utils
 import hashlib
 import imaplib
 import re
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from email.header import decode_header, make_header
 
 import config
+
+
+def _extrair_data_publicacao(mensagem):
+    """Usa o cabecalho Date do proprio e-mail como data de publicacao."""
+    bruta = mensagem.get("Date")
+    if not bruta:
+        return None
+    try:
+        data = email.utils.parsedate_to_datetime(bruta)
+        if data.tzinfo is None:
+            data = data.replace(tzinfo=timezone.utc)
+        return data.astimezone(timezone.utc).isoformat()
+    except (ValueError, TypeError):
+        return None
 
 SERVIDOR_IMAP = "imap.gmail.com"
 PORTA_IMAP = 993
@@ -233,6 +247,7 @@ def buscar():
                 continue
 
             plataforma = _identificar_plataforma(remetente, links)
+            data_publicacao = _extrair_data_publicacao(mensagem)
 
             # Um alerta traz varias vagas. Cada link vira um candidato,
             # e as camadas de filtro decidem o que presta.
@@ -245,6 +260,7 @@ def buscar():
                     "descricao": corpo[:4000],
                     "url": link,
                     "fonte": f"E-mail ({plataforma})",
+                    "data_publicacao": data_publicacao,
                 })
 
         print(f"  E-mail: {lidas} alertas lidos, {len(vagas)} links extraidos")

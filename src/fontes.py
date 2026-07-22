@@ -9,6 +9,8 @@ import hashlib
 import html
 import re
 import xml.etree.ElementTree as ET
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 
 import requests
 
@@ -16,6 +18,53 @@ import config
 
 TIMEOUT = 20
 HEADERS = {"User-Agent": "vaga-radar/1.0 (projeto pessoal de estudo)"}
+
+
+def _extrair_data_publicacao_json(item):
+    """
+    Normaliza a data de publicacao para ISO 8601 (UTC).
+
+    Cada fonte usa um campo diferente:
+      RemoteOK   -> "date" (ISO 8601 com timezone)
+      Remotive   -> "publication_date" (ISO 8601 sem timezone, UTC implicito)
+      Himalayas  -> "pubDate" (epoch em segundos)
+
+    Retorna None se a fonte nao informar data - nesse caso a vaga nao e
+    penalizada pelo filtro de frescor (ver filtro_data.py).
+    """
+    bruta = item.get("date") or item.get("publication_date")
+    if bruta:
+        try:
+            texto = str(bruta).replace("Z", "+00:00")
+            data = datetime.fromisoformat(texto)
+            if data.tzinfo is None:
+                data = data.replace(tzinfo=timezone.utc)
+            return data.astimezone(timezone.utc).isoformat()
+        except ValueError:
+            pass
+
+    epoch = item.get("epoch") or item.get("pubDate")
+    if isinstance(epoch, (int, float)):
+        try:
+            return datetime.fromtimestamp(epoch, tz=timezone.utc).isoformat()
+        except (ValueError, OSError, OverflowError):
+            pass
+
+    return None
+
+
+def _extrair_data_publicacao_rss(item):
+    """RSS usa <pubDate> no formato RFC 822 (ex: 'Tue, 30 Jun 2026 20:32:52 +0000')."""
+    bruta = item.findtext("pubDate")
+    if not bruta:
+        return None
+    try:
+        data = parsedate_to_datetime(bruta)
+        if data.tzinfo is None:
+            data = data.replace(tzinfo=timezone.utc)
+        return data.astimezone(timezone.utc).isoformat()
+    except (ValueError, TypeError):
+        return None
 
 
 def _limpar_html(texto):
@@ -94,6 +143,7 @@ def _buscar_json(fonte):
             "descricao": descricao[:4000],
             "url": str(url).strip(),
             "fonte": fonte["nome"],
+            "data_publicacao": _extrair_data_publicacao_json(item),
         })
     return vagas
 
@@ -128,6 +178,7 @@ def _buscar_rss(fonte):
             "descricao": descricao[:4000],
             "url": url,
             "fonte": fonte["nome"],
+            "data_publicacao": _extrair_data_publicacao_rss(item),
         })
     return vagas
 

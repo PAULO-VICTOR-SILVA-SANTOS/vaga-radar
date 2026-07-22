@@ -49,7 +49,8 @@ As duas camadas existem porque chamar IA para classificar vaga de enfermagem
 ## Stack
 
 Python 3.11, `requests`, GitHub Actions (cron), API do Telegram Bot,
-API da Anthropic (Claude Haiku) para a classificação semântica.
+API do Google Gemini (Flash-Lite, camada gratuita) para a classificação
+semântica.
 
 Sem banco de dados: o histórico é um JSON que o próprio workflow commita
 de volta no repositório.
@@ -122,7 +123,7 @@ Em **Secrets**, adicione:
 |---|---|
 | `TELEGRAM_TOKEN` | o token do BotFather |
 | `TELEGRAM_CHAT_ID` | seu chat ID |
-| `ANTHROPIC_API_KEY` | sua chave da Anthropic (só se for usar IA) |
+| `GEMINI_API_KEY` | sua chave gratuita do Google AI Studio (só se for usar IA) |
 
 Em **Variables**, adicione:
 
@@ -130,6 +131,7 @@ Em **Variables**, adicione:
 |---|---|
 | `USE_AI` | `false` no começo |
 | `NOTA_MINIMA` | `6` |
+| `DIAS_MAX_VAGA` | `30` (não notifica vaga publicada há mais tempo que isso) |
 
 Faça push. Vá na aba **Actions**, escolha "Vaga Radar" e clique em
 **Run workflow** para testar manualmente. Depois disso ele roda sozinho
@@ -137,10 +139,15 @@ de 2 em 2 horas, das 8h às 22h (horário de João Pessoa).
 
 ### 6. Ligar a camada de IA
 
-Depois de entender o fluxo, mude a variável `USE_AI` para `true`.
+1. Crie uma chave gratuita em [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+   (conta Google, sem cartão de crédito)
+2. Adicione a chave como secret `GEMINI_API_KEY` no repositório
+3. Mude a variável `USE_AI` para `true`
 
-Custo: com Haiku, algo em torno de centavos por dia no volume típico
-(dezenas de vagas passando pela camada 2 por execução).
+Custo: zero. O modelo usado é o `gemini-2.5-flash-lite`, que está na
+cota gratuita do Google AI Studio. Se a cota gratuita for excedida em
+algum dia de pico, a camada falha "aberta" (a vaga é liberada em vez de
+descartada) — veja o comentário no topo de `filtro_ia.py`.
 
 ---
 
@@ -149,15 +156,18 @@ Custo: com Haiku, algo em torno de centavos por dia no volume típico
 A aba **Actions** mostra a saída de cada execução:
 
 ```
-[1/5] Buscando nas fontes...
+[1/6] Buscando nas fontes...
   RemoteOK: 87 vagas
   Remotive: 142 vagas
   total bruto: 229
 
-[3/5] Camada 1 - filtro por palavra-chave...
-  aprovadas: 14 de 229
-    descartadas por bloqueada no titulo: 96
-    descartadas por nenhuma palavra-chave da sua stack: 119
+[2/6] Camada 0 - filtro por data (max 30 dias)...
+  aprovadas por data: 210 de 229 (expiradas/antigas: 12, sem data informada: 7)
+
+[4/6] Camada 1 - filtro por palavra-chave...
+  aprovadas: 14 de 210
+    descartadas por cargo incompativel: 96
+    descartadas por nenhuma palavra-chave da sua stack: 100
 ```
 
 Se "aprovadas" der sempre 0, seus filtros estão apertados demais.
@@ -213,19 +223,22 @@ leia tudo por um canal só.
 
 ### Sobre rodar isso no GitHub Actions
 
-`EMAIL_ATIVO` vem `false` por padrão e **não** está no workflow de
-propósito. Colocar credencial de e-mail pessoal em secrets de repositório
-é um risco maior que um token de bot.
+Por padrão, colocar credencial de e-mail pessoal em secrets de
+repositório é um risco maior que um token de bot: quem tiver acesso de
+escrita ao repositório pode extrair o segredo, e em repositório
+**público** um fork malicioso com workflow alterado é vetor real.
 
-Três opções, da mais segura para a menos:
+Neste projeto o repositório é **privado**, então esse risco principal
+(fork malicioso de estranho) não se aplica - só quem já tem acesso ao
+repositório (você) consegue explorar o secret. Por isso `EMAIL_ATIVO`,
+`EMAIL_USUARIO` e `EMAIL_SENHA_APP` estão configurados como secrets
+e o workflow os encaminha para a execução na nuvem.
+
+Se um dia o repositório virar público, revise essa decisão antes -
+nesse cenário, as opções mais seguras passam a ser:
 
 1. Rodar a parte de e-mail só na sua máquina, quando quiser
 2. Criar um Gmail dedicado que só recebe encaminhamento dos alertas
-3. Aceitar o risco e adicionar os secrets no workflow
-
-Se for a 3, saiba que quem tiver acesso de escrita ao repositório pode
-extrair o segredo. Em repositório público, um fork malicioso com workflow
-alterado é vetor real.
 
 ## Ideias para a v2
 

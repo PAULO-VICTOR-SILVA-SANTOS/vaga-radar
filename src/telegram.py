@@ -9,8 +9,20 @@ import time
 import requests
 
 import config
+import filtro_data
 
 TIMEOUT = 20
+
+
+def _idade_texto(vaga):
+    idade = filtro_data.idade_em_dias(vaga)
+    if idade is None:
+        return None
+    if idade <= 0:
+        return "publicada hoje"
+    if idade == 1:
+        return "publicada ontem"
+    return f"publicada ha {idade} dias"
 
 
 def _escapar(texto):
@@ -31,6 +43,10 @@ def _montar_mensagem(vaga):
         f"🔎 {_escapar(vaga['fonte'])}",
     ]
 
+    idade = _idade_texto(vaga)
+    if idade:
+        linhas.append(f"🗓️ {_escapar(idade)}")
+
     if "nota" in vaga:
         linhas.append(f"⭐ Nota {vaga['nota']}/10 — {_escapar(vaga.get('motivo', ''))}")
 
@@ -48,6 +64,10 @@ def _montar_mensagem_simples(vaga):
         f"Local: {vaga['local']}",
         f"Fonte: {vaga['fonte']}",
     ]
+
+    idade = _idade_texto(vaga)
+    if idade:
+        linhas.append(idade.capitalize())
 
     if "nota" in vaga:
         linhas.append(f"Nota {vaga['nota']}/10 - {vaga.get('motivo', '')}")

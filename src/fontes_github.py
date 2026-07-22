@@ -67,6 +67,7 @@ def buscar():
                     "descricao": (corpo[:3500] + tags_str),
                     "url": link,
                     "fonte": f"GitHub ({repo})",
+                    "data_publicacao": issue.get("created_at"),
                 })
         except Exception as erro:
             print(f"  Erro ao buscar no repo {repo}: {erro}")

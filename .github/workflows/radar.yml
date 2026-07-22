@@ -32,10 +32,14 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USE_AI: ${{ vars.USE_AI || 'false' }}
           NOTA_MINIMA: ${{ vars.NOTA_MINIMA || '6' }}
+          DIAS_MAX_VAGA: ${{ vars.DIAS_MAX_VAGA || '30' }}
+          EMAIL_ATIVO: ${{ secrets.EMAIL_ATIVO }}
+          EMAIL_USUARIO: ${{ secrets.EMAIL_USUARIO }}
+          EMAIL_SENHA_APP: ${{ secrets.EMAIL_SENHA_APP }}
         run: python src/main.py
 
       - name: Salvar o historico de vagas vistas

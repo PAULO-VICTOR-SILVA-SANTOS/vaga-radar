@@ -14,6 +14,7 @@ Rodar local:  python src/main.py
 import sys
 
 import config
+import filtro_data
 import filtro_ia
 import filtro_keyword
 import fontes
@@ -27,7 +28,7 @@ def main():
     print(f"Camada de IA: {'LIGADA' if config.USE_AI else 'desligada'}")
     print("=" * 60)
 
-    print("\n[1/5] Buscando nas fontes...")
+    print("\n[1/6] Buscando nas fontes...")
     vagas = fontes.buscar_todas()
     print(f"  total bruto: {len(vagas)}")
 
@@ -35,7 +36,14 @@ def main():
         print("\nNenhuma vaga retornada. Encerrando sem erro.")
         return 0
 
-    print("\n[2/5] Removendo vagas ja vistas...")
+    print(f"\n[2/6] Camada 0 - filtro por data (max {config.DIAS_MAX_VAGA} dias)...")
+    vagas = filtro_data.filtrar(vagas)
+
+    if not vagas:
+        print("\nNenhuma vaga recente o suficiente.")
+        return 0
+
+    print("\n[3/6] Removendo vagas ja vistas...")
     visto = historico.carregar()
     vagas = historico.separar_novas(vagas, visto)
     print(f"  novas: {len(vagas)}")
@@ -44,7 +52,7 @@ def main():
         print("\nNada novo desde a ultima execucao.")
         return 0
 
-    print("\n[3/5] Camada 1 - filtro por palavra-chave...")
+    print("\n[4/6] Camada 1 - filtro por palavra-chave...")
     vagas = filtro_keyword.filtrar(vagas)
 
     if not vagas:
@@ -54,10 +62,10 @@ def main():
         return 0
 
     if config.USE_AI:
-        print("\n[4/5] Camada 2 - filtro por IA...")
+        print("\n[5/6] Camada 2 - filtro por IA...")
         vagas = filtro_ia.filtrar(vagas)
     else:
-        print("\n[4/5] Camada 2 pulada (USE_AI=false)")
+        print("\n[5/6] Camada 2 pulada (USE_AI=false)")
 
     if not vagas:
         print("\nNenhuma vaga passou no filtro de IA.")
@@ -69,7 +77,7 @@ def main():
     if total_aprovadas > len(vagas):
         print(f"  limitando a {len(vagas)} de {total_aprovadas} aprovadas")
 
-    print(f"\n[5/5] Enviando {len(vagas)} vaga(s) no Telegram...")
+    print(f"\n[6/6] Enviando {len(vagas)} vaga(s) no Telegram...")
     enviadas = telegram.enviar_lote(vagas)
     print(f"  enviadas: {enviadas}")
 

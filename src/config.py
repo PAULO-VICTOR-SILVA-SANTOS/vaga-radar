@@ -14,6 +14,13 @@ USE_AI = os.getenv("USE_AI", "true").lower() == "true"
 NOTA_MINIMA = int(os.getenv("NOTA_MINIMA", "6"))
 
 # ---------------------------------------------------------------------------
+# CAMADA 0 - FILTRO POR DATA (vaga fresca, sem vaga expirada)
+# Corta vaga publicada ha mais dias que isso. Se a fonte nao informar a
+# data de publicacao, a vaga passa (nao penaliza fonte sem essa info).
+# ---------------------------------------------------------------------------
+DIAS_MAX_VAGA = int(os.getenv("DIAS_MAX_VAGA", "30"))
+
+# ---------------------------------------------------------------------------
 # SEU PERFIL - usado apenas pela camada de IA
 # ---------------------------------------------------------------------------
 PERFIL = """
@@ -79,7 +86,10 @@ com Spring Boot — trate essas como incompativeis. Java como
 #    radar existe para achar o que ja bate, nao para gerar excecoes.
 #    Se quiser tentar uma dessas, faca manualmente.
 #  - Estagio/trainee NAO tem tratamento especial. Passa se a stack bater,
-#    como qualquer outra. Ubots e It4us passariam por citarem JavaScript.
+#    como qualquer outra. "junior"/"trainee"/"estagio" sozinhos NAO entram
+#    aqui de proposito: sem isso, "Estagio de Enfermagem" ou "Analista
+#    Financeiro Junior" passariam so pelo nivel, sem nenhuma palavra de
+#    dev. O nivel e avaliado pela camada de IA (PERFIL acima), nao aqui.
 PALAVRAS_OBRIGATORIAS = [
     # Linguagens
     "javascript", "typescript", "js developer",
@@ -97,8 +107,6 @@ PALAVRAS_OBRIGATORIAS = [
     "web developer", "desenvolvedor web", "desenvolvedor full",
     "desenvolvedor front", "desenvolvedor back",
     "programador web", "engenheiro de software",
-    # Nivel (pega vaga generica de entrada)
-    "junior", "trainee", "estagio", "estagiario", "entry level",
 ]
 
 # BLOQUEIO NO TITULO
@@ -272,10 +280,12 @@ EMAIL_MAX_LINKS_POR_EMAIL = 12
 # So e-mails destes remetentes sao processados.
 # Confira os enderecos reais na sua caixa e ajuste.
 EMAIL_REMETENTES = [
-    "indeed.com",         # Alertas diretos de vagas do Indeed (muito úteis)
-    "remotar.com.br",     # Focado em vagas remotas no Brasil
-    "programathor.com.br",# Vagas de tecnologia/desenvolvimento
-    "micro1.ai"           # Plataforma de vagas globais/IA
+    "indeed.com",          # Alertas diretos de vagas do Indeed (muito uteis)
+    "linkedin.com",        # Alertas de vaga do LinkedIn ("jobalerts-noreply@linkedin.com")
+    "gupy.com.br",         # Alertas de vaga do Gupy (ATS mais usado no Brasil; remetente real "no-reply@gupy.com.br")
+    "remotar.com.br",      # Focado em vagas remotas no Brasil
+    "programathor.com.br", # Vagas de tecnologia/desenvolvimento
+    "micro1.ai",           # Plataforma de vagas globais/IA
 ]
 
 # ---------------------------------------------------------------------------
@@ -294,7 +304,10 @@ MAX_POR_EXECUCAO = 10
 # ---------------------------------------------------------------------------
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
+
+# Chave gratuita do Google AI Studio (aistudio.google.com/apikey).
+# Sem cartao de credito, cota gratuita generosa no modelo Flash-Lite.
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 
 # Opcional: aumenta o limite de chamadas a API do GitHub (60 -> 5000 req/h).
 # No GitHub Actions, o secret automatico GITHUB_TOKEN ja serve para isso.

@@ -1,21 +1,32 @@
 """
-Camada 2: filtro semantico via API da Anthropic.
+Camada 2: filtro semantico via API do Google Gemini (camada gratuita).
 
-So roda no que sobrou da camada 1. Usa Haiku, que e barato e suficiente
-para uma tarefa de classificacao com criterio claro.
+So roda no que sobrou da camada 1. Usa Gemini Flash-Lite, que tem cota
+gratuita generosa no Google AI Studio (sem cartao de credito) e e rapido
+o bastante para uma tarefa de classificacao com criterio claro.
 
 Se a chamada falhar, a vaga passa (fail-open). E melhor voce receber uma
-vaga duvidosa do que perder uma boa por causa de instabilidade de rede.
+vaga duvidosa do que perder uma boa por causa de instabilidade de rede ou
+limite de cota gratuita.
 """
 import json
 import re
+import time
 
 import requests
 
 import config
 
-URL_API = "https://api.anthropic.com/v1/messages"
-MODELO = "claude-haiku-4-5-20251001"
+URL_API = (
+    "https://generativelanguage.googleapis.com/v1beta/models/"
+    "{modelo}:generateContent"
+)
+MODELO = "gemini-2.5-flash-lite"
+
+# Camada gratuita do Gemini limita requisicoes por minuto. Uma pequena
+# pausa entre chamadas evita estourar o limite (HTTP 429) no meio de uma
+# execucao com varias vagas para avaliar.
+PAUSA_ENTRE_CHAMADAS_SEGUNDOS = 4.1
 
 INSTRUCAO = """Voce avalia vagas de emprego para um candidato especifico.
 
@@ -67,7 +78,7 @@ def _extrair_json(texto):
 
 def avaliar(vaga):
     """Retorna (nota: int, motivo: str)."""
-    if not config.ANTHROPIC_API_KEY:
+    if not config.GEMINI_API_KEY:
         return 10, "IA sem chave configurada, vaga liberada"
 
     prompt = INSTRUCAO.format(
@@ -79,28 +90,30 @@ def avaliar(vaga):
     )
 
     corpo = {
-        "model": MODELO,
-        "max_tokens": 200,
-        "messages": [{"role": "user", "content": prompt}],
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "temperature": 0,
+            "maxOutputTokens": 200,
+            "responseMimeType": "application/json",
+        },
     }
-    cabecalhos = {
-        "content-type": "application/json",
-        "x-api-key": config.ANTHROPIC_API_KEY,
-        "anthropic-version": "2023-06-01",
-    }
+    url = URL_API.format(modelo=MODELO)
 
     try:
         resposta = requests.post(
-            URL_API, headers=cabecalhos, json=corpo, timeout=45
+            url,
+            params={"key": config.GEMINI_API_KEY},
+            json=corpo,
+            timeout=45,
         )
         resposta.raise_for_status()
         dados = resposta.json()
 
-        texto = "".join(
-            bloco.get("text", "")
-            for bloco in dados.get("content", [])
-            if bloco.get("type") == "text"
-        )
+        candidatos = dados.get("candidates") or []
+        texto = ""
+        if candidatos:
+            partes = candidatos[0].get("content", {}).get("parts", [])
+            texto = "".join(parte.get("text", "") for parte in partes)
 
         analise = _extrair_json(texto)
         if not analise:
@@ -111,9 +124,9 @@ def avaliar(vaga):
         return max(0, min(10, nota)), motivo
 
     except requests.HTTPError as erro:
-        # Fail-open: erro de rede nao pode custar uma vaga boa. Loga o
-        # corpo da resposta pra dar pra saber o motivo real (chave
-        # invalida, sem credito, modelo indisponivel etc.).
+        # Fail-open: erro de rede ou de cota nao pode custar uma vaga boa.
+        # Loga o corpo da resposta pra dar pra saber o motivo real (chave
+        # invalida, cota gratuita esgotada, modelo indisponivel etc.).
         print(f"    [IA] {erro} - corpo: {erro.response.text[:300]}")
         return 10, f"IA indisponivel ({type(erro).__name__}), vaga liberada"
     except Exception as erro:
@@ -124,7 +137,11 @@ def filtrar(vagas):
     """Avalia cada vaga e devolve apenas as que batem a nota minima."""
     aprovadas = []
 
-    for vaga in vagas:
+    for indice, vaga in enumerate(vagas):
+        if indice > 0:
+            # Respeita o limite de requisicoes por minuto da cota gratuita.
+            time.sleep(PAUSA_ENTRE_CHAMADAS_SEGUNDOS)
+
         nota, motivo = avaliar(vaga)
         vaga["nota"] = nota
         vaga["motivo"] = motivo
