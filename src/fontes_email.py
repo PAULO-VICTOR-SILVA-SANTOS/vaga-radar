@@ -110,22 +110,36 @@ def _limpar_html(html_bruto):
     return re.sub(r"\s+", " ", texto).strip()
 
 
+_TEXTOS_LINK_GENERICOS = {
+    "ver vaga", "veja a vaga", "ver a vaga", "candidate-se", "candidatar-se",
+    "candidate-se agora", "apply now", "apply", "view job", "see job",
+    "saiba mais", "clique aqui", "click here", "more details",
+    "ver detalhes", "ver mais", "job details", "learn more",
+}
+
+
 def _extrair_links(html_bruto, texto_puro):
     """
-    Pega os links de vaga do e-mail.
+    Pega os links de vaga do e-mail, junto com o texto do proprio link.
 
     Alertas costumam usar link de rastreio que redireciona para a vaga real.
     Guardamos o link como veio: abrir no navegador leva ao destino certo.
+
+    Um alerta digest (ex: Indeed) agrega varias vagas diferentes num so
+    e-mail. O texto de cada link (o titulo da vaga daquele link especifico)
+    e mais especifico que o assunto do e-mail inteiro - guardamos os dois
+    pra decidir depois qual usar como titulo de cada vaga.
     """
-    links = []
+    candidatos = []
 
     for match in re.finditer(
-        r'href=["\'](https?://[^"\']+)["\']', html_bruto or "", re.I
+        r'<a[^>]+href=["\'](https?://[^"\']+)["\'][^>]*>(.*?)</a>',
+        html_bruto or "", re.I | re.S,
     ):
-        links.append(match.group(1))
+        candidatos.append((match.group(1), _limpar_html(match.group(2))))
 
     for match in re.finditer(r'https?://[^\s<>"\']+', texto_puro or ""):
-        links.append(match.group(0))
+        candidatos.append((match.group(0), ""))
 
     # Descarta link de rodape que nao e vaga.
     ruido = (
@@ -138,7 +152,7 @@ def _extrair_links(html_bruto, texto_puro):
 
     limpos = []
     vistos = set()
-    for link in links:
+    for link, texto_link in candidatos:
         minusculo = link.lower()
         if any(r in minusculo for r in ruido):
             continue
@@ -146,9 +160,21 @@ def _extrair_links(html_bruto, texto_puro):
         if link in vistos:
             continue
         vistos.add(link)
-        limpos.append(link)
+        limpos.append((link, texto_link))
 
     return limpos
+
+
+def _titulo_do_link(texto_link, assunto):
+    """
+    Prefere o texto do proprio link como titulo (mais especifico num
+    alerta digest com varias vagas); cai pro assunto do e-mail quando o
+    texto do link e vazio ou generico demais ("Ver vaga", "Apply now").
+    """
+    texto = (texto_link or "").strip()
+    if len(texto) >= 8 and texto.lower() not in _TEXTOS_LINK_GENERICOS:
+        return texto[:200]
+    return assunto[:200] or "Vaga por e-mail"
 
 
 def _fazer_id(texto):
@@ -251,10 +277,10 @@ def buscar():
 
             # Um alerta traz varias vagas. Cada link vira um candidato,
             # e as camadas de filtro decidem o que presta.
-            for link in links[: config.EMAIL_MAX_LINKS_POR_EMAIL]:
+            for link, texto_link in links[: config.EMAIL_MAX_LINKS_POR_EMAIL]:
                 vagas.append({
                     "id": _fazer_id(link),
-                    "titulo": assunto[:200] or "Vaga por e-mail",
+                    "titulo": _titulo_do_link(texto_link, assunto),
                     "empresa": plataforma,
                     "local": "ver na vaga",
                     "descricao": corpo[:4000],
