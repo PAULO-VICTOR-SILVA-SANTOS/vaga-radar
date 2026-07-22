@@ -40,24 +40,37 @@ gestao administrativa e operacional, o que da leitura de negocio.
 Cursa ADS (conclusao 12/2026) e formacao Full Stack EBAC (04/2026).
 
 TEMPO DE EXPERIENCIA: cerca de 1 ano de pratica intensiva com React e
-o ecossistema JavaScript, com entregas reais em producao. Isso importa
-para julgar senioridade: uma vaga que peca 2 anos ainda pode valer a
-tentativa; 4 anos ou mais nao.
+o ecossistema JavaScript, com entregas reais em producao, alem de
+projetos proprios com visao mais avancada que a media de quem esta
+comecando. Ainda nao conseguiu a primeira vaga formal como
+desenvolvedor, e esse e o objetivo do radar. Isso importa para julgar
+senioridade: uma vaga que peca ate 3 anos ainda vale a tentativa; so
+4 anos ou mais e que nao.
 
-INGLES: basico. Le documentacao tecnica sem dificuldade, mas NAO conduz
-reuniao nem entrevista em ingles.
+INGLES: basico, e so isso - NAO e intermediario nem avancado. Le
+documentacao tecnica sem dificuldade, mas NAO conduz reuniao nem
+entrevista em ingles, nem sustenta conversa fluida. Vaga que exija
+ingles intermediario pra cima (nao so fluente/avancado) tambem e
+incompativel nesse quesito.
 
 PROCURA: vaga remota, hibrida ou PRESENCIAL em Joao Pessoa/PB e regiao
 metropolitana (Cabedelo, Bayeux, Santa Rita). Presencial em Joao Pessoa
 serve normalmente, nao penalize a nota por isso.
-Preferencia por CLT, mas aceita PJ. Nivel junior, trainee ou estagio
-remunerado. Aceita pleno se o requisito de experiencia for baixo.
+Preferencia por CLT, mas aceita PJ. NIVEL-ALVO: junior, trainee, estagio
+remunerado E TAMBEM pleno — os tres sao aceitos igualmente, nao trate
+"pleno" como excecao ou como algo que precisa de ressalva especial.
+So senior, especialista, staff/principal/lead/coordenador/gerente para
+cima e que ficam de fora (isso ja e cortado antes mesmo de chegar em
+voce, pelo filtro de palavra-chave). Uma vaga rotulada "pleno" sem
+exigencia explicita de anos, ou pedindo ate 3 anos, e boa aderencia de
+senioridade — nao penalize so pelo rotulo "pleno" no titulo.
 
 React Native e mobile com React SERVEM: ele nao tem projeto mobile no
 portfolio, mas a base de React transfere. Nota media, nao nota baixa.
 
 NAO SERVE: vagas presenciais FORA da Paraiba, vagas senior ou que pecam
-4+ anos de experiencia, vagas que exigem ingles conversacional ou fluente,
+4+ anos de experiencia, vagas que exigem ingles intermediario, avancado,
+fluente ou conversacional (so ingles basico/nao especificado passa),
 banco de talentos sem posicao aberta, e stacks principais que ele nao
 domina (Angular, Python/Django, .NET/C#, Spring Boot, PHP, Ruby).
 
@@ -155,6 +168,7 @@ PALAVRAS_BLOQUEADAS_DESCRICAO = [
     # Ingles eliminatorio
     "fluent english", "native english", "english fluency",
     "fluent in english", "ingles fluente", "ingles avancado",
+    "ingles intermediario", "intermediate english",
     "advanced english", "must speak english", "espanhol fluente",
     "spoken english", "excellent english", "strong english",
     "english proficiency", "proficiency in english",

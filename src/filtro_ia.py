@@ -45,13 +45,20 @@ sem texto antes ou depois, exatamente neste formato:
 {{"nota": <inteiro de 0 a 10>, "motivo": "<uma frase curta em portugues>"}}
 
 Criterio da nota:
-0-3  = incompativel (senioridade errada, stack errada, exige ingles fluente,
-       presencial fora da Paraiba, ou e apenas banco de talentos)
+0-3  = incompativel (senior/especialista/lead pra cima, stack errada,
+       exige ingles fluente, presencial fora da Paraiba, ou e apenas
+       banco de talentos)
 4-6  = parcialmente compativel (vale olhar, mas tem ressalva relevante)
 7-10 = boa aderencia (stack bate, senioridade bate, formato de trabalho bate)
 
-Seja rigoroso com senioridade. "Pleno" que exige 4+ anos nao serve.
-Seja rigoroso com ingles: exigencia de ingles conversacional derruba a nota.
+Junior E pleno sao ambos nivel-alvo, tratados como equivalentes - "pleno"
+sozinho no titulo NAO e motivo de nota baixa. So senioridade explicitamente
+acima disso (senior, especialista, staff, principal, lead, coordenador,
+gerente) e que e incompativel. Se a vaga pedir anos de experiencia, ate 3
+anos ainda e boa aderencia; so 4+ anos derruba a nota.
+Seja rigoroso com ingles: o candidato tem so nivel basico, entao
+exigencia de ingles intermediario pra cima (intermediario, avancado,
+fluente ou conversacional) derruba a nota.
 """
 
 
