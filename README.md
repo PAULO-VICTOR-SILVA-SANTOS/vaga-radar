@@ -249,4 +249,7 @@ nesse cenário, as opções mais seguras passam a ser:
 
 ## Licença
 
-MIT.
+Todos os direitos reservados. O código está público para leitura e avaliação
+(recrutadores, portfólio), mas não há licença de uso concedida — isso
+significa que copiar, redistribuir ou reutilizar qualquer parte deste
+código exige autorização explícita do autor.
