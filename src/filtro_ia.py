@@ -21,7 +21,7 @@ URL_API = (
     "https://generativelanguage.googleapis.com/v1beta/models/"
     "{modelo}:generateContent"
 )
-MODELO = "gemini-2.5-flash-lite"
+MODELO = "gemini-3.5-flash-lite"
 
 # Camada gratuita do Gemini limita requisicoes por minuto. Uma pequena
 # pausa entre chamadas evita estourar o limite (HTTP 429) no meio de uma

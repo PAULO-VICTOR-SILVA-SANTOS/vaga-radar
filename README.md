@@ -144,7 +144,7 @@ de 2 em 2 horas, das 8h às 22h (horário de João Pessoa).
 2. Adicione a chave como secret `GEMINI_API_KEY` no repositório
 3. Mude a variável `USE_AI` para `true`
 
-Custo: zero. O modelo usado é o `gemini-2.5-flash-lite`, que está na
+Custo: zero. O modelo usado é o `gemini-3.5-flash-lite`, que está na
 cota gratuita do Google AI Studio. Se a cota gratuita for excedida em
 algum dia de pico, a camada falha "aberta" (a vaga é liberada em vez de
 descartada) — veja o comentário no topo de `filtro_ia.py`.
