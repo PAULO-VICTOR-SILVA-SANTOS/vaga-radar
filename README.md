@@ -226,19 +226,21 @@ leia tudo por um canal só.
 Por padrão, colocar credencial de e-mail pessoal em secrets de
 repositório é um risco maior que um token de bot: quem tiver acesso de
 escrita ao repositório pode extrair o segredo, e em repositório
-**público** um fork malicioso com workflow alterado é vetor real.
+**público** um fork malicioso com workflow alterado é vetor real - o
+fork roda com o secret se o workflow disparar em `pull_request` (ou
+similar) vindo do fork.
 
-Neste projeto o repositório é **privado**, então esse risco principal
-(fork malicioso de estranho) não se aplica - só quem já tem acesso ao
-repositório (você) consegue explorar o secret. Por isso `EMAIL_ATIVO`,
-`EMAIL_USUARIO` e `EMAIL_SENHA_APP` estão configurados como secrets
-e o workflow os encaminha para a execução na nuvem.
+Este repositório é **público**, mas o `radar.yml` só dispara em
+`schedule` e `workflow_dispatch` - nenhum dos dois é acionável por um
+fork de terceiro. Isso fecha o vetor principal: alguém pode ver e
+copiar o workflow, mas não consegue fazer ele rodar com acesso aos
+seus secrets. Ainda assim, dois cuidados valem a pena:
 
-Se um dia o repositório virar público, revise essa decisão antes -
-nesse cenário, as opções mais seguras passam a ser:
-
-1. Rodar a parte de e-mail só na sua máquina, quando quiser
-2. Criar um Gmail dedicado que só recebe encaminhamento dos alertas
+1. Nunca adicione gatilho `pull_request` ou `pull_request_target` nesse
+   workflow sem revisar esse risco de novo
+2. Se preferir eliminar a superfície de risco de vez, rode a parte de
+   e-mail só na sua máquina (não no Actions) ou use um Gmail dedicado
+   que só recebe encaminhamento dos alertas
 
 ## Ideias para a v2
 
