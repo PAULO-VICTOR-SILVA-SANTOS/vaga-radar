@@ -24,6 +24,7 @@ REPOSITORIOS = [
     "backend-br/vagas",
     "vuejs-br/vagas",
     "androiddevbr/vagas",
+    "nodejsdevbr/vagas",
 ]
 
 

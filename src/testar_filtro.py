@@ -66,6 +66,9 @@ CASOS = [
     (False, _vaga("Desenvolvedor React Junior", "Remoto - Portugal. React", local="remoto / nacional"), "Portugal num repo BR"),
     (False, _vaga("Back-end Node.js Junior", "OPORTUNIDADE INTERNACIONAL. Localizacao: America Latina (LATAM). Voce vai atuar. Requisitos: Node. Responsabilidades: APIs.", local="remoto / nacional"), "LATAM em portugues nao vira Brasil"),
     (True,  _vaga("Back-end Node.js Junior", "Vaga aberta a toda a LATAM, com contratacao CLT no Brasil. Node", local="remoto / nacional"), "sinal explicito de Brasil vence LATAM"),
+    (True,  _vaga("Junior Fullstack Developer", "Nivel: Júnior. Contrato: PJ. Local: Remoto. | tags: NextJS, ReactJS, TypeScript", local="Remoto", fonte="Programathor"), "Programathor junior remoto passa"),
+    (True,  _vaga("Desenvolvedor Backend Node.js Jr", "Nivel: Júnior. Local: São Paulo, São Paulo, Brasil (Híbrido). | tags: Node.js, Docker", local="São Paulo, São Paulo, Brasil (Híbrido)", fonte="Programathor"), "Programathor hibrido em SP passa"),
+    (False, _vaga("Desenvolvedor Full Stack", "Nivel: Pleno. Contrato: CLT. Local: Remoto. | tags: React, Node.js", local="Remoto", fonte="Programathor"), "Programathor nivel Pleno"),
     # --- stack -------------------------------------------------------------
     (True,  _vaga("Desenvolvedor Python Junior", "FastAPI e PostgreSQL"), "Python agora e stack sua"),
     (True,  _vaga("Desenvolvedor Backend Junior", "Node.js, Express, MongoDB"), "Node + Mongo"),

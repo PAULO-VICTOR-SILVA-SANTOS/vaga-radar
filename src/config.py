@@ -280,7 +280,7 @@ INDICADORES_FORA_DO_BRASIL = [
 # Fontes que ja sao brasileiras: nao exigem sinal de Brasil, so caem se
 # houver indicio de fora. Qualquer outra fonte (RemoteOK, Remotive, WWR,
 # Himalayas e o que for adicionado a FONTES) precisa trazer sinal de Brasil.
-FONTES_BRASILEIRAS_PREFIXOS = ("GitHub", "E-mail")
+FONTES_BRASILEIRAS_PREFIXOS = ("GitHub", "E-mail", "Programathor")
 
 # Compatibilidade: alguns scripts antigos usam este nome.
 PALAVRAS_BLOQUEADAS = PALAVRAS_BLOQUEADAS_TITULO + PALAVRAS_BLOQUEADAS_DESCRICAO
@@ -366,7 +366,12 @@ AUDITORIA_DETALHE_ULTIMAS = 30      # so estas guardam a nota de cada vaga
 # Alerta: fonte com 0 vagas (ou falhando) por tantas execucoes seguidas.
 LIMITE_ZEROS_FONTE = 3
 # Fontes de nicho podem ficar em 0 legitimamente por dias: limite proprio.
-LIMITE_ZEROS_POR_FONTE = {}
+LIMITE_ZEROS_POR_FONTE = {
+    # Programathor: so pedimos junior/estagio e ha poucas vagas ativas, entao
+    # 0 por um dia e meio (12 execucoes) ainda e normal. Site fora do ar ou
+    # layout alterado nao dependem disto: viram falha e alertam em 3.
+    "Programathor": 12,
+}
 # Fontes que naturalmente ficam dias sem trazer nada (alerta por e-mail so
 # chega quando ha vaga nova). Ficam de fora do alerta de "0 vagas", mas o
 # alerta de FALHA (login IMAP, por exemplo) continua valendo.

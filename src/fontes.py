@@ -229,6 +229,21 @@ def buscar_todas():
         print(f"  GitHub Vagas: FALHOU ({type(erro).__name__}: {erro})")
         RELATORIO["GitHub Vagas"] = {"vagas": 0, "erro": type(erro).__name__}
 
+    # Fonte nacional: Programathor (HTML publico, so junior e estagio)
+    try:
+        import fontes_programathor
+        vagas = fontes_programathor.buscar()
+        print(f"  Programathor: {len(vagas)} vagas")
+        RELATORIO["Programathor"] = {"vagas": len(vagas), "erro": None}
+        for vaga in vagas:
+            if vaga["id"] in vistos:
+                continue
+            vistos.add(vaga["id"])
+            todas.append(vaga)
+    except Exception as erro:
+        print(f"  Programathor: FALHOU ({type(erro).__name__}: {erro})")
+        RELATORIO["Programathor"] = {"vagas": 0, "erro": type(erro).__name__}
+
     # Fonte extra: alertas por e-mail. Importado aqui dentro para que um
     # problema neste modulo nao impeca o resto do programa de rodar.
     if config.EMAIL_ATIVO:

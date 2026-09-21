@@ -268,11 +268,47 @@ def testar_main_completo():
         confere(levantou and log["execucoes"][-1]["erro_fatal"] == "RuntimeError", "erro fatal registrado e propagado")
 
 
+def testar_programathor():
+    print("\nProgramathor: erro real x 'sem vaga junior hoje'")
+    import fontes_programathor as fp
+
+    class Resp:
+        def __init__(self, texto, ok=True):
+            self.text, self._ok = texto, ok
+        def raise_for_status(self):
+            if not self._ok:
+                raise fp.requests.HTTPError("500")
+
+    def buscar_com(resposta):
+        with mock.patch.object(fp.requests, "get", resposta),              mock.patch.object(fp.time, "sleep"),              contextlib.redirect_stdout(io.StringIO()):
+            return fp.buscar()
+
+    vencida = '<div class="cell-list opacity-60p"><a href="/jobs/1-x"><h3>Vencida x</h3></a></div>'
+    confere(buscar_com(lambda *a, **k: Resp(vencida)) == [], "so vagas vencidas: retorna 0 sem erro (normal)")
+
+    try:
+        buscar_com(lambda *a, **k: Resp("", ok=False))
+        levantou = None
+    except Exception as erro:
+        levantou = type(erro).__name__
+    confere(levantou == "HTTPError", "site com erro 500: levanta HTTPError (vira falha no monitoramento)")
+
+    try:
+        buscar_com(lambda *a, **k: Resp("<html>pagina sem cards</html>"))
+        levantou = None
+    except Exception as erro:
+        levantou = type(erro).__name__
+    confere(levantou == "ValueError", "pagina sem nenhum card: levanta ValueError (layout mudou)")
+
+    confere(config.LIMITE_ZEROS_POR_FONTE.get("Programathor", 3) > 3, "Programathor tem limite proprio de zeros")
+
+
 if __name__ == "__main__":
     testar_fontes()
     testar_ia()
     testar_arquivo()
     testar_mensagem_telegram()
+    testar_programathor()
     testar_main_completo()
     print(f"\n{'TUDO OK' if not falhas else str(len(falhas)) + ' FALHA(S)'}")
     sys.exit(1 if falhas else 0)
