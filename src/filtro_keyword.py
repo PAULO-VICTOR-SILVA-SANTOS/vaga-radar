@@ -10,10 +10,15 @@ Sao DUAS listas de bloqueio, e a diferenca importa:
                nao importa o que a descricao diga.
 
   DESCRICAO  - so o que e realmente eliminatorio (ingles fluente,
-               8 anos de experiencia). Bloquear tecnologia na descricao
-               derruba vaga boa: quase toda vaga React cita Angular
-               em algum lugar como "diferencial" ou "conhecimento em".
+               nivel pleno/senior declarado, mais de 2 anos de experiencia).
+               Bloquear tecnologia na descricao derruba vaga boa: quase
+               toda vaga React cita Angular em algum lugar como
+               "diferencial" ou "conhecimento em".
+
+Alem disso: so entra vaga junior/trainee/estagio/sem senioridade, e so
+vaga do Brasil.
 """
+import re
 import unicodedata
 
 import config
@@ -28,6 +33,71 @@ def _normalizar(texto):
 
 def _preparar(lista):
     return [_normalizar(p) for p in lista]
+
+
+def _contem_termo(termos, texto):
+    """True se algum termo aparece como palavra inteira (evita 'natal' em 'natalie')."""
+    return next(
+        (t for t in termos if re.search(rf"(?<!\w){re.escape(t)}(?!\w)", texto)),
+        None,
+    )
+
+
+# "3+ anos", "mais de 2 anos", "2 a 4 years", "5 yrs". Em faixa, vale o minimo.
+_RE_ANOS = re.compile(
+    r"(?:(mais de|more than|over|acima de)\s+)?"
+    r"(\d{1,2})\s*(?:\+|ou mais)?\s*(?:(?:a|to|-|–|ate)\s*\d{1,2}\s*)?"
+    r"(?:anos?|years?|yrs?)(?!\w)"
+)
+
+
+def _anos_exigidos(descricao):
+    """
+    Maior exigencia de anos de EXPERIENCIA na descricao, ou None.
+    So conta numero perto de 'experi': "empresa com 10 anos de mercado"
+    nao e requisito.
+    """
+    maior = None
+    for m in _RE_ANOS.finditer(descricao):
+        contexto = descricao[max(0, m.start() - 50):m.end() + 60]
+        if "experi" not in contexto:
+            continue
+        anos = int(m.group(2)) + (1 if m.group(1) else 0)  # "mais de 2" = 3+
+        maior = anos if maior is None else max(maior, anos)
+    return maior
+
+
+def _fora_do_brasil(vaga, titulo, descricao):
+    """
+    Retorna o motivo se a vaga nao e do Brasil, ou None se pode seguir.
+
+    Sinal explicito de Brasil libera. Sem ele, indicio de fora (pais, LATAM,
+    "oportunidade internacional") corta em qualquer fonte. Restando duvida,
+    fontes brasileiras (GitHub, e-mail) passam e as internacionais
+    (RemoteOK, Remotive, WWR, Himalayas) so passam se escritas em portugues.
+    """
+    local = _normalizar(vaga.get("local", ""))
+    topo = f"{titulo} {local} {descricao[:1500]}"
+
+    if _contem_termo(_preparar(config.SINAIS_BRASIL), topo):
+        return None
+
+    fora = _contem_termo(_preparar(config.INDICADORES_FORA_DO_BRASIL), topo)
+    if fora:
+        return f"fora do Brasil: '{fora}'"
+
+    if vaga.get("fonte", "").startswith(config.FONTES_BRASILEIRAS_PREFIXOS):
+        return None
+
+    # Fonte internacional sem nenhum sinal de Brasil: so passa se a vaga for
+    # escrita em portugues (tres ou mais palavras tipicas).
+    palavras_pt = [
+        p for p in _preparar(config.PALAVRAS_PORTUGUES)
+        if re.search(rf"(?<!\w){p}(?!\w)", descricao)
+    ]
+    if len(palavras_pt) >= 3:
+        return None
+    return "sem indicacao de Brasil (vaga internacional)"
 
 
 def avaliar(vaga):
@@ -60,6 +130,9 @@ def avaliar(vaga):
     for palavra in bloq_titulo:
         if palavra in titulo:
             return False, f"cargo incompativel: '{palavra}'"
+    for padrao in config.REGEX_SENIORIDADE_TITULO:
+        if re.search(padrao, titulo):
+            return False, f"senioridade no titulo: '{padrao}'"
 
     # 1b. O titulo cita uma stack conflitante SEM citar a sua?
     # "Frontend Angular" cai. "Full Stack React/Angular" passa, porque
@@ -82,23 +155,28 @@ def avaliar(vaga):
         if palavra in descricao:
             return False, f"requisito eliminatorio: '{palavra}'"
 
-    # 3. E presencial em outra cidade?
-    # So corta se for presencial E numa cidade bloqueada. Vaga remota
-    # sediada em Sao Paulo continua valendo.
-    local = _normalizar(vaga.get("local", ""))
-    contexto = f"{titulo} {local} {descricao[:800]}"
+    # 2a. Os rotulos/tags da fonte declaram nivel pleno/senior?
+    rotulos = re.search(r"\|\s*(?:labels|tags):\s*([^\n]*)\s*$", descricao)
+    if rotulos:
+        nivel = _contem_termo(_preparar(config.ROTULOS_SENIORIDADE), rotulos.group(1))
+        if nivel:
+            return False, f"senioridade nos rotulos: '{nivel}'"
 
-    tem_remoto = any(
-        _normalizar(p) in contexto for p in config.INDICADORES_REMOTO
-    )
-    if not tem_remoto:
-        tem_presencial = any(
-            _normalizar(p) in contexto for p in config.INDICADORES_PRESENCIAL
-        )
-        if tem_presencial:
-            for cidade in _preparar(config.CIDADES_BLOQUEADAS):
-                if cidade in contexto:
-                    return False, f"presencial em {cidade}"
+    # 2b. A propria vaga declara nivel pleno/senior no corpo do texto?
+    for padrao in config.REGEX_SENIORIDADE_DESCRICAO:
+        achado = re.search(padrao, descricao)
+        if achado:
+            return False, f"senioridade na descricao: '{' '.join(achado.group(0).split())}'"
+
+    # 2c. Pede mais anos de experiencia do que voce tem?
+    anos = _anos_exigidos(descricao)
+    if anos is not None and anos > config.ANOS_EXPERIENCIA_MAX:
+        return False, f"experiencia acima do limite: {anos} anos"
+
+    # 3. E do Brasil? (remoto BR ou presencial em qualquer cidade do pais)
+    motivo_geo = _fora_do_brasil(vaga, titulo, descricao)
+    if motivo_geo:
+        return False, motivo_geo
 
     # 4. Bate com a sua stack?
     for palavra in obrigatorias:

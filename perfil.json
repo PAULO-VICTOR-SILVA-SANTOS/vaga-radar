@@ -1,0 +1,43 @@
+{
+  "nome": "Paulo Victor Silva Santos",
+  "cargo_alvo": "Desenvolvedor Full Stack Junior",
+  "localizacao": "Joao Pessoa, PB, Brasil",
+  "curriculo": "Curriculo_Paulo_Victor_ATS_v2.pdf",
+
+  "senioridade": {
+    "aceita": ["junior", "trainee", "estagio", "sem senioridade especificada"],
+    "nao_aceita": ["pleno", "senior", "sr", "specialist", "especialista", "lead", "staff", "principal", "coordenador", "gerente"],
+    "anos_experiencia_max": 2
+  },
+
+  "geografia": {
+    "regra": "SOMENTE Brasil: remoto BR ou presencial/hibrido em qualquer cidade do Brasil",
+    "descartar": "vaga internacional, ou que exija fuso horario ou idioma nao-BR como requisito central"
+  },
+
+  "stack": {
+    "linguagens": ["JavaScript ES6+", "TypeScript", "Python", "HTML5", "CSS3/SCSS"],
+    "front": ["React 19 (Hooks, Context API)", "Next.js", "Redux Toolkit", "Styled Components", "Tailwind CSS", "Bootstrap"],
+    "back": ["Node.js", "Express", "FastAPI", "SQLAlchemy", "Alembic", "APIs REST", "JWT/Autenticacao"],
+    "bancos": ["PostgreSQL (Supabase, em producao)", "MongoDB", "Firebase"],
+    "integracoes": ["Mercado Pago (Pix e Cartao)", "Resend", "LLMs via API (Gemini, Anthropic)"],
+    "automacao": ["GitHub Actions"],
+    "ferramentas": ["Git", "GitHub (sem fluxo de PR ainda)", "ESLint", "Vite", "Bun", "TanStack", "Vercel", "Render", "Railway"]
+  },
+
+  "match_forte": ["React", "Next.js", "Node.js", "Python/FastAPI", "TypeScript", "APIs REST", "PostgreSQL", "MongoDB"],
+
+  "gaps": {
+    "sem_experiencia_profissional": ["Java/Spring Boot (so nivel academico)", "SQL Server", "Angular/AngularJS", ".NET", "PHP"],
+    "nao_confirmado": ["Testes automatizados (Jest, Pytest, Cypress)", "Docker"]
+  },
+
+  "diferenciais": [
+    "projetos reais em producao para clientes (SaaS por assinatura com PostgreSQL; venda de ingressos com Mercado Pago processando transacoes reais)",
+    "15 anos de gestao administrativa e operacional (visao de negocio)",
+    "usa IA no fluxo de desenvolvimento e integra LLMs via API",
+    "cursa ADS (conclusao 12/2026); formacao Full Stack EBAC (04/2026)"
+  ],
+
+  "ingles": "basico. Le documentacao tecnica, mas nao conduz reuniao nem entrevista em ingles"
+}

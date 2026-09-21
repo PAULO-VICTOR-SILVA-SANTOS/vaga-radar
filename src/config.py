@@ -2,6 +2,7 @@
 Configuracao central do Vaga Radar.
 Edite este arquivo para ajustar seu perfil e filtros.
 """
+import json
 import os
 
 # ---------------------------------------------------------------------------
@@ -22,63 +23,58 @@ DIAS_MAX_VAGA = int(os.getenv("DIAS_MAX_VAGA", "30"))
 
 # ---------------------------------------------------------------------------
 # SEU PERFIL - usado apenas pela camada de IA
+# Os dados (stack, gaps, regras) ficam em perfil.json, na raiz do repo.
+# Para atualizar o curriculo, edite aquele arquivo; aqui so montamos o texto
+# que vai no prompt.
 # ---------------------------------------------------------------------------
-PERFIL = """
-Desenvolvedor Full Stack junior, baseado em Joao Pessoa/PB, Brasil.
+ARQUIVO_PERFIL = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "perfil.json"
+)
 
-LINGUAGENS: JavaScript ES6+, TypeScript, Java (POO).
-FRONT: React 19 (Hooks, Context API), Next.js, Redux Toolkit, Styled
-Components, Tailwind, Bootstrap, HTML5, CSS3/SCSS.
-BACK: Node.js, Express, APIs REST (consumo e criacao), autenticacao JWT.
-DADOS: PostgreSQL via Supabase (em producao), MongoDB, Firebase.
-FERRAMENTAS: Git/GitHub, Vite, ESLint, Vercel, Render, Cloudinary,
-Mercado Pago (pagamentos PIX), N8N (automacao).
 
-DIFERENCIAIS: tem projetos reais em producao para clientes pagantes,
-incluindo um SaaS por assinatura com banco relacional. Tem 19 anos de
-gestao administrativa e operacional, o que da leitura de negocio.
-Cursa ADS (conclusao 12/2026) e formacao Full Stack EBAC (04/2026).
+def _montar_perfil(p):
+    stack = p["stack"]
+    sen = p["senioridade"]
+    gaps = p["gaps"]
+    return f"""
+{p['cargo_alvo']}, baseado em {p['localizacao']}.
 
-TEMPO DE EXPERIENCIA: cerca de 1 ano de pratica intensiva com React e
-o ecossistema JavaScript, com entregas reais em producao, alem de
-projetos proprios com visao mais avancada que a media de quem esta
-comecando. Ainda nao conseguiu a primeira vaga formal como
-desenvolvedor, e esse e o objetivo do radar. Isso importa para julgar
-senioridade: uma vaga que peca ate 3 anos ainda vale a tentativa; so
-4 anos ou mais e que nao.
+LINGUAGENS: {', '.join(stack['linguagens'])}.
+FRONT: {', '.join(stack['front'])}.
+BACK: {', '.join(stack['back'])}.
+DADOS: {', '.join(stack['bancos'])}.
+INTEGRACOES: {', '.join(stack['integracoes'])}.
+AUTOMACAO: {', '.join(stack['automacao'])}.
+FERRAMENTAS: {', '.join(stack['ferramentas'])}.
 
-INGLES: basico, e so isso - NAO e intermediario nem avancado. Le
-documentacao tecnica sem dificuldade, mas NAO conduz reuniao nem
-entrevista em ingles, nem sustenta conversa fluida. Vaga que exija
-ingles intermediario pra cima (nao so fluente/avancado) tambem e
-incompativel nesse quesito.
+MATCH FORTE (stack que a vaga precisa girar em torno): {', '.join(p['match_forte'])}.
 
-PROCURA: vaga remota, hibrida ou PRESENCIAL em Joao Pessoa/PB e regiao
-metropolitana (Cabedelo, Bayeux, Santa Rita). Presencial em Joao Pessoa
-serve normalmente, nao penalize a nota por isso.
-Preferencia por CLT, mas aceita PJ. NIVEL-ALVO: junior, trainee, estagio
-remunerado E TAMBEM pleno — os tres sao aceitos igualmente, nao trate
-"pleno" como excecao ou como algo que precisa de ressalva especial.
-So senior, especialista, staff/principal/lead/coordenador/gerente para
-cima e que ficam de fora (isso ja e cortado antes mesmo de chegar em
-voce, pelo filtro de palavra-chave). Uma vaga rotulada "pleno" sem
-exigencia explicita de anos, ou pedindo ate 3 anos, e boa aderencia de
-senioridade — nao penalize so pelo rotulo "pleno" no titulo.
+DIFERENCIAIS: {'; '.join(p['diferenciais'])}.
 
-React Native e mobile com React SERVEM: ele nao tem projeto mobile no
-portfolio, mas a base de React transfere. Nota media, nao nota baixa.
+SENIORIDADE: procura SOMENTE {', '.join(sen['aceita'][:-1])} ou {sen['aceita'][-1]}. NAO serve
+{', '.join(sen['nao_aceita'])}, nem vaga que exija mais de
+{sen['anos_experiencia_max']} anos de experiencia como desenvolvedor. "Pleno"
+no titulo ou como nivel da vaga e incompativel, mesmo sem anos explicitos.
+Ele ainda nao tem a primeira vaga formal como desenvolvedor.
 
-NAO SERVE: vagas presenciais FORA da Paraiba, vagas senior ou que pecam
-4+ anos de experiencia, vagas que exigem ingles intermediario, avancado,
-fluente ou conversacional (so ingles basico/nao especificado passa),
-banco de talentos sem posicao aberta, e stacks principais que ele nao
-domina (Angular, Python/Django, .NET/C#, Spring Boot, PHP, Ruby).
+GEOGRAFIA: {p['geografia']['regra']}. Vaga fora do Brasil, ou que exija fuso
+horario ou idioma nao-BR como requisito central, NAO serve.
 
-OBSERVACAO SOBRE JAVA: ele tem Java (POO) em nivel academico, com um
-projeto de jogo. Isso NAO o qualifica para vaga de Desenvolvedor Java
-com Spring Boot — trate essas como incompativeis. Java como
-"diferencial desejavel" numa vaga JavaScript e irrelevante, nao muda nada.
+INGLES: {p['ingles']}. Vaga que exija ingles intermediario, avancado, fluente
+ou conversacional e incompativel.
+
+GAPS (nao penalize sozinhos; so nao trate como match forte se forem requisito
+CENTRAL da vaga): {'; '.join(gaps['sem_experiencia_profissional'])}. Ainda sem
+confirmacao: {'; '.join(gaps['nao_confirmado'])}. Citados de passagem ou como
+"diferencial desejavel", nao mudam nada.
+
+NAO SERVE: banco de talentos sem posicao aberta.
 """
+
+
+with open(ARQUIVO_PERFIL, "r", encoding="utf-8") as _arquivo:
+    PERFIL_DADOS = json.load(_arquivo)
+PERFIL = _montar_perfil(PERFIL_DADOS)
 
 # ---------------------------------------------------------------------------
 # CAMADA 1 - FILTRO POR PALAVRA-CHAVE (barato, roda primeiro)
@@ -86,31 +82,29 @@ com Spring Boot — trate essas como incompativeis. Java como
 
 # A vaga precisa conter PELO MENOS UMA destas palavras.
 #
-# DECISOES JA TOMADAS (nao mexa sem querer mudar de ideia):
-#  - React Native / mobile PASSA. Voce nao tem projeto mobile, mas a base
-#    de React transfere e voce prefere ver e decidir.
-#  - Presencial em Joao Pessoa PASSA. Nao ha bloqueio por localidade aqui;
-#    quem julga isso e a camada de IA, pelo PERFIL acima.
-#  - Java com Spring Boot e CORTADO no titulo. Seu Java e academico (POO,
-#    um jogo), nao serve para vaga de backend Java.
-#  - Vagas de stack que voce nao domina (Delphi, Java, .NET) sao CORTADAS
-#    mesmo quando a empresa oferece treinamento. Voce ja se candidatou a
-#    uma assim (TecnoSpeed/Delphi) e decidiu que nao vale o volume: o
-#    radar existe para achar o que ja bate, nao para gerar excecoes.
-#    Se quiser tentar uma dessas, faca manualmente.
-#  - Estagio/trainee NAO tem tratamento especial. Passa se a stack bater,
-#    como qualquer outra. "junior"/"trainee"/"estagio" sozinhos NAO entram
-#    aqui de proposito: sem isso, "Estagio de Enfermagem" ou "Analista
-#    Financeiro Junior" passariam so pelo nivel, sem nenhuma palavra de
-#    dev. O nivel e avaliado pela camada de IA (PERFIL acima), nao aqui.
+# DECISOES (perfil atualizado com o curriculo ATS v2):
+#  - Alvo: SOMENTE junior, trainee, estagio ou vaga sem senioridade. Pleno,
+#    senior e afins sao cortados (titulo, marcador de nivel na descricao e
+#    anos de experiencia acima de ANOS_EXPERIENCIA_MAX).
+#  - Alvo: SOMENTE Brasil (remoto BR, ou presencial/hibrido em qualquer
+#    cidade do pais). Fora do Brasil e cortado.
+#  - Python/FastAPI agora conta como stack sua.
+#  - Java/Spring, .NET, PHP, Angular, Ruby, Delphi como CARGO no titulo sao
+#    cortados: seu Java e academico e os demais nao fazem parte da stack.
+#    Citados de passagem na descricao nao derrubam a vaga.
+#  - React Native / mobile PASSA: a base de React transfere.
+#  - "junior"/"trainee"/"estagio" sozinhos NAO entram aqui de proposito:
+#    sem isso, "Estagio de Enfermagem" passaria so pelo nivel, sem nenhuma
+#    palavra de dev. O nivel e avaliado nos bloqueios abaixo e pela IA.
 PALAVRAS_OBRIGATORIAS = [
     # Linguagens
-    "javascript", "typescript", "js developer",
+    "javascript", "typescript", "js developer", "python",
     # Front
     "react", "reactjs", "react.js", "next.js", "nextjs",
     "redux", "styled components", "tailwind",
     # Back
-    "node", "node.js", "nodejs", "express",
+    "node", "node.js", "nodejs", "express", "fastapi",
+    "api rest", "apis rest", "rest api", "restful",
     # Dados
     "postgresql", "postgres", "supabase", "mongodb", "firebase",
     # Cargos
@@ -126,19 +120,19 @@ PALAVRAS_OBRIGATORIAS = [
 # O titulo define o cargo. Se aparece aqui, a vaga nao e para voce,
 # nao importa o que a descricao diga.
 PALAVRAS_BLOQUEADAS_TITULO = [
-    # Senioridade acima do seu nivel
-    "senior", "sr.", "sr ", " iii", "specialist", "especialista",
+    # Senioridade acima do seu nivel (so junior/trainee/estagio/sem nivel)
+    "pleno", "senior", "sr.", "sr ", "specialist", "especialista",
+    "mid-level", "mid level", "midlevel", "middle", "intermediate",
     "staff engineer", "principal", "tech lead", "team lead",
     "engineering manager", "head of", "architect", "arquiteto",
     "coordenador", "gerente de", "diretor",
     # Stacks que nao sao a sua, como CARGO
     "desenvolvedor java", "programador java", "java developer",
     "desenvolvedor php", "php developer", "programador php",
-    "desenvolvedor python", "python developer",
     "desenvolvedor .net", ".net developer", "desenvolvedor c#",
     "desenvolvedor angular", "angular developer",
     "desenvolvedor ruby", "ruby developer",
-    "desenvolvedor delphi", "desenvolvedor cobol",
+    "desenvolvedor delphi", "cobol",
     "wordpress", "drupal", "salesforce", "sap ", "abap",
     # Areas que nao sao desenvolvimento
     "designer", "ux/ui", "product owner", "scrum master",
@@ -153,19 +147,51 @@ PALAVRAS_BLOQUEADAS_TITULO = [
     "auxiliar administrativo", "estoquista", "seguranca patrimonial",
 ]
 
+# Senioridade no titulo que precisa de fronteira de palavra: como substring
+# ("pl", "lead", "ii") casaria com "sql", "misleading", "iiot" etc.
+# Roda sobre o titulo ja normalizado (minusculo, sem acento).
+REGEX_SENIORIDADE_TITULO = [
+    r"\bsr\b", r"\bpl\b", r"\b(?:ii|iii|iv)\b", r"\bmid\b",
+    r"\blead\b", r"\blider\b", r"\bstaff\b",
+]
+
+# Nivel da propria vaga declarado na DESCRICAO (titulo generico, nivel no
+# corpo). Deliberadamente restrito a "nivel: pleno" / "desenvolvedor senior":
+# "pleno" solto e comum em portugues ("pleno dominio") e "senior engineers"
+# aparece em vaga junior ("voce vai trabalhar com senior engineers").
+REGEX_SENIORIDADE_DESCRICAO = [
+    r"\b(?:nivel|senioridade|seniority|level|perfil|cargo|vaga)\s*(?:de\s+)?[:\-]?\s*"
+    r"(?:desenvolvedor\w*\s+)?(?:pleno|senior|sr|mid|middle|especialista)\b",
+    # "Desenvolvedor(a) Cobol Senior", "Developer Full Stack Pleno": aceita
+    # "(a)" e no maximo uma palavra entre o cargo e o nivel.
+    r"\b(?:desenvolvedor\w*|developer|engineer|engenheir\w+|programador\w*|dev)"
+    r"(?:\(a\))?(?:\s+(?:full[\s-]?stack|front[\s-]?end|back[\s-]?end|[\w#+.-]+))?"
+    r"\s+(?:pleno|senior|sr|mid-level|especialista)\b",
+    r"\b(?:pleno|senior)\s*[/(]\s*(?:pleno|senior)\b",
+    r"\(\s*(?:pleno|senior|sr)\s*\)",
+]
+
+# Rotulos/tags que as fontes anexam ao fim da descricao ("| labels: PJ,
+# Pleno, Senior" nos repos do GitHub; "| tags: ..." no RemoteOK). Como o
+# nivel e declarado ali de forma explicita, qualquer um destes derruba a vaga.
+ROTULOS_SENIORIDADE = [
+    "pleno", "senior", "sr", "especialista", "specialist", "lead", "staff",
+    "principal", "mid", "middle", "mid-level",
+]
+
+# Anos de experiencia como desenvolvedor: acima disto a vaga cai. Vem do
+# perfil.json ("mais de ~2 anos" = 3 ou mais). Em faixas ("2 a 4 anos") vale
+# o minimo. Quem calcula e o filtro_keyword.
+ANOS_EXPERIENCIA_MAX = PERFIL_DADOS["senioridade"]["anos_experiencia_max"]
+
 # BLOQUEIO NA DESCRICAO
 # Aqui so o que e realmente eliminatorio, esteja onde estiver.
 # Cuidado ao aumentar esta lista: e facil derrubar vaga boa que apenas
 # menciona uma tecnologia de passagem.
 #
-# Esta lista foi montada a partir de vagas REAIS que voce ja rejeitou.
+# Anos de experiencia NAO ficam aqui: sao tratados por regex (ver acima).
 PALAVRAS_BLOQUEADAS_DESCRICAO = [
-    # Experiencia que voce nao tem
-    "10+ years", "8+ years", "7+ years", "6+ years", "5+ years",
-    "10+ anos", "8+ anos", "7+ anos", "6+ anos", "5+ anos",
-    "minimo de 5 anos", "minimo de 6 anos", "minimo de 7 anos",
-    "pelo menos 5 anos", "pelo menos 6 anos",
-    # Ingles eliminatorio
+    # Ingles eliminatorio (voce tem so ingles basico)
     "fluent english", "native english", "english fluency",
     "fluent in english", "ingles fluente", "ingles avancado",
     "ingles intermediario", "intermediate english",
@@ -173,6 +199,9 @@ PALAVRAS_BLOQUEADAS_DESCRICAO = [
     "spoken english", "excellent english", "strong english",
     "english proficiency", "proficiency in english",
     "written and spoken", "verbal and written english",
+    "business english", "conversational english", "ingles conversacional",
+    "ingles obrigatorio", "english is required", "english is mandatory",
+    "fluency in english", "proficient in english",
     # Nao e vaga de verdade
     "banco de talentos", "talent pool", "cadastro reserva",
     # Stacks proprietarias que voce ja rejeitou por nome
@@ -186,53 +215,72 @@ PALAVRAS_BLOQUEADAS_DESCRICAO = [
 # TECNOLOGIAS SUAS (so nomes de tecnologia, NENHUM cargo)
 # Usada para decidir se um titulo com stack conflitante deve ser salvo.
 # "Full Stack React/Angular" passa porque React esta aqui.
-# "Fullstack Python" cai, porque "fullstack" e cargo e nao entra nesta lista.
+# "Fullstack Java" cai, porque "fullstack" e cargo e nao entra nesta lista.
 TECNOLOGIAS_SUAS = [
     "javascript", "typescript", "react", "reactjs", "react.js",
     "next.js", "nextjs", "next js", "node", "node.js", "nodejs",
     "express", "redux", "tailwind", "styled components",
     "postgresql", "postgres", "supabase", "mongodb", "firebase",
+    "python", "fastapi",
     "html", "css", "sass", "scss", "vite",
 ]
 
 # STACK CONFLITANTE NO TITULO
 # Se o titulo tiver uma destas E NAO tiver nenhuma da sua stack, corta.
-# Isso pega "Frontend Angular", "Fullstack Python", "Dev .NET" — formatos
+# Isso pega "Frontend Angular", "Fullstack Java", "Dev .NET" — formatos
 # que a lista de cargo nao alcanca porque nao comecam com "Desenvolvedor".
 #
 # A regra e condicional de proposito: "Full Stack React/Angular" passa,
 # porque React aparece junto. "Frontend Angular" cai, porque so tem Angular.
+# Python saiu daqui: agora e stack sua (Django/Flask continuam fora).
 STACKS_CONFLITANTES = [
-    "angular", "python", "django", "flask", ".net", "c#", "dotnet",
+    "angular", "django", "flask", ".net", "c#", "dotnet",
     "php", "laravel", "ruby", "rails", "spring", "java ",
-    "golang", " go ", "rust", "scala", "kotlin", "elixir",
+    "sql server", "golang", " go ", "rust", "scala", "kotlin", "elixir",
     "vue", "svelte", "ember",
 ]
 
-# BLOQUEIO POR LOCALIDADE
-# Voce aceita presencial em Joao Pessoa e regiao. Fora da Paraiba, nao.
-# So bloqueia se a vaga for explicitamente presencial NAQUELA cidade.
-CIDADES_BLOQUEADAS = [
-    "sao paulo", "rio de janeiro", "belo horizonte", "curitiba",
-    "porto alegre", "florianopolis", "brasilia", "salvador",
-    "recife", "fortaleza", "maracanau", "campinas",
-    "sao jose dos campos", "goiania", "manaus", "belem",
-    "natal", "maceio", "aracaju", "teresina", "sao luis",
-    "vitoria", "cuiaba", "campo grande", "londrina", "joinville",
+# FILTRO GEOGRAFICO: SOMENTE BRASIL
+# Remoto BR e presencial/hibrido em qualquer cidade do Brasil servem, entao
+# nao ha mais bloqueio por cidade. O que corta e vaga sem ligacao com o
+# Brasil. "Worldwide"/"Anywhere"/"LATAM" NAO contam como Brasil: sao vagas
+# internacionais que costumam exigir ingles e fuso estrangeiro.
+
+# Sinais de que a vaga e brasileira (procurados no titulo, local e no inicio
+# da descricao, ja normalizados).
+SINAIS_BRASIL = [
+    "brasil", "brazil", "brasileir", "pt-br", "clt",
+    "joao pessoa", "sao paulo", "rio de janeiro", "belo horizonte",
+    "curitiba", "porto alegre", "florianopolis", "brasilia", "salvador",
+    "recife", "fortaleza", "campinas", "goiania", "manaus", "belem",
+    "natal", "maceio", "aracaju", "teresina", "sao luis", "vitoria",
+    "cuiaba", "campo grande", "londrina", "joinville", "campina grande",
 ]
 
-# Palavras que indicam que a vaga e presencial de verdade.
-# Se aparecer uma destas JUNTO com uma cidade bloqueada, a vaga cai.
-INDICADORES_PRESENCIAL = [
-    "presencial", "on-site", "onsite", "no escritorio",
-    "hibrido", "hybrid", "comparecer",
+# Palavras de portugues que raramente aparecem em vaga em ingles. Tres ou
+# mais na descricao contam como sinal de Brasil (vaga escrita em pt-br).
+PALAVRAS_PORTUGUES = [
+    "voce", "requisitos", "responsabilidades", "beneficios", "atividades",
+    "vaga", "conhecimentos", "diferencial", "empresa",
 ]
 
-# Se a vaga disser que e remota, a cidade nao importa.
-INDICADORES_REMOTO = [
-    "remoto", "remote", "home office", "100% remoto",
-    "trabalho remoto", "anywhere", "totalmente remoto",
+# Indicios explicitos de vaga fora do Brasil (ou aberta a toda a America
+# Latina). Valem para qualquer fonte, mesmo com texto em portugues: um repo
+# brasileiro tambem publica "Remoto - Portugal" e "Oportunidade internacional".
+# Um sinal explicito de Brasil (SINAIS_BRASIL) tem prioridade sobre estes.
+INDICADORES_FORA_DO_BRASIL = [
+    "usa only", "us only", "u.s. only", "united states", "north america",
+    "europe", "emea", "apac", "uk only", "united kingdom", "canada",
+    "germany", "india", "australia", "portugal", "espanha", "spain",
+    "argentina", "mexico", "colombia", "chile",
+    "latam", "america latina", "latin america", "oportunidade internacional",
+    "international opportunity",
 ]
+
+# Fontes que ja sao brasileiras: nao exigem sinal de Brasil, so caem se
+# houver indicio de fora. Qualquer outra fonte (RemoteOK, Remotive, WWR,
+# Himalayas e o que for adicionado a FONTES) precisa trazer sinal de Brasil.
+FONTES_BRASILEIRAS_PREFIXOS = ("GitHub", "E-mail")
 
 # Compatibilidade: alguns scripts antigos usam este nome.
 PALAVRAS_BLOQUEADAS = PALAVRAS_BLOQUEADAS_TITULO + PALAVRAS_BLOQUEADAS_DESCRICAO

@@ -45,20 +45,34 @@ sem texto antes ou depois, exatamente neste formato:
 {{"nota": <inteiro de 0 a 10>, "motivo": "<uma frase curta em portugues>"}}
 
 Criterio da nota:
-0-3  = incompativel (senior/especialista/lead pra cima, stack errada,
-       exige ingles fluente, presencial fora da Paraiba, ou e apenas
-       banco de talentos)
+0-3  = incompativel (pleno, senior, especialista, lead ou acima; pede mais
+       de 2 anos de experiencia; vaga fora do Brasil ou que exige fuso ou
+       idioma nao-BR; exige ingles intermediario pra cima; stack central
+       que o candidato nao domina; ou e apenas banco de talentos)
 4-6  = parcialmente compativel (vale olhar, mas tem ressalva relevante)
 7-10 = boa aderencia (stack bate, senioridade bate, formato de trabalho bate)
 
-Junior E pleno sao ambos nivel-alvo, tratados como equivalentes - "pleno"
-sozinho no titulo NAO e motivo de nota baixa. So senioridade explicitamente
-acima disso (senior, especialista, staff, principal, lead, coordenador,
-gerente) e que e incompativel. Se a vaga pedir anos de experiencia, ate 3
-anos ainda e boa aderencia; so 4+ anos derruba a nota.
-Seja rigoroso com ingles: o candidato tem so nivel basico, entao
-exigencia de ingles intermediario pra cima (intermediario, avancado,
-fluente ou conversacional) derruba a nota.
+Senioridade: so junior, trainee, estagio ou vaga sem senioridade
+especificada servem. "Pleno" no titulo ou como nivel da vaga e incompativel
+(nota 0-3), mesmo sem anos explicitos. Se a vaga pedir anos de experiencia,
+ate 2 anos ainda e boa aderencia; 3 anos ou mais derruba a nota.
+
+Localizacao: so Brasil (remoto BR, ou presencial/hibrido em qualquer cidade
+do Brasil). Vaga aberta ao "mundo todo" mas de empresa estrangeira, com
+fuso ou reunioes em horario estrangeiro, so serve se o texto deixar claro
+que contrata no Brasil.
+
+Ingles: o candidato tem so nivel basico, entao exigencia de ingles
+intermediario pra cima (intermediario, avancado, fluente ou conversacional)
+derruba a nota.
+
+Gaps do candidato (Java/Spring Boot, SQL Server, Angular, .NET, PHP): se
+forem o requisito CENTRAL da vaga, a nota NAO passa de 5. Docker e testes
+automatizados (Jest, Pytest, Cypress) sao gaps mais leves: como requisito
+central, nota no maximo 6. Citados de passagem ou como diferencial desejavel,
+ignore. Stack central React, Next.js, Node.js, Python/FastAPI, TypeScript,
+APIs REST, PostgreSQL ou MongoDB sustenta nota 7 ou mais, desde que
+senioridade e localizacao batam.
 """
 
 
