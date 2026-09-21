@@ -35,8 +35,12 @@ def _escapar_atributo(texto):
     return html.escape(str(texto), quote=True)
 
 
-def _montar_mensagem(vaga):
-    linhas = [
+def _montar_mensagem(vaga, aviso=None):
+    linhas = []
+    if aviso:
+        # Aviso de saude do sistema, destacado no topo, antes da vaga.
+        linhas += [f"<b>{_escapar(aviso)}</b>", ""]
+    linhas += [
         f"<b>{_escapar(vaga['titulo'])}</b>",
         f"🏢 {_escapar(vaga['empresa'])}",
         f"📍 {_escapar(vaga['local'])}",
@@ -56,9 +60,10 @@ def _montar_mensagem(vaga):
     return "\n".join(linhas)
 
 
-def _montar_mensagem_simples(vaga):
+def _montar_mensagem_simples(vaga, aviso=None):
     """Sem tags HTML - usada quando o Telegram rejeita a versao formatada."""
-    linhas = [
+    linhas = [aviso, ""] if aviso else []
+    linhas += [
         vaga["titulo"],
         f"Empresa: {vaga['empresa']}",
         f"Local: {vaga['local']}",
@@ -78,8 +83,8 @@ def _montar_mensagem_simples(vaga):
     return "\n".join(linhas)
 
 
-def enviar_vaga(vaga):
-    """Envia uma vaga. Retorna True se deu certo."""
+def enviar_vaga(vaga, aviso=None):
+    """Envia uma vaga. Retorna True se deu certo. `aviso` vai no topo."""
     if not config.TELEGRAM_TOKEN or not config.TELEGRAM_CHAT_ID:
         print("    telegram nao configurado, pulando envio")
         return False
@@ -87,7 +92,7 @@ def enviar_vaga(vaga):
     url = f"https://api.telegram.org/bot{config.TELEGRAM_TOKEN}/sendMessage"
     corpo = {
         "chat_id": config.TELEGRAM_CHAT_ID,
-        "text": _montar_mensagem(vaga),
+        "text": _montar_mensagem(vaga, aviso),
         "parse_mode": "HTML",
         "disable_web_page_preview": False,
     }
@@ -101,7 +106,7 @@ def enviar_vaga(vaga):
             print(f"    HTML rejeitado pelo Telegram ({resposta.text[:200]}), tentando sem formatacao")
             corpo_simples = {
                 "chat_id": config.TELEGRAM_CHAT_ID,
-                "text": _montar_mensagem_simples(vaga),
+                "text": _montar_mensagem_simples(vaga, aviso),
                 "disable_web_page_preview": False,
             }
             resposta = requests.post(url, json=corpo_simples, timeout=TIMEOUT)
@@ -114,28 +119,34 @@ def enviar_vaga(vaga):
         return False
 
 
-def enviar_lote(vagas):
-    """Envia varias vagas com pausa, para nao bater no rate limit do Telegram."""
+def enviar_lote(vagas, aviso=None):
+    """
+    Envia varias vagas com pausa, para nao bater no rate limit do Telegram.
+    `aviso` (alerta de saude) vai no topo da primeira mensagem entregue: se
+    essa falhar, ele acompanha a seguinte, ate chegar.
+    """
     enviadas = 0
+    pendente = aviso
     for vaga in vagas:
-        if enviar_vaga(vaga):
+        if enviar_vaga(vaga, pendente):
             enviadas += 1
+            pendente = None
         time.sleep(1.2)
     return enviadas
 
 
 def enviar_aviso(texto):
-    """Mensagem simples de status ou erro."""
+    """Mensagem simples de status ou erro. True so se o Telegram aceitou."""
     if not config.TELEGRAM_TOKEN or not config.TELEGRAM_CHAT_ID:
         return False
 
     url = f"https://api.telegram.org/bot{config.TELEGRAM_TOKEN}/sendMessage"
     try:
-        requests.post(
+        resposta = requests.post(
             url,
             json={"chat_id": config.TELEGRAM_CHAT_ID, "text": texto},
             timeout=TIMEOUT,
         )
-        return True
+        return resposta.ok
     except Exception:
         return False

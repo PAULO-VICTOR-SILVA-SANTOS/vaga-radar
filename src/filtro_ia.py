@@ -97,10 +97,29 @@ def _extrair_json(texto):
     return None
 
 
-def avaliar(vaga):
-    """Retorna (nota: int, motivo: str)."""
+# Estatisticas da ultima execucao de filtrar(). O main le isto para o log de
+# auditoria e para o alerta de saude da IA. Nao muda o que e aprovado.
+ESTATISTICAS = {}
+
+_ROTULO_FALHA = {
+    "sem_chave": "GEMINI_API_KEY ausente",
+    "ilegivel": "resposta ilegivel",
+    "http_429": "HTTP 429 (limite de cota)",
+}
+
+
+def _zerar_estatisticas():
+    ESTATISTICAS.clear()
+    ESTATISTICAS.update(
+        chamadas=0, falhas=0, erros_429=0, ultimo_erro=None,
+        resultados=[], avaliacoes=[],
+    )
+
+
+def _avaliar_detalhado(vaga):
+    """Retorna (nota, motivo, status). status e 'ok' ou o tipo da falha."""
     if not config.GEMINI_API_KEY:
-        return 10, "IA sem chave configurada, vaga liberada"
+        return 10, "IA sem chave configurada, vaga liberada", "sem_chave"
 
     prompt = INSTRUCAO.format(
         perfil=config.PERFIL.strip(),
@@ -138,11 +157,11 @@ def avaliar(vaga):
 
         analise = _extrair_json(texto)
         if not analise:
-            return 10, "resposta da IA ilegivel, vaga liberada"
+            return 10, "resposta da IA ilegivel, vaga liberada", "ilegivel"
 
         nota = int(analise.get("nota", 10))
         motivo = str(analise.get("motivo", "")).strip() or "sem motivo informado"
-        return max(0, min(10, nota)), motivo
+        return max(0, min(10, nota)), motivo, "ok"
 
     except requests.HTTPError as erro:
         # Fail-open: erro de rede ou de cota nao pode custar uma vaga boa.
@@ -150,14 +169,39 @@ def avaliar(vaga):
         # invalida, cota gratuita esgotada, modelo indisponivel etc.).
         # Nao loga str(erro): o requests inclui a URL completa na mensagem,
         # e a URL desta API carrega a chave como query param.
-        print(f"    [IA] HTTP {erro.response.status_code} - corpo: {erro.response.text[:300]}")
-        return 10, f"IA indisponivel ({type(erro).__name__}), vaga liberada"
+        codigo = erro.response.status_code
+        print(f"    [IA] HTTP {codigo} - corpo: {erro.response.text[:300]}")
+        return 10, f"IA indisponivel ({type(erro).__name__}), vaga liberada", f"http_{codigo}"
     except Exception as erro:
-        return 10, f"IA indisponivel ({type(erro).__name__}), vaga liberada"
+        return (
+            10,
+            f"IA indisponivel ({type(erro).__name__}), vaga liberada",
+            f"erro_{type(erro).__name__}",
+        )
+
+
+def avaliar(vaga):
+    """Retorna (nota: int, motivo: str)."""
+    nota, motivo, _ = _avaliar_detalhado(vaga)
+    return nota, motivo
+
+
+def _resumir(vaga, nota, motivo, aprovada, status):
+    return {
+        "titulo": vaga["titulo"][:90],
+        "empresa": vaga["empresa"][:40],
+        "fonte": vaga["fonte"],
+        "url": vaga["url"],
+        "nota": nota,
+        "aprovada": aprovada,
+        "motivo": motivo[:160],
+        "ia_ok": status == "ok",
+    }
 
 
 def filtrar(vagas):
     """Avalia cada vaga e devolve apenas as que batem a nota minima."""
+    _zerar_estatisticas()
     aprovadas = []
 
     for indice, vaga in enumerate(vagas):
@@ -165,11 +209,22 @@ def filtrar(vagas):
             # Respeita o limite de requisicoes por minuto da cota gratuita.
             time.sleep(PAUSA_ENTRE_CHAMADAS_SEGUNDOS)
 
-        nota, motivo = avaliar(vaga)
+        nota, motivo, status = _avaliar_detalhado(vaga)
         vaga["nota"] = nota
         vaga["motivo"] = motivo
 
-        if nota >= config.NOTA_MINIMA:
+        ESTATISTICAS["chamadas"] += 1
+        ESTATISTICAS["resultados"].append(status == "ok")
+        if status != "ok":
+            ESTATISTICAS["falhas"] += 1
+            ESTATISTICAS["ultimo_erro"] = _ROTULO_FALHA.get(status, status)
+            if status == "http_429":
+                ESTATISTICAS["erros_429"] += 1
+
+        aprovada = nota >= config.NOTA_MINIMA
+        ESTATISTICAS["avaliacoes"].append(_resumir(vaga, nota, motivo, aprovada, status))
+
+        if aprovada:
             aprovadas.append(vaga)
             print(f"    [{nota}/10] OK   {vaga['titulo'][:60]} - {motivo}")
         else:

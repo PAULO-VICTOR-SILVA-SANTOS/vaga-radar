@@ -13,6 +13,10 @@ HEADERS = {"User-Agent": "vaga-radar/1.0 (projeto pessoal de estudo)"}
 if getattr(config, "GITHUB_TOKEN", None):
     HEADERS["Authorization"] = f"Bearer {config.GITHUB_TOKEN}"
 
+# O que cada repositorio trouxe na ultima buscar(), para a auditoria.
+# Mesmo formato de fontes.RELATORIO. Guarda so o nome do tipo do erro.
+RELATORIO = {}
+
 # Lista de repositorios oficiais da comunidade dev brasileira
 REPOSITORIOS = [
     "frontendbr/vagas",
@@ -32,6 +36,7 @@ def _fazer_id(url, titulo):
 def buscar():
     """Busca issues abertas de vagas nos repositorios configurados."""
     vagas = []
+    RELATORIO.clear()
 
     for repo in REPOSITORIOS:
         url = f"https://api.github.com/repos/{repo}/issues?state=open&per_page=30"
@@ -41,8 +46,10 @@ def buscar():
             issues = resposta.json()
 
             if not isinstance(issues, list):
+                RELATORIO[f"GitHub ({repo})"] = {"vagas": 0, "erro": "RespostaInesperada"}
                 continue
 
+            antes = len(vagas)
             for issue in issues:
                 # Pula pull requests se vierem na listagem de issues
                 if "pull_request" in issue:
@@ -69,8 +76,10 @@ def buscar():
                     "fonte": f"GitHub ({repo})",
                     "data_publicacao": issue.get("created_at"),
                 })
+            RELATORIO[f"GitHub ({repo})"] = {"vagas": len(vagas) - antes, "erro": None}
         except Exception as erro:
             print(f"  Erro ao buscar no repo {repo}: {erro}")
+            RELATORIO[f"GitHub ({repo})"] = {"vagas": 0, "erro": type(erro).__name__}
             continue
 
     return vagas

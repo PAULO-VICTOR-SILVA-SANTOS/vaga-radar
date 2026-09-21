@@ -355,6 +355,29 @@ EMAIL_REMETENTES = [
 # ---------------------------------------------------------------------------
 ARQUIVO_VISTAS = "vagas_vistas.json"
 
+# ---------------------------------------------------------------------------
+# AUDITORIA E SAUDE (ver auditoria.py)
+# ---------------------------------------------------------------------------
+# Log persistente: uma entrada por execucao. O Actions commita este arquivo.
+ARQUIVO_AUDITORIA = "log_auditoria.json"
+AUDITORIA_MAX_EXECUCOES = 200       # ~25 dias a 8 execucoes por dia
+AUDITORIA_DETALHE_ULTIMAS = 30      # so estas guardam a nota de cada vaga
+
+# Alerta: fonte com 0 vagas (ou falhando) por tantas execucoes seguidas.
+LIMITE_ZEROS_FONTE = 3
+# Fontes de nicho podem ficar em 0 legitimamente por dias: limite proprio.
+LIMITE_ZEROS_POR_FONTE = {}
+# Fontes que naturalmente ficam dias sem trazer nada (alerta por e-mail so
+# chega quando ha vaga nova). Ficam de fora do alerta de "0 vagas", mas o
+# alerta de FALHA (login IMAP, por exemplo) continua valendo.
+FONTES_SEM_ALERTA_DE_ZERO = ("E-mail",)
+
+# Alerta: chamadas da IA que falham (erro, cota 429, chave ausente) seguidas.
+LIMITE_FALHAS_IA = int(os.getenv("LIMITE_FALHAS_IA", "3"))
+
+# Um alerta que continua valendo so e repetido depois deste intervalo.
+REALERTA_HORAS = 24
+
 # Quantos dias manter uma vaga no historico antes de esquecer.
 DIAS_HISTORICO = 45
 

@@ -19,6 +19,13 @@ import config
 TIMEOUT = 20
 HEADERS = {"User-Agent": "vaga-radar/1.0 (projeto pessoal de estudo)"}
 
+# O que cada fonte trouxe na ultima buscar_todas(), para a auditoria:
+#   {"RemoteOK": {"vagas": 99, "erro": None}, ...}
+# "erro" e so o NOME do tipo da excecao (a mensagem do requests pode ter URL
+# com chave/token). Fica em variavel do modulo para nao mudar o retorno de
+# buscar_todas().
+RELATORIO = {}
+
 
 def _extrair_data_publicacao_json(item):
     """
@@ -187,6 +194,7 @@ def buscar_todas():
     """Busca em todas as fontes. Uma fonte que falha nao derruba as outras."""
     todas = []
     vistos = set()
+    RELATORIO.clear()
 
     for fonte in config.FONTES:
         try:
@@ -195,8 +203,10 @@ def buscar_todas():
             else:
                 vagas = _buscar_rss(fonte)
             print(f"  {fonte['nome']}: {len(vagas)} vagas")
+            RELATORIO[fonte["nome"]] = {"vagas": len(vagas), "erro": None}
         except Exception as erro:
             print(f"  {fonte['nome']}: FALHOU ({type(erro).__name__}: {erro})")
+            RELATORIO[fonte["nome"]] = {"vagas": 0, "erro": type(erro).__name__}
             continue
 
         # Deduplica dentro desta execucao (a mesma vaga aparece em varios feeds).
@@ -214,20 +224,25 @@ def buscar_todas():
                 continue
             vistos.add(vaga["id"])
             todas.append(vaga)
+        RELATORIO.update(fontes_github.RELATORIO)
     except Exception as erro:
         print(f"  GitHub Vagas: FALHOU ({type(erro).__name__}: {erro})")
+        RELATORIO["GitHub Vagas"] = {"vagas": 0, "erro": type(erro).__name__}
 
     # Fonte extra: alertas por e-mail. Importado aqui dentro para que um
     # problema neste modulo nao impeca o resto do programa de rodar.
     if config.EMAIL_ATIVO:
         try:
             import fontes_email
-            for vaga in fontes_email.buscar():
+            do_email = fontes_email.buscar()
+            RELATORIO["E-mail"] = {"vagas": len(do_email), "erro": None}
+            for vaga in do_email:
                 if vaga["id"] in vistos:
                     continue
                 vistos.add(vaga["id"])
                 todas.append(vaga)
         except Exception as erro:
             print(f"  E-mail: FALHOU ({type(erro).__name__}: {erro})")
+            RELATORIO["E-mail"] = {"vagas": 0, "erro": type(erro).__name__}
 
     return todas

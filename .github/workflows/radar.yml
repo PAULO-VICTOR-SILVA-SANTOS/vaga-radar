@@ -42,14 +42,19 @@ jobs:
           EMAIL_SENHA_APP: ${{ secrets.EMAIL_SENHA_APP }}
         run: python src/main.py
 
-      - name: Salvar o historico de vagas vistas
+      # always(): mesmo que o radar tenha falhado, o log de auditoria (com o
+      # erro registrado) e o estado de saude precisam ser guardados.
+      - name: Salvar o historico e o log de auditoria
+        if: always()
         run: |
           git config user.name "vaga-radar-bot"
           git config user.email "actions@github.com"
-          git add vagas_vistas.json
+          for arquivo in vagas_vistas.json log_auditoria.json; do
+            if [ -f "$arquivo" ]; then git add "$arquivo"; fi
+          done
           if git diff --staged --quiet; then
             echo "Nada mudou no historico."
           else
-            git commit -m "historico: atualiza vagas vistas [skip ci]"
+            git commit -m "historico: atualiza vagas vistas e auditoria [skip ci]"
             git push
           fi
