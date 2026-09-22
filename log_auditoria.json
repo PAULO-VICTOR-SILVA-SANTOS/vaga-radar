@@ -5,62 +5,62 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-21T23:54:24.566142+00:00"
+    "ultimo_ok": "2026-09-22T05:54:56.990199+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-21T23:54:24.566142+00:00"
+    "ultimo_ok": "2026-09-22T05:54:56.990199+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-21T23:54:24.566142+00:00"
+    "ultimo_ok": "2026-09-22T05:54:56.990199+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-21T23:54:24.566142+00:00"
+    "ultimo_ok": "2026-09-22T05:54:56.990199+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-21T23:54:24.566142+00:00"
+    "ultimo_ok": "2026-09-22T05:54:56.990199+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-21T23:54:24.566142+00:00"
+    "ultimo_ok": "2026-09-22T05:54:56.990199+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-21T23:54:24.566142+00:00"
+    "ultimo_ok": "2026-09-22T05:54:56.990199+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-21T23:54:24.566142+00:00"
+    "ultimo_ok": "2026-09-22T05:54:56.990199+00:00"
    },
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-21T23:54:24.566142+00:00"
+    "ultimo_ok": "2026-09-22T05:54:56.990199+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-21T23:54:24.566142+00:00"
+    "ultimo_ok": "2026-09-22T05:54:56.990199+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
-    "erros_seguidos": 3,
+    "erros_seguidos": 4,
     "ultimo_ok": null
    },
    "E-mail": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-21T23:54:24.566142+00:00"
+    "ultimo_ok": "2026-09-22T05:54:56.990199+00:00"
    }
   },
   "ia": {
@@ -884,6 +884,180 @@
       "nota": 2,
       "aprovada": false,
       "motivo": "A vaga exige nível pleno e tecnologia .NET, sendo incompatível com o perfil júnior.",
+      "ia_ok": true
+     }
+    ]
+   },
+   "avisos": [],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-09-22T05:53:50.049950+00:00",
+   "duracao_s": 66.9,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 99,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 18,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 29,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 12,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (vuejs-br/vagas)": {
+     "vagas": 2,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 6,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 11,
+     "erro": null
+    },
+    "Programathor": {
+     "vagas": 0,
+     "erro": "HTTPError"
+    },
+    "E-mail": {
+     "vagas": 45,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 297,
+    "camada0_data": 197,
+    "novas": 181,
+    "camada1_keyword": 10,
+    "camada2_ia_avaliadas": 10,
+    "camada2_ia_aprovadas": 0,
+    "enviadas": 0
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 10,
+    "falhas": 0,
+    "erros_429": 0,
+    "ultimo_erro": null,
+    "avaliacoes": [
+     {
+      "titulo": "3591: Desenvolvedor Full Stack Jr/Pleno em mazzatech. Mais 5 vagas de desenvolvedor pleno ",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://clk.indeed.com/hp?co=BR&utm_campaign=job_alerts&utm_medium=email&utm_source=jobseeker_emails&from=ja&tk=1k32hgcp7g9j1803",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige nível pleno no título e descrição, sendo incompatível com o perfil júnior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "3591: Desenvolvedor Full Stack Jr/Pleno em mazzatech. Mais 5 vagas de desenvolvedor pleno ",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_02NzQrCMBCE3yXQnrTpD6ItBNGD4FV8gbqJSfqThDQ5SOm7uxURYQ-z3zAzM4mkISoENzWUTgKiF5k2XAiegR1pC2CjCXSwUpsjWBO0iYJ9Akl1SsoL3sP_RfBPn96OrGtTsOx8S9XAXCAbMpJmJt_CK8fZYpeX-7yu67xAGwYN_V15G6VCM_gofvTlBKJJS7PVBuk6gKBrUYd-reqrUkkuwR0EP2DfsrwB2kmRktsAAAA/8rqLI8hYx9vQ9WqfVbZF0bnOCRSQRMW9wbwBePraYns",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige nível pleno no título e descrição, sendo incompatível com o perfil júnior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "3591: Desenvolvedor Full Stack Jr/Pleno",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=3a328037302eaa90&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38LplIW3TaYGN820ooPHJATgqWMmbll5be0kiA5RLVAKA&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k32hgcp7g9j1803&alid=69de485faffb823f5e8e3e9b&bb=fzBWw63Hx5Z98kIIQpuISqVgOn6xAw2IG3P8BwnTg7DF2si58zMTR2G9153rtjLYqL37b3ovPQRZUy5brtTEWnRh-wpLeSTHFLe_YpbRtvw4RjFDuczG-o_kpS-zjULGcSPlteVDZ_a4x0zk-gaUJw%3D%3D&tmtk=1k32hgcp7g9j1803",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige nível pleno no título (Jr/Pleno), o que é incompatível com o perfil júnior do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "[1303] Pessoa Desenvolvedora Fullstack Pl (Híbrido - Manaus)",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=f40edef18aca4c68&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38LplIW3TaYGN820ooPHJATgqWMmbll5be0kiA5RLVAKA&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k32hgcp7g9j1803&alid=69de485faffb823f5e8e3e9b&bb=NeriCOneXh_c4Ib7t8VLKyHXUcGmXSlNpCk_Vir6Fmgpl02_5casy17qwrXud1xBvcpeQKMgm47OXiHve41aM41mx4amaHv3zcuwVVaY4E68MPJGFCisfMQXQphmFoEZCvoovsyBO29nYr72cJPiyA%3D%3D&tmtk=1k32hgcp7g9j1803",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade plena (Pl) no título, o que é incompatível com o perfil júnior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Achar vagas",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/",
+      "nota": 3,
+      "aprovada": false,
+      "motivo": "A descrição da vaga está incompleta e não traz detalhes claros sobre requisitos, senioridade ou localidade.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor(a) Back-end & IA na empresa Buy Invest Real Estate Industrial & Logístico pa",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://secure.indeed.com/account/login?continue=https%3A%2F%2Fbr.indeed.com%2F&from=jobi2a_multijob-pt-BR_email&tk=1k326607tg5fb801&co=BR&hl=pt",
+      "nota": 3,
+      "aprovada": false,
+      "motivo": "A vaga é presencial em Balneário Camboriú, SC, enquanto o candidato está baseado em João Pessoa, PB, e não há indicação de modalidade remota.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor(a) Back-end & IA",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/pagead/clk/dl?from=jobi2a_multijob-pt-BR_email&jrtk=5-cmh1-1-1k3265vrlpfal800-8bea2eaa6210d2bc&mo=r&ad=-6NYlbfkN0AbILPmdLikQz8sjLb3K6lo7PShCJGhhL7at3H-cWCywZykPf-abEboX0hR_aVRw-gyKqdgttyvh76NeZhWPKnmWlr4sYv-1gyeoKTp2R6PYjeogHkLEeScFdoOx6P9L_ex57gHTOSvHsjucHTbW-t099b39NAEGh2G-xl-vqJiB-Fsf4U0zhNJij7CUV85U3epYhjjGOvR1RsvWGNubW0CFTWnsSMBqw8BQgcjhf4tYIKlXoXBqY_D3OciLZV1xAWSjR1pNEjcdwC66T8Yjpb50lDAn7VkE7ZciYyrdt4NkP1wDADbHPlwGONdHIiU0yYVe9_4bfgaMeemYyHjCeXDROsiwMCkCrYYguhpLLyWGeGxxvMK7_1YyuDw2sf6rFUayAoUAmgg0JBt_YfvY7fgym5rbZ0xTXPGtmluvl1eOwUPrEWsBA5-vO_9Hl4BF7oHd4tCjSXnEJX9nHbq0Ho-_5vaYuvHmo-z10Ujf2T35lhEqkRhPGs9nCRCT4o1biKqG8OMp0vFhnXe2BJuRQGKFUmcbkB56dIMmmv_cDMdT-D8x6h6tNQ5i7A9u_Ra1HrYfhG23DuG29iNJ7idoa_6NouNaM16p03TS2eN6W6IP9TteAGWA0Mtt-h-xbmeGpq4wFWoHMvZfWYOVW9CdZkpwhGyYbsykHTz504GvPIrUmdIffBwPa1n8KTdRBb4stbOTz2zIJNT-MYSy7z3aXr_VDl2hYAj702mvwaBVwbx3A%3D%3D&rm=2&xkcb=SoBt6_M2eiEX0cbOgp0NbzkdCdPP&jsa=7874&camk=C3EPSzFlQw9bZaBXEjuFxg%3D%3D",
+      "nota": 3,
+      "aprovada": false,
+      "motivo": "A descricao da vaga esta incompleta e oculta no texto fornecido, impossibilitando a avaliacao adequada.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Pausar estes e-mails",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://match.indeed.com/invitations/pause?tk=1k326607tg5fb801&info=AAAAAcQ3CALGYMPub8Zaw_8KYjepGwzLStYLJ909O1YfceUrtox40wGzxymJ7npADWN9nvzUrRrQB8NjO3KUpydtZJYa0UHf7_vkioKSLoUSQBWFhz-ZVFJ0cKhcb6nxbnMC8tPxfDgxxWGN-RPJLeCIjhKp5lwEr5ubas1eAyz4yY6YojS49tV-Bb6jUJofcbICcjXIiT3sVPY%3D",
+      "nota": 3,
+      "aprovada": false,
+      "motivo": "A descrição da vaga está incompleta e truncada, sem informações suficientes sobre requisitos, localização e senioridade.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Central de Ajuda",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://support.indeed.com/hc/pt-br?hl=pt",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A descrição da vaga está incompleta e não traz informações suficientes sobre requisitos e senioridade.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor(a) Back-end & IA na empresa Buy Invest Real Estate Industrial & Logístico pa",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://subscriptions.indeed.com?token=CkDLV4vn4QlTLMN2qkCwETig1HVFgUT6mYQDjoTbITjmNTEQbdN7V5scUBRFMnWykizJSVYEDfcykQ9M4KCq-jG_EiA0kRJ0dNnCNaVlvz6yOw_gknQuDqqWW5yoZbe405jiEBoQSRz9aLqh5nO8CqPH8VUxFQ%3D%3D&co=BR&hl=pt&tmtk=1k326607tg5fb801&from=jaf",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga é presencial em Balneário Camboriú, SC, enquanto o candidato está baseado em João Pessoa, PB.",
       "ia_ok": true
      }
     ]
