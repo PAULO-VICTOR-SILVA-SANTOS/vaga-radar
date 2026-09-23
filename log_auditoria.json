@@ -5,66 +5,66 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-23T05:34:46.764295+00:00"
+    "ultimo_ok": "2026-09-23T15:25:24.525109+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-23T05:34:46.764295+00:00"
+    "ultimo_ok": "2026-09-23T15:25:24.525109+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-23T05:34:46.764295+00:00"
+    "ultimo_ok": "2026-09-23T15:25:24.525109+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-23T05:34:46.764295+00:00"
+    "ultimo_ok": "2026-09-23T15:25:24.525109+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-23T05:34:46.764295+00:00"
+    "ultimo_ok": "2026-09-23T15:25:24.525109+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-23T05:34:46.764295+00:00"
+    "ultimo_ok": "2026-09-23T15:25:24.525109+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-23T05:34:46.764295+00:00"
+    "ultimo_ok": "2026-09-23T15:25:24.525109+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-23T05:34:46.764295+00:00"
+    "ultimo_ok": "2026-09-23T15:25:24.525109+00:00"
    },
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-23T05:34:46.764295+00:00"
+    "ultimo_ok": "2026-09-23T15:25:24.525109+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-23T05:34:46.764295+00:00"
+    "ultimo_ok": "2026-09-23T15:25:24.525109+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
-    "erros_seguidos": 8,
+    "erros_seguidos": 9,
     "ultimo_ok": null
    },
    "E-mail": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-23T05:34:46.764295+00:00"
+    "ultimo_ok": "2026-09-23T15:25:24.525109+00:00"
    }
   },
   "ia": {
-   "falhas_seguidas": 0
+   "falhas_seguidas": 2
   },
   "alertas": {}
  },
@@ -1697,6 +1697,160 @@
       "aprovada": false,
       "motivo": "A vaga e para nivel pleno, o que e incompativel com o perfil junior do candidato.",
       "ia_ok": true
+     }
+    ]
+   },
+   "avisos": [],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-09-23T15:20:43.055732+00:00",
+   "duracao_s": 291.6,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 99,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 19,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 12,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (vuejs-br/vagas)": {
+     "vagas": 2,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 6,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 11,
+     "erro": null
+    },
+    "Programathor": {
+     "vagas": 0,
+     "erro": "HTTPError"
+    },
+    "E-mail": {
+     "vagas": 45,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 299,
+    "camada0_data": 201,
+    "novas": 175,
+    "camada1_keyword": 8,
+    "camada2_ia_avaliadas": 8,
+    "camada2_ia_aprovadas": 6,
+    "enviadas": 6
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 8,
+    "falhas": 6,
+    "erros_429": 0,
+    "ultimo_erro": "erro_ReadTimeout",
+    "avaliacoes": [
+     {
+      "titulo": "Desenvolvedor C++ / Python Pleno em MIRANTE TECNOLOGIA. Mais 13 vagas de desenvolvedor ple",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://clk.indeed.com/hp?co=BR&utm_campaign=job_alerts&utm_medium=email&utm_source=jobseeker_emails&from=ja&tk=1k358i8u6g9j1800",
+      "nota": 10,
+      "aprovada": true,
+      "motivo": "IA indisponivel (HTTPError), vaga liberada",
+      "ia_ok": false
+     },
+     {
+      "titulo": "Desenvolvedor C++ / Python Pleno em MIRANTE TECNOLOGIA. Mais 13 vagas de desenvolvedor ple",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_02NzQqDMBCE3yWgp9ZERapCKO2h0GvpC9gkNdGYSH4ORXz3rqWUwh5mv2FmFhRRi2QIs28x9oJFJzJluBA8Y3bCHWM2moC17ZU5MmuCMlHQTyApT0lxgXu4vwj86dPZiQ5dyiw931Kp6RzQDk2oXdC38MphNq9IcSBN05AcbKYVG-_S2dhLMIOL4kdfswDkVW_2ygDdBgAMHegwblVjWdWKF0SV2tfQt65vsBs2i9sAAAA/Fq5o0dimVEBPdeFRkmuFqMFQnzpFLi1QloXk9gS0-aw",
+      "nota": 10,
+      "aprovada": true,
+      "motivo": "IA indisponivel (ReadTimeout), vaga liberada",
+      "ia_ok": false
+     },
+     {
+      "titulo": "Desenvolvedor C++ / Python Pleno",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=dfcd8c489c5820b3&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv1skBNysgFeE8ivt2crQYiY&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k358i8u6g9j1800&alid=69de485faffb823f5e8e3e9b&bb=0U4Qg7Ibfh30BbRMEEIw3JkRwQmn3RasKxm9goYk5wl_9sO6XWQca1qzRFhhDi0E5hz-KnNlk4wy6hSSj-cz0an0RtgVedmDYGlIkm1vmwI-Ni33HzbMXzR0Ia7fj2-uAEy7VfdWD8alqowdkro-QQ%3D%3D&tmtk=1k358i8u6g9j1800",
+      "nota": 10,
+      "aprovada": true,
+      "motivo": "IA indisponivel (HTTPError), vaga liberada",
+      "ia_ok": false
+     },
+     {
+      "titulo": "Zé Delivery | Desenvolvedor Pleno Front end",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=5837a4c8917dd2c4&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv1skBNysgFeE8ivt2crQYiY&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k358i8u6g9j1800&alid=69de485faffb823f5e8e3e9b&bb=FHR4Sq1d9TUYDPKoA_vt1Zxseul0JilRO5CMJ54w64pNjgWBzW1uTivVfBn1BUHvfDTvuQF32PDp-rP75Z7roj-0cvOP7TTyBYTLvHe401MxrCY224wIf67rcRa2JNaN2vZ_iQ5yMq51h1dReMNH4g%3D%3D&tmtk=1k358i8u6g9j1800",
+      "nota": 10,
+      "aprovada": true,
+      "motivo": "IA indisponivel (ReadTimeout), vaga liberada",
+      "ia_ok": false
+     },
+     {
+      "titulo": "[Job-31688] MidLevel Developer React Native, Brazil",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=1d3535a5fc711d7b&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv1skBNysgFeE8ivt2crQYiY&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k358i8u6g9j1800&alid=69de485faffb823f5e8e3e9b&bb=fD2huLevmUeV0FoXGlngSDxUkhSJ5kWP2DFSWONunuRykKRgvK9jZ3GoL_2sFK5Ir_P5syTbBP_FcnXPFCl53CSIocEJepO01u3kqhgAE_kANqPQs8YJvwCv_KvD2hs2qCodxMW40jCciguDYhygHQ%3D%3D&tmtk=1k358i8u6g9j1800",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige nível pleno (MidLevel) e stack em React Native, o que é incompatível com o perfil júnior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor Node.js Pleno | Remoto",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=f17369268d6d6ca5&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv1skBNysgFeE8ivt2crQYiY&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k358i8u6g9j1800&alid=69de485faffb823f5e8e3e9b&bb=IoTZryFLAuBW-0M1S9n2cE6EhNvF9Zgw8Ix_0zPZZwr1jW8slpUnJdCgadEb12py_11iyPfzDF8w5NFGkO0bJFxVtHibNZ-ydqKCBLIR4arMe3f8r4BlRRros9lr_cIqHLGFj152fbJe54bPXHz1RQ%3D%3D&tmtk=1k358i8u6g9j1800",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade Pleno, o que e inativel para o perfil junior do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "DESENVOLVEDOR BACK END PLENO (Eight Vision)",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=392402bc3cc24c06&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv1skBNysgFeE8ivt2crQYiY&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k358i8u6g9j1800&alid=69de485faffb823f5e8e3e9b&bb=_CKcGoEDs6TfmFdTLSNbQ0OhkoCPQQkdFvgAVnJuNpHbBqUL4I6oi_EhRzq4ZniuOwN48PCr8MMUciYcjq92Kdb4q6KbdWg0_qpnxKpX2gBbrdYn_h2i9KovEbmLDzL0g9rFoXOiPCNlaTTDrNFUqQ%3D%3D&tmtk=1k358i8u6g9j1800",
+      "nota": 10,
+      "aprovada": true,
+      "motivo": "IA indisponivel (HTTPError), vaga liberada",
+      "ia_ok": false
+     },
+     {
+      "titulo": "Engenheiro(a) de Software Full Stack Pleno",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=ccfb8225d880195b&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv1skBNysgFeE8ivt2crQYiY&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k358i8u6g9j1800&alid=69de485faffb823f5e8e3e9b&bb=zHZQV8vHAiOgoIYtNzaHVgoAVlUnIyQIQeOP2R6zYjhKKVkCmtlKh84-EzwiL5DP00anK2WokHwWihivY6w2YGACFunJofEh7qNJ1jXv8bss-FHUM4zemfzL8TLT7ffIPAHZfBKWA7jsFUdLF7y9hQ%3D%3D&tmtk=1k358i8u6g9j1800",
+      "nota": 10,
+      "aprovada": true,
+      "motivo": "IA indisponivel (ReadTimeout), vaga liberada",
+      "ia_ok": false
      }
     ]
    },
