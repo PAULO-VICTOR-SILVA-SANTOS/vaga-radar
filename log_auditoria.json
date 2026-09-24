@@ -5,66 +5,66 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-24T05:54:35.141105+00:00"
+    "ultimo_ok": "2026-09-24T15:45:02.793253+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-24T05:54:35.141105+00:00"
+    "ultimo_ok": "2026-09-24T15:45:02.793253+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-24T05:54:35.141105+00:00"
+    "ultimo_ok": "2026-09-24T15:45:02.793253+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-24T05:54:35.141105+00:00"
+    "ultimo_ok": "2026-09-24T15:45:02.793253+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-24T05:54:35.141105+00:00"
+    "ultimo_ok": "2026-09-24T15:45:02.793253+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-24T05:54:35.141105+00:00"
+    "ultimo_ok": "2026-09-24T15:45:02.793253+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-24T05:54:35.141105+00:00"
+    "ultimo_ok": "2026-09-24T15:45:02.793253+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-24T05:54:35.141105+00:00"
+    "ultimo_ok": "2026-09-24T15:45:02.793253+00:00"
    },
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-24T05:54:35.141105+00:00"
+    "ultimo_ok": "2026-09-24T15:45:02.793253+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-24T05:54:35.141105+00:00"
+    "ultimo_ok": "2026-09-24T15:45:02.793253+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
-    "erros_seguidos": 12,
+    "erros_seguidos": 13,
     "ultimo_ok": null
    },
    "E-mail": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-24T05:54:35.141105+00:00"
+    "ultimo_ok": "2026-09-24T15:45:02.793253+00:00"
    }
   },
   "ia": {
-   "falhas_seguidas": 0
+   "falhas_seguidas": 1
   },
   "alertas": {
    "fonte:Programathor": "2026-09-24T05:54:35.970769+00:00"
@@ -2211,6 +2211,100 @@
    "avisos": [
     "Fonte 'Programathor' falhou em 12 execucoes seguidas (ultimo erro: HTTPError). Pode estar com problema."
    ],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-09-24T15:43:32.892890+00:00",
+   "duracao_s": 91.7,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 99,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 19,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 12,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (vuejs-br/vagas)": {
+     "vagas": 2,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 6,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 11,
+     "erro": null
+    },
+    "Programathor": {
+     "vagas": 0,
+     "erro": "HTTPError"
+    },
+    "E-mail": {
+     "vagas": 42,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 292,
+    "camada0_data": 196,
+    "novas": 176,
+    "camada1_keyword": 2,
+    "camada2_ia_avaliadas": 2,
+    "camada2_ia_aprovadas": 1,
+    "enviadas": 1
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 2,
+    "falhas": 1,
+    "erros_429": 0,
+    "ultimo_erro": "erro_ReadTimeout",
+    "avaliacoes": [
+     {
+      "titulo": "[Job-31688] MidLevel Developer React Native, Brazil",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=1d3535a5fc711d7b&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv1skBNysgFeE8ivt2crQYiY&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k358i8u6g9j1800&alid=69de485faffb823f5e8e3e9b&bb=fD2huLevmUeV0FoXGlngSDxUkhSJ5kWP2DFSWONunuRykKRgvK9jZ3GoL_2sFK5Ir_P5syTbBP_FcnXPFCl53CSIocEJepO01u3kqhgAE_kANqPQs8YJvwCv_KvD2hs2qCodxMW40jCciguDYhygHQ%3D%3D&tmtk=1k358i8u6g9j1800",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "Vaga para nivel pleno (MidLevel) e exige React Native, fora do perfil junior e stack principal.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor Node.js Pleno | Remoto",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=f17369268d6d6ca5&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv1skBNysgFeE8ivt2crQYiY&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k358i8u6g9j1800&alid=69de485faffb823f5e8e3e9b&bb=IoTZryFLAuBW-0M1S9n2cE6EhNvF9Zgw8Ix_0zPZZwr1jW8slpUnJdCgadEb12py_11iyPfzDF8w5NFGkO0bJFxVtHibNZ-ydqKCBLIR4arMe3f8r4BlRRros9lr_cIqHLGFj152fbJe54bPXHz1RQ%3D%3D&tmtk=1k358i8u6g9j1800",
+      "nota": 10,
+      "aprovada": true,
+      "motivo": "IA indisponivel (ReadTimeout), vaga liberada",
+      "ia_ok": false
+     }
+    ]
+   },
+   "avisos": [],
    "erro_fatal": null
   }
  ]
