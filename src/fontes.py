@@ -26,6 +26,10 @@ HEADERS = {"User-Agent": "vaga-radar/1.0 (projeto pessoal de estudo)"}
 # buscar_todas().
 RELATORIO = {}
 
+# Pausa temporaria: Cloudflare bloqueia o GitHub Actions (HTTP 403).
+# Para reativar a coleta, altere para True.
+PROGRAMATHOR_ATIVO = False
+
 
 def _extrair_data_publicacao_json(item):
     """
@@ -229,20 +233,23 @@ def buscar_todas():
         print(f"  GitHub Vagas: FALHOU ({type(erro).__name__}: {erro})")
         RELATORIO["GitHub Vagas"] = {"vagas": 0, "erro": type(erro).__name__}
 
-    # Fonte nacional: Programathor (HTML publico, so junior e estagio)
-    try:
-        import fontes_programathor
-        vagas = fontes_programathor.buscar()
-        print(f"  Programathor: {len(vagas)} vagas")
-        RELATORIO["Programathor"] = {"vagas": len(vagas), "erro": None}
-        for vaga in vagas:
-            if vaga["id"] in vistos:
-                continue
-            vistos.add(vaga["id"])
-            todas.append(vaga)
-    except Exception as erro:
-        print(f"  Programathor: FALHOU ({type(erro).__name__}: {erro})")
-        RELATORIO["Programathor"] = {"vagas": 0, "erro": type(erro).__name__}
+    if PROGRAMATHOR_ATIVO:
+        # Fonte nacional: Programathor (HTML publico, so junior e estagio)
+        try:
+            import fontes_programathor
+            vagas = fontes_programathor.buscar()
+            print(f"  Programathor: {len(vagas)} vagas")
+            RELATORIO["Programathor"] = {"vagas": len(vagas), "erro": None}
+            for vaga in vagas:
+                if vaga["id"] in vistos:
+                    continue
+                vistos.add(vaga["id"])
+                todas.append(vaga)
+        except Exception as erro:
+            print(f"  Programathor: FALHOU ({type(erro).__name__}: {erro})")
+            RELATORIO["Programathor"] = {"vagas": 0, "erro": type(erro).__name__}
+    else:
+        print("  Programathor: pausado temporariamente (sem consulta e sem alerta)")
 
     # Fonte extra: alertas por e-mail. Importado aqui dentro para que um
     # problema neste modulo nao impeca o resto do programa de rodar.
