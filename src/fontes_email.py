@@ -21,6 +21,7 @@ leia tudo por um canal so.
 import email
 import email.utils
 import hashlib
+import html
 import imaplib
 import re
 from datetime import datetime, timedelta, timezone
@@ -129,6 +130,11 @@ def _extrair_links(html_bruto, texto_puro):
     e-mail. O texto de cada link (o titulo da vaga daquele link especifico)
     e mais especifico que o assunto do e-mail inteiro - guardamos os dois
     pra decidir depois qual usar como titulo de cada vaga.
+
+    O HTML do e-mail escapa "&" como "&amp;" dentro do href (exigencia do
+    proprio HTML). Sem desfazer isso, a URL guardada fica com "&amp;" no
+    lugar de "&" - ai o Telegram escapa de novo (vira "&amp;amp;") e o link
+    quebra ao clicar. html.unescape() desfaz isso antes de guardar a URL.
     """
     candidatos = []
 
@@ -136,10 +142,10 @@ def _extrair_links(html_bruto, texto_puro):
         r'<a[^>]+href=["\'](https?://[^"\']+)["\'][^>]*>(.*?)</a>',
         html_bruto or "", re.I | re.S,
     ):
-        candidatos.append((match.group(1), _limpar_html(match.group(2))))
+        candidatos.append((html.unescape(match.group(1)), _limpar_html(match.group(2))))
 
     for match in re.finditer(r'https?://[^\s<>"\']+', texto_puro or ""):
-        candidatos.append((match.group(0), ""))
+        candidatos.append((html.unescape(match.group(0)), ""))
 
     # Descarta link de rodape que nao e vaga.
     ruido = (

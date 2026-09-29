@@ -19,6 +19,7 @@ import auditoria
 import config
 import filtro_ia
 import fontes
+import fontes_email
 import main
 import telegram
 
@@ -303,12 +304,77 @@ def testar_programathor():
     confere(config.LIMITE_ZEROS_POR_FONTE.get("Programathor", 3) > 3, "Programathor tem limite proprio de zeros")
 
 
+def testar_diagnostico_http():
+    print("\nDiagnostico HTTP sem credenciais")
+    import requests
+    import fontes_github
+    import fontes_programathor
+
+    for codigo in (403, 429, 500, 503):
+        resposta = requests.Response()
+        resposta.status_code = codigo
+        resposta.url = "https://example.com/?token=segredo"
+        erro = requests.HTTPError("token=segredo", response=resposta)
+        with mock.patch.object(fontes, "PROGRAMATHOR_ATIVO", True), \
+             mock.patch.object(config, "FONTES", []), \
+             mock.patch.object(config, "EMAIL_ATIVO", False), \
+             mock.patch.object(fontes_github, "buscar", return_value=[]), \
+             mock.patch.dict(fontes_github.RELATORIO, {}, clear=True), \
+             mock.patch.object(fontes_programathor, "buscar", side_effect=erro), \
+             contextlib.redirect_stdout(io.StringIO()):
+            vagas = fontes.buscar_todas()
+        resumo = fontes.RELATORIO["Programathor"]["erro"]
+        confere(resumo == f"HTTPError (HTTP {codigo})", f"HTTP {codigo} chega ao relatorio")
+        confere(vagas == [], "falha da fonte nao interrompe a coleta")
+        dados = auditoria._vazio()
+        execucao = _execucao()
+        execucao["fontes"] = dict(fontes.RELATORIO)
+        for _ in range(config.LIMITE_ZEROS_POR_FONTE["Programathor"]):
+            alertas = auditoria.avaliar_saude(dados, execucao, [])
+        texto = alertas[0][1]
+        confere(f"HTTP {codigo}" in texto and "segredo" not in texto,
+                f"alerta mostra HTTP {codigo} sem expor token")
+    confere(fontes._resumir_erro(requests.HTTPError("segredo")) == "HTTPError",
+            "erro sem resposta continua compativel")
+    confere(fontes._resumir_erro(requests.Timeout("segredo")) == "Timeout",
+            "timeout nao expoe a mensagem")
+
+
+def testar_links_email():
+    print("\nLinks extraidos de e-mail (HTML)")
+
+    # O HTML de alerta escapa "&" como "&amp;" dentro do href (exigencia do
+    # proprio HTML). Se isso nao for desfeito, a URL guardada fica errada e,
+    # ao passar pelo escape do Telegram de novo, vira "&amp;amp;" - o link
+    # quebra ao clicar. Regressao do bug reportado pelo usuario.
+    html_email = (
+        '<a href="https://www.linkedin.com/comm/jobs/view/1?trk=eml&amp;refId=abc">'
+        "Dev Junior</a>"
+    )
+    links = fontes_email._extrair_links(html_email, "")
+    confere(len(links) == 1, "extraiu 1 link do HTML")
+    url, _ = links[0]
+    confere(url == "https://www.linkedin.com/comm/jobs/view/1?trk=eml&refId=abc",
+            "'&amp;' do href foi desfeito para '&' real")
+
+    vaga = {
+        "titulo": "Dev Junior", "empresa": "LinkedIn", "local": "remoto",
+        "fonte": "E-mail (LinkedIn)", "url": url,
+    }
+    mensagem = telegram._montar_mensagem(vaga)
+    confere('href="https://www.linkedin.com/comm/jobs/view/1?trk=eml&amp;refId=abc"' in mensagem,
+            "mensagem do Telegram escapa uma unica vez (sem '&amp;amp;')")
+    confere("&amp;amp;" not in mensagem, "sem escape duplicado no link final")
+
+
 if __name__ == "__main__":
     testar_fontes()
     testar_ia()
     testar_arquivo()
     testar_mensagem_telegram()
     testar_programathor()
+    testar_diagnostico_http()
+    testar_links_email()
     testar_main_completo()
     print(f"\n{'TUDO OK' if not falhas else str(len(falhas)) + ' FALHA(S)'}")
     sys.exit(1 if falhas else 0)
