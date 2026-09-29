@@ -5,37 +5,37 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-29T06:39:04.233323+00:00"
+    "ultimo_ok": "2026-09-29T16:49:21.910764+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-29T06:39:04.233323+00:00"
+    "ultimo_ok": "2026-09-29T16:49:21.910764+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-29T06:39:04.233323+00:00"
+    "ultimo_ok": "2026-09-29T16:49:21.910764+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-29T06:39:04.233323+00:00"
+    "ultimo_ok": "2026-09-29T16:49:21.910764+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-29T06:39:04.233323+00:00"
+    "ultimo_ok": "2026-09-29T16:49:21.910764+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-29T06:39:04.233323+00:00"
+    "ultimo_ok": "2026-09-29T16:49:21.910764+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-29T06:39:04.233323+00:00"
+    "ultimo_ok": "2026-09-29T16:49:21.910764+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 11,
@@ -45,12 +45,12 @@
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-29T06:39:04.233323+00:00"
+    "ultimo_ok": "2026-09-29T16:49:21.910764+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-29T06:39:04.233323+00:00"
+    "ultimo_ok": "2026-09-29T16:49:21.910764+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
@@ -60,7 +60,7 @@
    "E-mail": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-09-29T06:39:04.233323+00:00"
+    "ultimo_ok": "2026-09-29T16:49:21.910764+00:00"
    }
   },
   "ia": {
@@ -210,238 +210,7 @@
     "falhas": 0,
     "erros_429": 0,
     "ultimo_erro": null,
-    "avaliacoes": [
-     {
-      "titulo": "Desenvolvedor(a) Fullstack Backend - Trainee em Confitec. Mais 6 vagas de estagiário de ti",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://clk.indeed.com/hp?co=BR&utm_campaign=job_alerts&utm_medium=email&utm_source=jobseeker_emails&from=ja&tk=1k32icae2gel3800",
-      "nota": 8,
-      "aprovada": true,
-      "motivo": "Vaga remota para trainee com boa aderência ao perfil e stack compatível.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Desenvolvedor(a) Fullstack Backend - Trainee em Confitec. Mais 6 vagas de estagiário de ti",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_02NzQrCMBCE3yXQnrTpD6ItFNGD4FV8gbiNzbZNUtLkIKXv7lZEhD3MfsPMzCywiinvx6nifJIQnEzQNFI2CVjNBYANxvPBtmiOYI1HE2T9CUTFKcovdA_3F6E_fjqr607EYOvzLVZDPXq2YZpVM_sWXhuazXZpvk_LskwzsmFA6O_K2dAqMr0L8kdfoyQ0YWu2aIiuAwQ6Qdr3a1Vf5AgiON1leKC-ZXkDBjn9ntsAAAA/fCmhPa3R8xHo9UoF762X3tzN99zE0dsWJ3a3DNvStms",
-      "nota": 8,
-      "aprovada": true,
-      "motivo": "Vaga remota para trainee com boa aderência ao perfil e senioridade.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Desenvolvedor(a) Fullstack Backend - Trainee",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=57c25c44b40b19fa&from=ja&qd=RnZhMybXSk4M3QtTVGXWoYSS59_jmai_wNMYqEp82RukapMh_x0yOxfesmoL7B1J23iAiHnftkQTClo6PqHGMIv2yFHLeRyEG0X73O4Fx94&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k32icae2gel3800&alid=69e4e296eb2a0d6bbf8328a0&bb=29v2jpfzRqY_kvCYt9RVzO8-n8_uJSm2GXt8_RiXlF25KjJdJ3IpHi-qcmEYyp94fiX95uqPH67-xE5Zd-Xh1ogmgdmB7jJT3GGNzKMIWEb2nBjqeWk-9n0zt-W7VK_JdD2wvTpO82lSRTmJiAjtLw%3D%3D&tmtk=1k32icae2gel3800",
-      "nota": 7,
-      "aprovada": true,
-      "motivo": "Vaga trainee com aderência à senioridade e boa compatibilidade com o perfil fullstack do candidato.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "3591: Desenvolvedor Full Stack Jr/Pleno em mazzatech. Mais 5 vagas de desenvolvedor pleno ",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://clk.indeed.com/hp?co=BR&utm_campaign=job_alerts&utm_medium=email&utm_source=jobseeker_emails&from=ja&tk=1k32hgcp7g9j1803",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige nível pleno no título e descrição, o que é incompatível com o perfil júnior do candidato.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "3591: Desenvolvedor Full Stack Jr/Pleno em mazzatech. Mais 5 vagas de desenvolvedor pleno ",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_02NzQrCMBCE3yXQnrTpD6ItBNGD4FV8gbqJSfqThDQ5SOm7uxURYQ-z3zAzM4mkISoENzWUTgKiF5k2XAiegR1pC2CjCXSwUpsjWBO0iYJ9Akl1SsoL3sP_RfBPn96OrGtTsOx8S9XAXCAbMpJmJt_CK8fZYpeX-7yu67xAGwYN_V15G6VCM_gofvTlBKJJS7PVBuk6gKBrUYd-reqrUkkuwR0EP2DfsrwB2kmRktsAAAA/8rqLI8hYx9vQ9WqfVbZF0bnOCRSQRMW9wbwBePraYns",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige nível pleno no título (Jr/Pleno), o que é incompatível com a senioridade júnior do candidato.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "3591: Desenvolvedor Full Stack Jr/Pleno",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=3a328037302eaa90&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38LplIW3TaYGN820ooPHJATgqWMmbll5be0kiA5RLVAKA&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k32hgcp7g9j1803&alid=69de485faffb823f5e8e3e9b&bb=fzBWw63Hx5Z98kIIQpuISqVgOn6xAw2IG3P8BwnTg7DF2si58zMTR2G9153rtjLYqL37b3ovPQRZUy5brtTEWnRh-wpLeSTHFLe_YpbRtvw4RjFDuczG-o_kpS-zjULGcSPlteVDZ_a4x0zk-gaUJw%3D%3D&tmtk=1k32hgcp7g9j1803",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "O titulo da vaga especifica o nivel Junior/Pleno, o que e incompativel com a regra de senioridade do candidato.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "[1303] Pessoa Desenvolvedora Fullstack Pl (Híbrido - Manaus)",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=f40edef18aca4c68&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38LplIW3TaYGN820ooPHJATgqWMmbll5be0kiA5RLVAKA&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k32hgcp7g9j1803&alid=69de485faffb823f5e8e3e9b&bb=NeriCOneXh_c4Ib7t8VLKyHXUcGmXSlNpCk_Vir6Fmgpl02_5casy17qwrXud1xBvcpeQKMgm47OXiHve41aM41mx4amaHv3zcuwVVaY4E68MPJGFCisfMQXQphmFoEZCvoovsyBO29nYr72cJPiyA%3D%3D&tmtk=1k32hgcp7g9j1803",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade Pleno, o que e incompativel com o perfil junior do candidato.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Desenvolvedor(a) Back-end & IA na empresa Buy Invest Real Estate Industrial & Logístico pa",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/?co=BR&utm_campaign=job_alerts&utm_medium=email&utm_source=jobseeker_emails&from=jobi2a_multijob-pt-BR_email&tk=1k326607tg5fb801",
-      "nota": 3,
-      "aprovada": false,
-      "motivo": "A vaga exige localizacao presencial em Balneario Camboriu, SC, sendo incompativel com o candidato baseado em Joao Pessoa, PB.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Achar vagas",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/",
-      "nota": 3,
-      "aprovada": false,
-      "motivo": "A descrição da vaga está incompleta e vaga, não especificando requisitos claros de senioridade e localização.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Desenvolvedor(a) Back-end & IA na empresa Buy Invest Real Estate Industrial & Logístico pa",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://secure.indeed.com/account/login?continue=https%3A%2F%2Fbr.indeed.com%2F&from=jobi2a_multijob-pt-BR_email&tk=1k326607tg5fb801&co=BR&hl=pt",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige presencialidade em Balneário Camboriú, SC, enquanto o candidato está baseado em João Pessoa, PB.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Desenvolvedor(a) Back-end & IA",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/pagead/clk/dl?from=jobi2a_multijob-pt-BR_email&jrtk=5-cmh1-1-1k3265vrlpfal800-8bea2eaa6210d2bc&mo=r&ad=-6NYlbfkN0AbILPmdLikQz8sjLb3K6lo7PShCJGhhL7at3H-cWCywZykPf-abEboX0hR_aVRw-gyKqdgttyvh76NeZhWPKnmWlr4sYv-1gyeoKTp2R6PYjeogHkLEeScFdoOx6P9L_ex57gHTOSvHsjucHTbW-t099b39NAEGh2G-xl-vqJiB-Fsf4U0zhNJij7CUV85U3epYhjjGOvR1RsvWGNubW0CFTWnsSMBqw8BQgcjhf4tYIKlXoXBqY_D3OciLZV1xAWSjR1pNEjcdwC66T8Yjpb50lDAn7VkE7ZciYyrdt4NkP1wDADbHPlwGONdHIiU0yYVe9_4bfgaMeemYyHjCeXDROsiwMCkCrYYguhpLLyWGeGxxvMK7_1YyuDw2sf6rFUayAoUAmgg0JBt_YfvY7fgym5rbZ0xTXPGtmluvl1eOwUPrEWsBA5-vO_9Hl4BF7oHd4tCjSXnEJX9nHbq0Ho-_5vaYuvHmo-z10Ujf2T35lhEqkRhPGs9nCRCT4o1biKqG8OMp0vFhnXe2BJuRQGKFUmcbkB56dIMmmv_cDMdT-D8x6h6tNQ5i7A9u_Ra1HrYfhG23DuG29iNJ7idoa_6NouNaM16p03TS2eN6W6IP9TteAGWA0Mtt-h-xbmeGpq4wFWoHMvZfWYOVW9CdZkpwhGyYbsykHTz504GvPIrUmdIffBwPa1n8KTdRBb4stbOTz2zIJNT-MYSy7z3aXr_VDl2hYAj702mvwaBVwbx3A%3D%3D&rm=2&xkcb=SoBt6_M2eiEX0cbOgp0NbzkdCdPP&jsa=7874&camk=C3EPSzFlQw9bZaBXEjuFxg%3D%3D",
-      "nota": 3,
-      "aprovada": false,
-      "motivo": "A descrição da vaga está incompleta e não traz informações sobre senioridade, requisitos e localização.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Pausar estes e-mails",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://match.indeed.com/invitations/pause?tk=1k326607tg5fb801&info=AAAAAcQ3CALGYMPub8Zaw_8KYjepGwzLStYLJ909O1YfceUrtox40wGzxymJ7npADWN9nvzUrRrQB8NjO3KUpydtZJYa0UHf7_vkioKSLoUSQBWFhz-ZVFJ0cKhcb6nxbnMC8tPxfDgxxWGN-RPJLeCIjhKp5lwEr5ubas1eAyz4yY6YojS49tV-Bb6jUJofcbICcjXIiT3sVPY%3D",
-      "nota": 5,
-      "aprovada": false,
-      "motivo": "A descricao da vaga esta incompleta no corpo do email, faltando requisitos tecnicos essenciais para uma avaliacao precisa.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Central de Ajuda",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://support.indeed.com/hc/pt-br?hl=pt",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A descrição da vaga está incompleta e truncada na plataforma Indeed, não permitindo avaliar requisitos centrais, localização e senioridade.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Desenvolvedor(a) Back-end & IA na empresa Buy Invest Real Estate Industrial & Logístico pa",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://subscriptions.indeed.com?token=CkDLV4vn4QlTLMN2qkCwETig1HVFgUT6mYQDjoTbITjmNTEQbdN7V5scUBRFMnWykizJSVYEDfcykQ9M4KCq-jG_EiA0kRJ0dNnCNaVlvz6yOw_gknQuDqqWW5yoZbe405jiEBoQSRz9aLqh5nO8CqPH8VUxFQ%3D%3D&co=BR&hl=pt&tmtk=1k326607tg5fb801&from=jaf",
-      "nota": 3,
-      "aprovada": false,
-      "motivo": "A vaga exige presencialidade ou localizacao especifica em Balneario Camboriu, SC, enquanto o candidato e baseado em Joao Pessoa, PB.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Desenvolvedor PL/SQL Pleno em DS3 Digital. Mais 10 vagas de desenvolvedor pleno em Remoto",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://clk.indeed.com/hp?co=BR&utm_campaign=job_alerts&utm_medium=email&utm_source=jobseeker_emails&from=ja&tk=1k2tapd7ig9j1800",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade plena e PL/SQL, sendo incompatível com o perfil júnior.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Desenvolvedor PL/SQL Pleno em DS3 Digital. Mais 10 vagas de desenvolvedor pleno em Remoto",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_02NzQrCMBCE3yXQnrRpI0VbCKIHwav4AmmaJulPEtLkIKXv7lZEhD3MfsPMLCiiGqkQ3FxjPAsevci0aYVoM24nzDi30QQ8WqnNmVsTtImCfgLJ4ZKQG1zj_yLwp523E-1Zyi29PlI1UhfQDk2oXtC38N7CbFHm5JhXVZUXYPNR8-GpvI1SgRl8FD_6cgLQrKXZawN0GwDQM9Bh2KoGEpjTRMiya07Qt65velT2z9sAAAA/6mpyIAY3fEGtojqtL8OWz1__bOC0_HAPYJV5r4-P-ws",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade plena e PL/SQL, sendo incompatível com o perfil júnior.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Desenvolvedor PL/SQL Pleno",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=0a8c8bec04b60be8&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38efJEL4VbySqmlOHYykfC9Xjq6-oI276Lvmh_c_Y8VQ4&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k2tapd7ig9j1800&alid=69de485faffb823f5e8e3e9b&bb=sC-IKThFpoLxISFqM5U4CeQy1bczxK2Fgjc1RKrt-KX2ONzPqbuW0AGJkY-g0yismq-MSlXATx9xVI5v9iYBbelyra6ee0fs6HSYWXCR8i5yPsDJYZwZ6tzaQAasvRv_-UmJ1Qw4N2bRwIs2CUVzGw%3D%3D&tmtk=1k2tapd7ig9j1800",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige nível pleno e PL/SQL, sendo incompatível com o perfil júnior.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Desenvolvedor(a) Pleno Fullstack - Vaga Afirmativa para Pessoas com Deficiência",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=ac1991338b0662ac&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38efJEL4VbySqmlOHYykfC9Xjq6-oI276Lvmh_c_Y8VQ4&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k2tapd7ig9j1800&alid=69de485faffb823f5e8e3e9b&bb=hXg4He2--sontIuMj8i_VmsAZdxZE9ExLvAEdkTooG4kZdNoqMxyOviWLvYS3cGjnX_yxWThMRzMr7FyVMuEQyahqJarXlmGM3ne7X_gPsQSxov0a0fWnm7BRFM3sbZguv1IvW_7eOkvJJtAoAINLQ%3D%3D&tmtk=1k2tapd7ig9j1800",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade plena e stack incompativel com o perfil junior.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Analista Desenvolvedor TI SR",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=f40ba139adb7711a&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38efJEL4VbySqmlOHYykfC9Xjq6-oI276Lvmh_c_Y8VQ4&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k2tapd7ig9j1800&alid=69de485faffb823f5e8e3e9b&bb=31Uc0GzkRg60kcI7fORgOTNnLRMvHc9wvNtYHWz4OPTJhPD4kfpRSeizMNIdqAWzJy_zC9xC6TGy-O13VK_0ZQGk0lkz4GwdDPxDMzMRk00jSZRyGJOp_X5-WTnW6SHc_Bz35El1ra52Ei1eG6HkgQ%3D%3D&tmtk=1k2tapd7ig9j1800",
-      "nota": 0,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade SR (Sênior) e stack com PL/SQL e Node/Nest, incompatível com o perfil júnior.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Desenvolvedor Pleno (Java/Python)",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=f6a7e7501f657a5f&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38efJEL4VbySqmlOHYykfC9Xjq6-oI276Lvmh_c_Y8VQ4&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k2tapd7ig9j1800&alid=69de485faffb823f5e8e3e9b&bb=om_5FF6v3esgx92TBcZN8a4ZXHkesiU_cgKUGqKUHEvG_OiQh9ic4ry3pUeqE33aoU_qmK3nZUCOpTrGeGVCaZV8PGVULY79toQD3gQKRfyaotVt1I4K0YC5jVys1Zyu_wiA1XKyDDK0N2Jv-Zx_kQ%3D%3D&tmtk=1k2tapd7ig9j1800",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade plena no titulo, o que e incompativel com o perfil junior do candidato.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "[31773] Midlevel Developer FullStack Java/Angular",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=0cbf47d5943d97d2&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38efJEL4VbySqmlOHYykfC9Xjq6-oI276Lvmh_c_Y8VQ4&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k2tapd7ig9j1800&alid=69de485faffb823f5e8e3e9b&bb=bCr3sdo8Zr3tZ2cA77eOwr03JTrnybJIMEEvuwm_HmThmg4tXaWiMModCDI9bPITI8b3JxBjFV1SD73quTUnnpybAgt-vKSqz7jmYIPjX5YfoVu0M3pJ8H-zQasWIG-FxI7WZcx4pv6Tx48fTlIz8Q%3D%3D&tmtk=1k2tapd7ig9j1800",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade plena (Midlevel) e tecnologias incompatíveis como Java/Angular.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Analista de Qualidade (QA/Tester) Pleno",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=b203efb0bb8c8eaf&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38efJEL4VbySqmlOHYykfC9Xjq6-oI276Lvmh_c_Y8VQ4&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k2tapd7ig9j1800&alid=69de485faffb823f5e8e3e9b&bb=zl0N_9_KLbjX1ehzcdgO14sVW7lx_DDheG3ozPtucduKjQkTJBmLjf99T3COkRiuFCBm3SvCqAMNVeCYQgioUWbPpbEpzAaCXrHrbMNkDm83W5o0mb7exSaM0yz3qdAxUxr5f_Wca_hFvV-h3-GIAw%3D%3D&tmtk=1k2tapd7ig9j1800",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade Pleno, o que e incompativel com o perfil junior do candidato.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Desenvolvedor Fullstack .NET / BackEnd - Pleno",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=3345be18cebbb04f&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38efJEL4VbySqmlOHYykfC9Xjq6-oI276Lvmh_c_Y8VQ4&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k2tapd7ig9j1800&alid=69de485faffb823f5e8e3e9b&bb=czH89QPb_X5OzUhPDJntmJBj74h4d4QmO6Viy9J44fkQIIFitSl3sOTXBAPaOtgnlra-Xe4Z9PafrLMkbWY1B81N1LRYgHhh8GhIoEUqBfWtegzHGzNSu4RG1g65cUvV0aNpr36l5nFBmu9Tbw6iXg%3D%3D&tmtk=1k2tapd7ig9j1800",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade Pleno e tecnologia .NET, sendo incompatível com o perfil júnior.",
-      "ia_ok": true
-     }
-    ]
+    "avaliacoes": []
    },
    "avisos": [],
    "erro_fatal": null
@@ -5569,6 +5338,182 @@
       "nota": 3,
       "aprovada": false,
       "motivo": "A vaga exige Java e a senioridade inclui Pleno, o que é incompatível com o perfil.",
+      "ia_ok": true
+     }
+    ]
+   },
+   "avisos": [],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-09-29T16:48:22.938733+00:00",
+   "duracao_s": 59.0,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 99,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 16,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 12,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 6,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 11,
+     "erro": null
+    },
+    "E-mail": {
+     "vagas": 33,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 282,
+    "camada0_data": 168,
+    "novas": 152,
+    "camada1_keyword": 11,
+    "camada2_ia_avaliadas": 11,
+    "camada2_ia_aprovadas": 0,
+    "enviadas": 0
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 11,
+    "falhas": 0,
+    "erros_429": 0,
+    "ultimo_erro": null,
+    "avaliacoes": [
+     {
+      "titulo": "&emsp;&#8203; Ver vaga &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_32UV6vjSBBG_4th_bSeqxwumEU5WMlWtF-EsuSWLFnR0jD_fTUM7ONSDQXfabrqoTk_D9Ph-1COYzd8f33F_Y_qlWZZ-iNpm68uKrIo_Upq8E_et8352cYVEoV7a6IxKU_deGJvYdZEVX189iM446ekKeHTXgAFM9TDYwFqiILREwaTJIYkcJoTJEwn2LFpz_0xSs8nwrjXcQ4MiMuaUE-ZANlQ__mcCYljvViimE6sED3YMHdafFqPUazm4s-tjEAuewh9MgxLGx93pKnEVAykuLlOOcDNekxffRd2194dEpQznecmKgpV6WwJP1knxG-gIWrO7znmfcuQy8TfWc5HeMm9GYPVKw3JUp5T6pgEqYs50kZMawIQTUvVtFZ5qWwZkRmU3h3MK2pRKad4s_URNeaA6-V1oyPfjsj7De4FjYzllNfTwmmz62liYOoSmxn2wYzmhtGTu_LUoPnjUGzNzIdvNcevsOSugFl8iA63vMWwpFFVxCEiE-kGEZgNwVYiNq9vrdW9Vn3lmtBuRYNNMc53CD7fo6zV0I4J39wWIMIsrSjCwO7l5kWu-cHCThRtjMtOjFRNT-w5QiJXFk0gXPQVpzccC0fTIwPio3nKy04aT7VdeZQ9kQKIRzptvg7T_bqxdOEmagoDBjUh2vMnFL8-cZeAGMx1i4h6bEvulUlXe9Ig3bRGd-s1oalFgA3r4xZ0b8QEKi56YuhZce2xLa05gmG9oMS3uPNFTmT7N1wL2eLos6BCVGSiVrAFbPbytFzAa_9xkvEY9i_TdSHhPirC-0oKpMCHlzGUiuq-AZHeOLekQMhWJrC38um2fELaQw-3C-fdRlu9ygLf7T-1YG-5U0bvVy9bkJRk64BB8LXsuNH1p5RRFCstJ7i1ZVRO3zozL2kQGp2jlE3rDCY_d-_bmnIijzNzKBNBttTQ3JEI-0L5aMsWijyR74n8xOmCKzjh4rSiJ4WTg2Wo7Pe9GrQXHIJio3PrgZa5HpZPI9rKh-LWjeLMG4CD1EDV9GVBmLJzkads5AK2F-OJyaRIIjS_FcRlOHroHUPGCxcULX_ZJNRCLCeaTO9zDWY_hrLMpsflL5Tfz7FvzsjxA5L4bLcMQYQ6kkGIPl4KuekhJd5AyqWWdXwO0RlFCPSYRA04c6hg2ZtYX5cwXh8FNamXki3-vHj4-9Acvn8eoiRpp9eopLtbYBxCSIimaQjecVQUahv_ARBCkDRN7HAHSV0lwCn7dirKHY79lP2Xrl22R3OVLbt79vS3jfbgf3y0XxrB7xl_RJS1SJTH0L7Br1__AoJIMBryBAAA/3iEcqdyyZbel_dJY41-wfjbRfsgXT6MN5tUlz9gdV-w",
+      "nota": 3,
+      "aprovada": false,
+      "motivo": "A vaga exige nivel Pleno e Java como requisitos centrais, sendo incompativel com o perfil junior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "&emsp;&#8203; Não é uma boa correspondência &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12Q226jMBRF_wVp5qk02Ay3SFVFSCaQS1NIqkz6UhnbgGvAqWMISdV_H7cjzUPPy5H22tKW1rvRGWOjUup4Go9GDVK4umUtoZTcYtGMWNszhRQT7WnUCmWyVlFJT4qSe8XvALd5b0kqICpyywI_WVuIu_Dz6PmtGmi4cQgZuiTKpL8G0vM4CS7X_JkJcFh5D3E0rHAVOCffDcElk06U2td1A5Ml6HD6a_dm19vtpjz-3g4MJ1lYg4eJ2_1Zi5kM9ksYzxZ723t9kvMkdrJHUgPE-7M9NHwS-6xDsz5LzClU1xJ5tZfZSu19GCy2z3CVhrt93PFl5uf21DRn_dmN2uIalYd5Yw1zuQFcwfQQpkX4w54aN0ZjjN8NhLHoWpUQrQw4FvSsIAgsoDEqy4XI_wELul4QuBpqgGuG-a6SoisrDZXs6P_0cqQ6yhExv7zrvJBCDxmvImcQvej3BcyjMifZC20Qq3VJ8c-Vb-qNj4-_l-NxKcsBAAA/tkARPW0Pu__C-K-2qIIccGJYzqt9HB11xtkQQMlNEEE",
+      "nota": 3,
+      "aprovada": false,
+      "motivo": "A vaga exige nivel Pleno e Java como requisitos centrais, o que e incompativel com o perfil junior do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "&emsp;&#8203; Não &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12QXW-CMBiF_wvJvBpKyxAwMQuiE_wc6OL0rpavrkC1toga__swS5Zl5-49T95z8dwUqfSUTIjDqdfpFEjgrE3KKI6jNmZFh5QVEUgQVp5-oMqbq0w74FXQPqA6rTQeM4iSvaaBFikT1nceic_HrI6dpRFFtfTdkFtzwE2TRvblut8RBrYzc-G59QxntnGyug64hNxwA_06L6A_BRIHL-ujnq9Wy_TwtqoJ9kMnB4tBV37O2Yjbmyn0RpONbn598LHvGeF7lANEq7NeF3TgWUSiURX66hCKa4rM3Ax1ITYWtCerHZwFznrjSToNrb0-VNVRde66ZXJ10-240OoxXwIqYLB1gsR50oethLOiTyBS4wKRXE0aPXuEqfKsFErvpiCMmSyFHzUqgaFBU7NtWwMNxjnBdJ1xJtOsgYLL-Le9HOKm-rMl6OP_n1Plfv8GpX9GlaQBAAA/okBKx_96YgPkbIRnRZgKMQF6KSlafkFKorGiDZHpsV4",
+      "nota": 3,
+      "aprovada": false,
+      "motivo": "A vaga exige Java e nivel pleno, o que e incompativel com o perfil junior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "&emsp;&#8203; Sim &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12QXW-CMBiF_wvJvBpKyxAwMQuiE_wc6OL0rpavrkC1toga__swS5Zl5-49T95z8dwUqfSUTIjDqdfpFEjgrE3KKI6jNmZFh5QVEUgQVp5-oMqbq0w7xqugfUB1Wmk8ZhAle00DLVImrO88Ep-PWR07SyOKaum7IbfmgJsmjezLdb8jDGxn5sJz6xnObONkdR1wCbnhBvp1XkB_CiQOXtZHPV-tlunhbVUT7IdODhaDrvycsxG3N1PojSYb3fz64GPfM8L3KAeIVme9LujAs4hEoyr01SEU1xSZuRnqQmwsaE9WOzgLnPXGk3QaWnt9qKqj6tx1y-TqpttxodVjvgRUwGDrBInzpA9bCWdFn0CkxgUiuZo0evYIU-VZKZTeTUEYM1kKP2pUAkODpmbbtgYajHOC6TrjTKZZAwWX8W97OcRN9WdL0Mf_P6fK_f4NsJC2BaQBAAA/0RNTj5iwrH3daeTTBF97yEwOKy5BrThWOCumwaUHhhc",
+      "nota": 3,
+      "aprovada": false,
+      "motivo": "A vaga exige nível pleno e Java, o que é incompatível com o perfil júnior e o gap do candidato na tecnologia.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Editar perfil",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2OsQqDMBiE3yWDU2OjpRQFKbh1le4SY9KkSUyIfwpFfPf-hdLp4O747jaSSUs0QFzb4zGmoIyTpVlmKedSBH9VKfjuGSZT8xHFcxCaRqD9MErPjStE6Pqh0K6LQA7Ek3YjXIiQF7jNiK7OrL6wpmlYhbFwRti7TiE_NIaQsvy77yjRWj1PQBXOT1xYKmcD9HcLm2C_SHuyL5ZkqLmaGHL3_QOzHRehxwAAAA/izPE5W18AFK8_Kz8C3GXMtoOaTCj0Lqve4Uzqrs9C2w",
+      "nota": 3,
+      "aprovada": false,
+      "motivo": "A vaga exige nivel Pleno no titulo e Java, que e um gap central para o candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor Jr. ou Pleno Java/React HÍBRIDO na empresa Duett Software",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_0WOwWrDMBBE_0UHn6pEcSnFBhPILdeQe5DXq0qV5RXyKjSE_Hu2l-Q08AbezF1V1SvPnNd-u82FXJhxE5YJcdoAJUHosOACuO5doTT80hhae5FIlsHrzPpwumCyYW6AhsOp8fOQuaGMyyCGVBnVh0qqvysLQHXh4ySbuy_Tfpuu68xOapgDxLMvVH-8lFwqvugto6A12cLaya_RQtTJ_um3neO_MX7GqylIrXWjEe3j8QTayxZh3wAAAA/ILv1yV3klXHwR-6hvlxgyUK_1rZ7NE4tCikUzb3AZsQ",
+      "nota": 3,
+      "aprovada": false,
+      "motivo": "A vaga exige Java e nivel pleno, o que é incompatível com o perfil júnior e a stack principal do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Pausar estes e-mails",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12Qy26CQABF_4WkXVVhoAiYmAaRCj4L2FDd4fCaDjA4ziBi_PdiF130Ls_J3ZybwIWxkDNWn8eiWEYM5kNUxUkSDyEpRVQ1iEUMkeos1hE_J28MTwBWcCPRhMhRepQk8IyqlEzMx5LLKW8Tc6vGcctdy6f6GlBNw7Fx7Y4HRMB-pW0cq13B3FDP-sgEV5-qlqd061J2l4BD73V3Uoog2Gb1e9Ai6PpmATbTEf9aE5sa4VJ27EWoaN-fdO46qv8RFyDCzUVpSzx1dMQju_HdwUxmXRZpheYrjIW6bCyCg7zyzF3ocLz09aMyGwzs5jKyqrSzsv28lNo53QLMZG9veqn5pMyEF6EUxjchgpDwirlxXwqokqxJhmFIoNewQBDvckp4lveSUZ780Wud9Og3Ws8Yfpz_hRPu9x-5BmOvgAEAAA/r-REZwKp8Wz19O5-lLQ7lfnc6uXu3ltg6r_d97hRcyM",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige nivel Pleno e Java como requisitos centrais, sendo incompativel com o perfil.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Central de Ajuda",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2NQQqDMBBF7zLr1kRLKQmUrt33AjpJG4maIU4KRby7I5Ru3-P9v0IBC4GZFqvUUohS5mqYnfeuwjSpgIr43OdHGO_EcIIJ7AodYiozt07i-qqbmzbG6Fo0jgPGZ8ipvINIzsX_6Ze8oN-JUI5HHi_xo7NPTffqtWxs2w76HG9glQAAAA/DSuRaGGyxfsUimGD_daAR0j9ppT_Hp_r9DnxCXsJSDE",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige nivel Pleno e Java, além de ser híbrida em local incerto, o que viola os critérios de senioridade e stack.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor Jr. ou Pleno Java/React HÍBRIDO na empresa Duett Software",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2MQQ7CIBBF7zJrU6Y1xsAN3HsBOoylQQrBoYlpendh4_a9_98BFQx4kfwxSs1lWDfH7AZKUcEFIpgDLFGqmzxcW443nO6otcaxaXqvFJ6-pLr4JqVU_tNv5l5OkbNdOpbQ_-EadiycJvuasUXO8wfVZmIQgwAAAA/Bb_hpc03f8wFpPFqpNh8oabxS4CB6-yeCAzn206b74M",
+      "nota": 3,
+      "aprovada": false,
+      "motivo": "A vaga exige Java e aceita nivel pleno, alem de ser hibrida em local nao especificado que pode nao ser compativel.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Política de Privacidade",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2MQQrCMBBF7zJu1aQVkQTEtXsvkEyiKWmbkE4KpfTujlDcvvf_W6GChkCUJy1EKOQx5NLNBpczpkFkEraY0U3C2FTp1I3Oe_cI_T3TYR_m1He4wBEG0CsYxFRHejruNlfZ3qRSSjaskWfxFUqqn8CSSvV_umTPaA8ypfi7x0ucZfGpNW8rubFtX48jr2OwAAAA/sEGQJGLr6TSAUoCsdhESg6LTHg0upie5jBQXTfgJwvo",
+      "nota": 3,
+      "aprovada": false,
+      "motivo": "A vaga exige nível pleno e Java, além de ser híbrida em local não especificado no Brasil.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor Jr. ou Pleno Java/React HÍBRIDO na empresa Duett Software",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2MQQrDIBAA_7K9lmgSSlEoPffeDxjdxqBGMWuhhPw9eul1hpkdCkiwRGmTjE25W1aDaDodA_M4K_-0_pHoQnGDKwSQOyitY1npZWrY3_hw50II3let_aLd2-ZYZlsl5YJ_-kvYEObQRuRa7Eb35RnjoD4Tr4fjOAHDOyvNjwAAAA/01MmVOSlcBjYySnjMQBQqBbuAfh04ywZmiI3IfbH5-4",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige Java e possui nivel Pleno no titulo, sendo incompativeis com o perfil.",
       "ia_ok": true
      }
     ]
