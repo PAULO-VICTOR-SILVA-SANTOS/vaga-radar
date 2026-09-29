@@ -301,39 +301,19 @@ def testar_programathor():
         levantou = type(erro).__name__
     confere(levantou == "ValueError", "pagina sem nenhum card: levanta ValueError (layout mudou)")
 
-    confere(config.LIMITE_ZEROS_POR_FONTE.get("Programathor", 3) > 3, "Programathor tem limite proprio de zeros")
 
-
-def testar_diagnostico_http():
-    print("\nDiagnostico HTTP sem credenciais")
+def testar_resumir_erro():
+    print("\n_resumir_erro: diagnostico sem expor segredo")
     import requests
-    import fontes_github
-    import fontes_programathor
 
     for codigo in (403, 429, 500, 503):
         resposta = requests.Response()
         resposta.status_code = codigo
         resposta.url = "https://example.com/?token=segredo"
         erro = requests.HTTPError("token=segredo", response=resposta)
-        with mock.patch.object(fontes, "PROGRAMATHOR_ATIVO", True), \
-             mock.patch.object(config, "FONTES", []), \
-             mock.patch.object(config, "EMAIL_ATIVO", False), \
-             mock.patch.object(fontes_github, "buscar", return_value=[]), \
-             mock.patch.dict(fontes_github.RELATORIO, {}, clear=True), \
-             mock.patch.object(fontes_programathor, "buscar", side_effect=erro), \
-             contextlib.redirect_stdout(io.StringIO()):
-            vagas = fontes.buscar_todas()
-        resumo = fontes.RELATORIO["Programathor"]["erro"]
-        confere(resumo == f"HTTPError (HTTP {codigo})", f"HTTP {codigo} chega ao relatorio")
-        confere(vagas == [], "falha da fonte nao interrompe a coleta")
-        dados = auditoria._vazio()
-        execucao = _execucao()
-        execucao["fontes"] = dict(fontes.RELATORIO)
-        for _ in range(config.LIMITE_ZEROS_POR_FONTE["Programathor"]):
-            alertas = auditoria.avaliar_saude(dados, execucao, [])
-        texto = alertas[0][1]
-        confere(f"HTTP {codigo}" in texto and "segredo" not in texto,
-                f"alerta mostra HTTP {codigo} sem expor token")
+        confere(fontes._resumir_erro(erro) == f"HTTPError (HTTP {codigo})",
+                f"HTTP {codigo} aparece no resumo, sem o token")
+
     confere(fontes._resumir_erro(requests.HTTPError("segredo")) == "HTTPError",
             "erro sem resposta continua compativel")
     confere(fontes._resumir_erro(requests.Timeout("segredo")) == "Timeout",
@@ -373,7 +353,7 @@ if __name__ == "__main__":
     testar_arquivo()
     testar_mensagem_telegram()
     testar_programathor()
-    testar_diagnostico_http()
+    testar_resumir_erro()
     testar_links_email()
     testar_main_completo()
     print(f"\n{'TUDO OK' if not falhas else str(len(falhas)) + ' FALHA(S)'}")

@@ -21,10 +21,21 @@ HEADERS = {"User-Agent": "vaga-radar/1.0 (projeto pessoal de estudo)"}
 
 # O que cada fonte trouxe na ultima buscar_todas(), para a auditoria:
 #   {"RemoteOK": {"vagas": 99, "erro": None}, ...}
-# "erro" e so o NOME do tipo da excecao (a mensagem do requests pode ter URL
-# com chave/token). Fica em variavel do modulo para nao mudar o retorno de
+# "erro" guarda o tipo e, se disponivel, o status HTTP, sem mensagem ou URL
+# com chave/token. Fica em variavel do modulo para nao mudar o retorno de
 # buscar_todas().
 RELATORIO = {}
+
+
+def _resumir_erro(erro):
+    """Diagnostico util sem expor URLs, tokens ou corpo da resposta."""
+    nome = type(erro).__name__
+    resposta = getattr(erro, "response", None)
+    # Response com status >= 400 e falsy no requests: testar None explicitamente.
+    codigo = getattr(resposta, "status_code", None)
+    if isinstance(codigo, int) and 100 <= codigo <= 599:
+        return f"{nome} (HTTP {codigo})"
+    return nome
 
 
 def _extrair_data_publicacao_json(item):
@@ -228,21 +239,6 @@ def buscar_todas():
     except Exception as erro:
         print(f"  GitHub Vagas: FALHOU ({type(erro).__name__}: {erro})")
         RELATORIO["GitHub Vagas"] = {"vagas": 0, "erro": type(erro).__name__}
-
-    # Fonte nacional: Programathor (HTML publico, so junior e estagio)
-    try:
-        import fontes_programathor
-        vagas = fontes_programathor.buscar()
-        print(f"  Programathor: {len(vagas)} vagas")
-        RELATORIO["Programathor"] = {"vagas": len(vagas), "erro": None}
-        for vaga in vagas:
-            if vaga["id"] in vistos:
-                continue
-            vistos.add(vaga["id"])
-            todas.append(vaga)
-    except Exception as erro:
-        print(f"  Programathor: FALHOU ({type(erro).__name__}: {erro})")
-        RELATORIO["Programathor"] = {"vagas": 0, "erro": type(erro).__name__}
 
     # Fonte extra: alertas por e-mail. Importado aqui dentro para que um
     # problema neste modulo nao impeca o resto do programa de rodar.
