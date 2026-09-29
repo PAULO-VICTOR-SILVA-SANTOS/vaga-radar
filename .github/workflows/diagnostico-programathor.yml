@@ -1,0 +1,37 @@
+name: Diagnostico Programathor
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  diagnostico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: Consultar Programathor sem notificacoes
+        shell: python
+        run: |
+          import json, sys, time, requests
+          sys.path.insert(0, 'src')
+          import fontes_programathor as p
+          falhou = False
+          for i, consulta in enumerate(p.CONSULTAS):
+              if i: time.sleep(p.PAUSA_SEGUNDOS)
+              resultado = {'consulta': consulta}
+              try:
+                  r = requests.get(f'{p.BASE}/jobs?{consulta}', headers=p.HEADERS, timeout=p.TIMEOUT)
+                  texto = r.text.lower()
+                  resultado.update(http=r.status_code, servidor=r.headers.get('Server'), cf_mitigated=r.headers.get('cf-mitigated'), cf_ray=r.headers.get('cf-ray'), retry_after=r.headers.get('Retry-After'), desafio=any(m in texto for m in ('cf-chl-', '/cdn-cgi/challenge-platform/', 'just a moment...')), cards_ativos=len(p._RE_CARD.findall(r.text)), cards_total=r.text.count('<div class="cell-list '))
+                  falhou |= r.status_code != 200 or resultado['cards_total'] == 0
+              except requests.RequestException as erro:
+                  resultado['erro'] = type(erro).__name__
+                  falhou = True
+              print(json.dumps(resultado), flush=True)
+          sys.exit(1 if falhou else 0)
