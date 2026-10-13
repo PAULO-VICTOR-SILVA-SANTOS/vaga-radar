@@ -5,37 +5,37 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
+    "ultimo_ok": "2026-10-13T23:11:49.054908+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
+    "ultimo_ok": "2026-10-13T23:11:49.054908+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
+    "ultimo_ok": "2026-10-13T23:11:49.054908+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
+    "ultimo_ok": "2026-10-13T23:11:49.054908+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
+    "ultimo_ok": "2026-10-13T23:11:49.054908+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
+    "ultimo_ok": "2026-10-13T23:11:49.054908+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
+    "ultimo_ok": "2026-10-13T23:11:49.054908+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 11,
@@ -45,12 +45,12 @@
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
+    "ultimo_ok": "2026-10-13T23:11:49.054908+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
+    "ultimo_ok": "2026-10-13T23:11:49.054908+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
@@ -60,15 +60,13 @@
    "E-mail": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
+    "ultimo_ok": "2026-10-13T23:11:49.054908+00:00"
    }
   },
   "ia": {
    "falhas_seguidas": 5
   },
-  "alertas": {
-   "ia": "2026-10-13T18:01:00.083600+00:00"
-  }
+  "alertas": {}
  },
  "execucoes": [
   {
@@ -6870,6 +6868,71 @@
    "avisos": [
     "IA falhou 5 vezes seguidas (ultimo erro: http_503). Vagas podem estar chegando sem avaliacao."
    ],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-10-13T23:11:43.326982+00:00",
+   "duracao_s": 5.7,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 99,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 16,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 15,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 5,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 2,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 3,
+     "erro": null
+    },
+    "E-mail": {
+     "vagas": 32,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 247,
+    "camada0_data": 159,
+    "novas": 150,
+    "camada1_keyword": 0,
+    "camada2_ia_avaliadas": 0,
+    "camada2_ia_aprovadas": 0,
+    "enviadas": 0
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 0,
+    "falhas": 0,
+    "erros_429": 0,
+    "ultimo_erro": null,
+    "avaliacoes": []
+   },
+   "avisos": [],
    "erro_fatal": null
   }
  ]
