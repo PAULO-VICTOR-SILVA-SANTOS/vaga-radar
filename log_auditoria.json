@@ -5,37 +5,37 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T02:27:28.300857+00:00"
+    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T02:27:28.300857+00:00"
+    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T02:27:28.300857+00:00"
+    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T02:27:28.300857+00:00"
+    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T02:27:28.300857+00:00"
+    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T02:27:28.300857+00:00"
+    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T02:27:28.300857+00:00"
+    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 11,
@@ -45,12 +45,12 @@
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T02:27:28.300857+00:00"
+    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T02:27:28.300857+00:00"
+    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
@@ -60,13 +60,15 @@
    "E-mail": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-13T02:27:28.300857+00:00"
+    "ultimo_ok": "2026-10-13T18:00:50.738309+00:00"
    }
   },
   "ia": {
-   "falhas_seguidas": 0
+   "falhas_seguidas": 5
   },
-  "alertas": {}
+  "alertas": {
+   "ia": "2026-10-13T18:01:00.083600+00:00"
+  }
  },
  "execucoes": [
   {
@@ -6750,6 +6752,124 @@
     ]
    },
    "avisos": [],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-10-13T17:58:44.924957+00:00",
+   "duracao_s": 135.2,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 99,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 16,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 15,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 5,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 2,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 3,
+     "erro": null
+    },
+    "E-mail": {
+     "vagas": 32,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 247,
+    "camada0_data": 156,
+    "novas": 152,
+    "camada1_keyword": 5,
+    "camada2_ia_avaliadas": 5,
+    "camada2_ia_aprovadas": 5,
+    "enviadas": 5
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 5,
+    "falhas": 5,
+    "erros_429": 0,
+    "ultimo_erro": "http_503",
+    "avaliacoes": [
+     {
+      "titulo": "[Remoto ou Híbrido - São Paulo/SP] Full Stack Developer - Cogfy",
+      "empresa": "GitHub (backend-br/vagas)",
+      "fonte": "GitHub (backend-br/vagas)",
+      "url": "https://github.com/backend-br/vagas/issues/12441",
+      "nota": 10,
+      "aprovada": true,
+      "motivo": "IA indisponivel (ReadTimeout), vaga liberada",
+      "ia_ok": false
+     },
+     {
+      "titulo": "[Job-31991] Mid Level Java/Angular Developer FullStack, Brazil",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=df4f307c76bfe407&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38buTPQvA7j-i2XPU-RJxf1MvIwwNGPI8Xt26yiGXAYHo&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k4oqnsfvg1pa800&alid=69de485faffb823f5e8e3e9b&bb=TWhYlairkh6-2uRDMIv2R1iDw0hfUTyv1zFNXFhljuOMbWodkAYMTwKBuj1eRj8U9yhwVSYNjcIsc0IjKLUF4J5cDFM69KQ5ynMl6-uqEdOx3Hgqm8GekxjtuGzoKiIKylFN5CjYNHZfSPDprpzjVA8BSR-EOtSR&tmtk=1k4oqnsfvg1pa800",
+      "nota": 10,
+      "aprovada": true,
+      "motivo": "IA indisponivel (ReadTimeout), vaga liberada",
+      "ia_ok": false
+     },
+     {
+      "titulo": "Engenheiro Full Stack Sênior | TFSports | Remoto",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=fb3b44b538a46dae&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38buTPQvA7j-i2XPU-RJxf1MvIwwNGPI8Xt26yiGXAYHo&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k4oqnsfvg1pa800&alid=69de485faffb823f5e8e3e9b&bb=VDUm8nqseSiO9AxyW5qQ0-2N2-lK2jgXMefhuwwnfHP5QdMa1Zng5IoWKmNHA665cosyEIhoaeJlsPahMG8D_G2SCtSbshYg4CE9mGNHxwXeqAI6Vfb9pUCojkf-8pcF2cBpNtXuqoVBRh72cfptW9fgE2XhtY0W&tmtk=1k4oqnsfvg1pa800",
+      "nota": 10,
+      "aprovada": true,
+      "motivo": "IA indisponivel (HTTPError), vaga liberada",
+      "ia_ok": false
+     },
+     {
+      "titulo": "Desenvolvedor Back-end Pleno - Integrações",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=bba5709bc6d49bac&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38buTPQvA7j-i2XPU-RJxf1MvIwwNGPI8Xt26yiGXAYHo&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k4oqnsfvg1pa800&alid=69de485faffb823f5e8e3e9b&bb=ZTQJnSuyHXcotE7xbJ9Krb0RwNVZ653QkGoH4ydyhpnuHuobWIEhI15gUyBiKoXiCP6gc01Dh1oADBqv5Njv0Gm41rw4mSTQrclmiYlGY3wBDhUuqurRX5lt-S-hiW6uhLHe8mngIYplzsZKOixCir72g1Z7gdkF&tmtk=1k4oqnsfvg1pa800",
+      "nota": 10,
+      "aprovada": true,
+      "motivo": "IA indisponivel (HTTPError), vaga liberada",
+      "ia_ok": false
+     },
+     {
+      "titulo": "Desenvolvedor Fullstack Pleno",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=d6ef581cbc534902&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38buTPQvA7j-i2XPU-RJxf1MvIwwNGPI8Xt26yiGXAYHo&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k4oqnsfvg1pa800&alid=69de485faffb823f5e8e3e9b&bb=Qql79fGna-HVAAgt9vNL6MrEc0kzsoU5E7kSDMhlpM38YKckY0BM20U28gLcuZtR01FH5i9qQ6oUvIUZK5mNIuNPM7S-u9XG6vnDDPwTfZFF0-9Li7Wt9rQrOTsMxm2cAYPNxBH8pgHB5JwLw6-LciEyYxbNgLA2&tmtk=1k4oqnsfvg1pa800",
+      "nota": 10,
+      "aprovada": true,
+      "motivo": "IA indisponivel (HTTPError), vaga liberada",
+      "ia_ok": false
+     }
+    ]
+   },
+   "avisos": [
+    "IA falhou 5 vezes seguidas (ultimo erro: http_503). Vagas podem estar chegando sem avaliacao."
+   ],
    "erro_fatal": null
   }
  ]
