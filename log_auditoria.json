@@ -5,37 +5,37 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-19T22:50:00.131865+00:00"
+    "ultimo_ok": "2026-10-20T01:36:53.356493+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-19T22:50:00.131865+00:00"
+    "ultimo_ok": "2026-10-20T01:36:53.356493+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-19T22:50:00.131865+00:00"
+    "ultimo_ok": "2026-10-20T01:36:53.356493+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-19T22:50:00.131865+00:00"
+    "ultimo_ok": "2026-10-20T01:36:53.356493+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-19T22:50:00.131865+00:00"
+    "ultimo_ok": "2026-10-20T01:36:53.356493+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-19T22:50:00.131865+00:00"
+    "ultimo_ok": "2026-10-20T01:36:53.356493+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-19T22:50:00.131865+00:00"
+    "ultimo_ok": "2026-10-20T01:36:53.356493+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 11,
@@ -45,12 +45,12 @@
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-19T22:50:00.131865+00:00"
+    "ultimo_ok": "2026-10-20T01:36:53.356493+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-19T22:50:00.131865+00:00"
+    "ultimo_ok": "2026-10-20T01:36:53.356493+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
@@ -60,7 +60,7 @@
    "E-mail": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-19T22:50:00.131865+00:00"
+    "ultimo_ok": "2026-10-20T01:36:53.356493+00:00"
    }
   },
   "ia": {
@@ -5013,18 +5013,7 @@
     "falhas": 0,
     "erros_429": 0,
     "ultimo_erro": null,
-    "avaliacoes": [
-     {
-      "titulo": "[Remoto ou Híbrido - São Paulo/SP] Full Stack Developer - Cogfy",
-      "empresa": "GitHub (backend-br/vagas)",
-      "fonte": "GitHub (backend-br/vagas)",
-      "url": "https://github.com/backend-br/vagas/issues/12441",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige experiência sólida em produção, Docker, Kubernetes e testes automatizados, sendo incompatível com o perfil júnior sem experiência formal.",
-      "ia_ok": true
-     }
-    ]
+    "avaliacoes": []
    },
    "avisos": [],
    "erro_fatal": null
@@ -10177,6 +10166,71 @@
       "ia_ok": true
      }
     ]
+   },
+   "avisos": [],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-10-20T01:36:49.416891+00:00",
+   "duracao_s": 3.9,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 99,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 12,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 7,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 3,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 3,
+     "erro": null
+    },
+    "E-mail": {
+     "vagas": 12,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 230,
+    "camada0_data": 165,
+    "novas": 159,
+    "camada1_keyword": 0,
+    "camada2_ia_avaliadas": 0,
+    "camada2_ia_aprovadas": 0,
+    "enviadas": 0
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 0,
+    "falhas": 0,
+    "erros_429": 0,
+    "ultimo_erro": null,
+    "avaliacoes": []
    },
    "avisos": [],
    "erro_fatal": null
