@@ -5,37 +5,37 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-20T23:39:10.135853+00:00"
+    "ultimo_ok": "2026-10-21T05:48:53.213789+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-20T23:39:10.135853+00:00"
+    "ultimo_ok": "2026-10-21T05:48:53.213789+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-20T23:39:10.135853+00:00"
+    "ultimo_ok": "2026-10-21T05:48:53.213789+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-20T23:39:10.135853+00:00"
+    "ultimo_ok": "2026-10-21T05:48:53.213789+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-20T23:39:10.135853+00:00"
+    "ultimo_ok": "2026-10-21T05:48:53.213789+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-20T23:39:10.135853+00:00"
+    "ultimo_ok": "2026-10-21T05:48:53.213789+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-20T23:39:10.135853+00:00"
+    "ultimo_ok": "2026-10-21T05:48:53.213789+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 11,
@@ -45,12 +45,12 @@
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-20T23:39:10.135853+00:00"
+    "ultimo_ok": "2026-10-21T05:48:53.213789+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-20T23:39:10.135853+00:00"
+    "ultimo_ok": "2026-10-21T05:48:53.213789+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
@@ -60,7 +60,7 @@
    "E-mail": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-20T23:39:10.135853+00:00"
+    "ultimo_ok": "2026-10-21T05:48:53.213789+00:00"
    }
   },
   "ia": {
@@ -10434,6 +10434,192 @@
     "erros_429": 0,
     "ultimo_erro": null,
     "avaliacoes": []
+   },
+   "avisos": [],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-10-21T05:46:08.104048+00:00",
+   "duracao_s": 175.3,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 99,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 10,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 7,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 3,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 3,
+     "erro": null
+    },
+    "E-mail": {
+     "vagas": 12,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 228,
+    "camada0_data": 162,
+    "novas": 156,
+    "camada1_keyword": 12,
+    "camada2_ia_avaliadas": 12,
+    "camada2_ia_aprovadas": 6,
+    "enviadas": 6
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 12,
+    "falhas": 0,
+    "erros_429": 0,
+    "ultimo_erro": null,
+    "avaliacoes": [
+     {
+      "titulo": "&emsp;&#8203; Ver vaga &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_42RXW-iQBRA_wvJ-rTUmQEETMxGKayyVqxaqL4QZpgOw7c4gNr0v5dmkz7s0z7d5Jzc3OSed6mVplIiRH2Zjse4eeBlTGn8QKpi3JAxybNfaTZDyNCwQommqQqChjl6a6pillaYoygcRhEJksgNjYjgXSR4Vcq1kBe7kBYRz0cim8FMo6jgRGUqrg2gjzCeuZZ3eymCxdpYa-kS948JdDZWf7Rt90i5gP3BSbnle_jmLALsqa-RvJBvPhWqV8qdH65PQo8aBjs8v9jz1Z7uFOfPySrq-VHPn3P9hE79ah9GJGQh3IplcK5tZXUSvhxMYOnG63PslZW7ETa7HkDGah3s3auF5r8vq_PhuZ3cLeO6v789TZaya5u6-9oVXrLR9PLlZjjIrc_kYBcByxvjh_I4umYEz_bVfDfRn1Dcbvyc9BbaAQffs9iKt9tRk9bfr2CpyswkNgCXfkqFNH2XIkKqthSreAgCNYB0YJomgIOOGHMr_FcABUAVapoCBkFyTrJD0lQtSwYpmpZ-01tNB9Rx2g-BBvqVbAD_G23YENnXwX_CSR8fn7i9UVM0AgAA/6_U0G91Y-ciBjJcwdVsO4hbAM2LsXy5uNeODf-AlyBk",
+      "nota": 8,
+      "aprovada": true,
+      "motivo": "A vaga e para Desenvolvedor Full Stack Junior, a stack e compativel e os requisitos atendem ao perfil.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "&emsp;&#8203; Não é uma boa correspondência &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12RXW-iQBiF_wvJ7tVS-VZMmg2WKFQsWtEVb8wwM8AUmMFxALHpfy91k170vXmT8-TkJOe8S400lXIh6st0NKqAgPkDoQhj9ABZNSK0JQIIwuhlRJmQCRWY44vA6K8oHtXCxFpFoJEZST1Rxr8JTdmj83X7ZW_uo_kKItiDoLsFodUcjtxuy9S3udJDNLmu5_Ut3jlm7TvbzH46F6tT9JZVHBe-7qjuJrDo1aVGoO6C1Nrb7rMXuUcv5UG7elm8iKXBw9S8Pjn6XPMmPNY3-Yb1HpfP8bgCfoRx08ZdetNqWT52qEFdGF0n68hKbPQallbjrRf6wYhXmwP-p8465p-zQxpms_LM2HJxMbxtuNV2v3RX-iNV0vRdAhCyhgofDZWppqKNFdu2FXXAIMueWfIfKLqiGqpp6soAYElgEeWcNVk-QMEb_K32NR6kBCD53vugp5wNQdIbS4gGTsO7A5ljAAVp7zvItZBnrydcAVIODlF8Rf7YQfr4-AQRZ0lo2AEAAA/VdmS6n_W8TVegsopuk7sm3gov946Zbi8tr5NalCTl2Y",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A descricao da vaga esta incompleta e truncada, sem informacoes suficientes sobre requisitos, empresa ou localizacao.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "&emsp;&#8203; Não &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12Q226CQBRF_4WkfSrKXTAxDUoUKohWtOJLg8MMTLkMjoOIxn8vpknTdL-dvXL2w7pxNTfkUsaq07DfLyIG0h4uYwjjHiBFH5dnzCKGSXn6gTztrjLpi68sG4mZCqUCAyVRDpUuDJ5xicjIfGQ7b9VtMPVADNrIba6ur9W7PTXOOXIMKrQg1i_LaXUNN6ZaOeY6MSbHzPsMvpKCwsyRTdFauVp5sUrFFTcu0raG9WYH1t5G1D17i9mCzRXqI_UyMeWpZOs0lFfpirQ25Y_hoIicAML6HDboKlU8v2_iOm784KIvA-1gxO9-rtX2cibvlNBb7eCHOG6Ic0x2yE_G-ZGQ-eyk2Gt_LW2eZOsZUVKMsBTxsIhwzqNOzyECGffCFdzwxkUAkLpkTtypFFVBGgiGYQhih0GOQRaklNRJ2kFGa_jbthXsqj9bLHv8_3PK3e_fASZXgKQBAAA/vtIOmsPERFgzAm22PwQVj2oetPjLYcOc0EMCSk_gXy0",
+      "nota": 7,
+      "aprovada": true,
+      "motivo": "A vaga e para junior no Brasil e o perfil atende aos requisitos tecnicos principais.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "&emsp;&#8203; Sim &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12Q226CQBRF_4WkfSrKXTAxDUoUKohWtOJLg8MMTLkMjoOIxn8vpknTdL-dvXL2w7pxNTfkUsaq07DfLyIG0h4uYwjjHiBFH5dnzCKGSXn6gTztrjLpq68sG4mZCqUCAyVRDpUuDJ5xicjIfGQ7b9VtMPVADNrIba6ur9W7PTXOOXIMKrQg1i_LaXUNN6ZaOeY6MSbHzPsMvpKCwsyRTdFauVp5sUrFFTcu0raG9WYH1t5G1D17i9mCzRXqI_UyMeWpZOs0lFfpirQ25Y_hoIicAML6HDboKlU8v2_iOm784KIvA-1gxO9-rtX2cibvlNBb7eCHOG6Ic0x2yE_G-ZGQ-eyk2Gt_LW2eZOsZUVKMsBTxsIhwzqNOzyECGffCFdzwxkUAkLpkTtypFFVBGgiGYQhih0GOQRaklNRJ2kFGa_jbthXsqj9bLHv8_3PK3e_fFMmnEKQBAAA/rjZvs_nJ61p3MPRrBqOV2fRqPO7HQn1qdYCC1amjCq8",
+      "nota": 3,
+      "aprovada": false,
+      "motivo": "A descricao da vaga esta incompleta e generica, nao fornecendo detalhes sobre a stack, localizacao ou requisitos.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Editar perfil",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2OwQrCMBBE_yUHT8bWYtEWiuDNq3gv6WbbrG2aEDeClP67EcTTwLxhZhYRRS0Ms3_WWeaD62nCHc0aUe_A2XMfnG0erqNCtUmsYjAyoAKml2Jys_QsL7cWraJpA6653DZmajyLrbCiXoQCcHHmq047-zIvjnlVVfk-YZgIxrsJLg4mQQ4R_-7bY7KeVgWWffrSKRglamL5-5iSPH4rxxILS3AYDp0_5Uexrh9GtrTE1AAAAA/XfVl9OrLkrO3R02XBfN2btLbuo5tQgYIgtuko7P761o",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A descrição da vaga está incompleta e vaga, parecendo ser uma notificação genérica do Indeed e não uma descrição real de posição.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor de Software Full Stack Júnior na empresa Yandeh",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_0WOwWrDMBAF_0UHn6rEMQmpDaaQW68h97BeryPFXq2QV6El5N-rXtrTg3kwzNNk0xmnGtduu41JJr_QxoeRaNygcEE0UaKAtH5MSbi_y-AbuJZhUHQ2EaD6B6iXYKPa0_lKDH6pUPrTuXJLH7WSSKEvOs5K5s2w6Z4GECUH_RxLwO5QN8e6bdt6V25cPM4XlyTfXDk1Zfqj35EKWhmS2qlEDoCzZfiy_3adf43zgRr2uL_th_heH83r9QNZD_i97AAAAA/BQfBATn039R_GCAw8an8tk9eEy19w0XMJw8iUKkTAxE",
+      "nota": 7,
+      "aprovada": true,
+      "motivo": "Vaga junior compativel com o perfil, stack e senioridade.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Pausar estes e-mails",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12Qy26CQABF_2WSdlXLG8XENChRqCBS0YqbBofhUR6Dw4yIxn8vdtFF7_Kc3M25AQbGIKW0bsYcV4YUpq9ZFSEUvUJccll1zmhIM1w1XB2yBr3RfCLkChLLDMqJfKxH_PA5q2I80R_bLTtl588dGMEutNur7apsfyDauYgtjfAdjEaX9by-BltdqS19k2izU-58-d9JSVBuSbpgeLZaXYxKtoWtHas7zXg3feNgxsQ-O6vFii5l4sbKZaZLc9EckUDyUg93JhmcgmEZWj5C7By08VWsB4NDG7Godf3LaO2rRy36cAuVmeuFtJcDx9ujT2HaYuuU7GM3mRYnjJeLRjY37kbcPkkGeAElGN9ACCFmFbWivpSg8OKQ1zSNF3oNiwzmfkowS9JeUsLQH-1q1KPfaD2j-eP8Lxy4338ANOqbRoABAAA/6yyllW7bxVl9iJXsqQXxpggk9ChU25ilbw3W0VCi4Cw",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "O texto da vaga fornecido é apenas um e-mail de notificação de alerta de emprego do Indeed e não contém a descrição da vaga em si.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Central de Ajuda",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2NQQrDIBAA_7LnNpqQkCqUnHvvB5pVohjjYtZDCfl7LZReZxjmgAIaHDPtWoi9EKXMjd-MtabBFIVDQXyd8-TWOzFcIII-4IWYysYPU-N2kN0olVKyrRpXj-HpciqLq5JzsX_6JlvRb1Iph28eBttFj_3Sz3STI5znB-EJCAqVAAAA/cdwj3XvAzCs9ffls_wyVFd4yVfHjWhHjs4E-sSLNGyo",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A descricao da vaga contem apenas lixo de formatacao e nao detalha requisitos tecnicos ou localizacao.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor de Software Full Stack Júnior na empresa Yandeh",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://go.onelink.me/3430878774?af_xp=custom&pid=email&c=i2a&af_adset=system-invitation",
+      "nota": 7,
+      "aprovada": true,
+      "motivo": "Vaga junior compativel com o perfil, restando conferir os detalhes na descricao original.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor de Software Full Stack Júnior na empresa Yandeh",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2MQQ6DIBBF7zLrRtBoLNyg-15AhwkQihA6LIzx7oVNt-_99y-ooMEx568WYi-DPwyRGTBFAQ-IoC_YEFM9-GXaclzktEqllBybxo_H8HYlVeua5FLpT89M_TlFypvtmEPvw0JT9Djbec9PucJ9_wDOcwV6gwAAAA/s0nrmFZSP3Qy4I0sHgyXnGoOXUdmiIqljXTERIV5zts",
+      "nota": 7,
+      "aprovada": true,
+      "motivo": "Vaga junior para desenvolvedor full stack compativel com o perfil, restando conferir os detalhes na plataforma.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Política de Privacidade",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2MywqDMBBF_2W6bZsoilWQrrvvDySTYIKPDHFSEPHfm4J0e869Z4cEHThmWjshXGSLjqL_KNzuGGZBLHRUi1mF0iHxzS_GWvN0U098OYcUJo8bXGGGbgeFGNLCL5O7RS3LRrZtK4usMc_Gt4shDS5Ljsn-6UY2ozOYKY-_-1jbcvZYDZWmh2zgOL6UNsgJsAAAAA/pMEQtvfpSvrP3TcM9OyFe6pzTDJf8T0-lds1bCov5-o",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A descrição da vaga contém apenas texto de política de privacidade e caracteres ocultos, sem informações reais sobre a posição.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor de Software Full Stack Júnior na empresa Yandeh",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2MQQ6DIBAA_7K9NoJGYzFpeu69H1DYAAGE4HJojH8vXHqdycwJBRYwROlYGNtyZ3eFqDoZA_OoV_8y_pnoRvGAOwRYTliljGWnt6phP_Fh5kII3lctvZXuY3Is2lRJueCffhM2hDm0EbkWuwmHYOWoxy09-AzX9QPYLkynjwAAAA/WVIna5XB81ClXqmSJQuIDTM_Zu37vuXoIt5s1w0lw2o",
+      "nota": 7,
+      "aprovada": true,
+      "motivo": "Vaga junior compativel com o perfil, restando conferir os detalhes na descricao original.",
+      "ia_ok": true
+     }
+    ]
    },
    "avisos": [],
    "erro_fatal": null
