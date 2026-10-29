@@ -5,37 +5,37 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-29T02:16:53.503571+00:00"
+    "ultimo_ok": "2026-10-29T17:22:39.383899+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-29T02:16:53.503571+00:00"
+    "ultimo_ok": "2026-10-29T17:22:39.383899+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-29T02:16:53.503571+00:00"
+    "ultimo_ok": "2026-10-29T17:22:39.383899+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-29T02:16:53.503571+00:00"
+    "ultimo_ok": "2026-10-29T17:22:39.383899+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-29T02:16:53.503571+00:00"
+    "ultimo_ok": "2026-10-29T17:22:39.383899+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-29T02:16:53.503571+00:00"
+    "ultimo_ok": "2026-10-29T17:22:39.383899+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-29T02:16:53.503571+00:00"
+    "ultimo_ok": "2026-10-29T17:22:39.383899+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 11,
@@ -45,12 +45,12 @@
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-29T02:16:53.503571+00:00"
+    "ultimo_ok": "2026-10-29T17:22:39.383899+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-29T02:16:53.503571+00:00"
+    "ultimo_ok": "2026-10-29T17:22:39.383899+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
@@ -60,7 +60,7 @@
    "E-mail": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-10-29T02:16:53.503571+00:00"
+    "ultimo_ok": "2026-10-29T17:22:39.383899+00:00"
    }
   },
   "ia": {
@@ -12155,6 +12155,162 @@
       "nota": 2,
       "aprovada": false,
       "motivo": "A descricao da vaga esta incompleta e truncada, sem informacoes claras sobre stack, senioridade ou localizacao.",
+      "ia_ok": true
+     }
+    ]
+   },
+   "avisos": [],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-10-29T17:19:18.525947+00:00",
+   "duracao_s": 200.9,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 99,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 12,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 19,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 7,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 3,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 3,
+     "erro": null
+    },
+    "E-mail": {
+     "vagas": 52,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 269,
+    "camada0_data": 211,
+    "novas": 208,
+    "camada1_keyword": 9,
+    "camada2_ia_avaliadas": 9,
+    "camada2_ia_aprovadas": 0,
+    "enviadas": 0
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 9,
+    "falhas": 0,
+    "erros_429": 0,
+    "ultimo_erro": null,
+    "avaliacoes": [
+     {
+      "titulo": "Desenvolvedor Full Stack - Pleno em V.tal | o futuro passa por aqui. Mais 12 vagas de dese",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://clk.indeed.com/hp?co=BR&utm_campaign=job_alerts&utm_medium=email&utm_source=jobseeker_emails&from=ja&tk=1k647hri3g4u3803",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade Pleno, o que e incompativel com o perfil junior do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor Full Stack - Pleno em V.tal | o futuro passa por aqui. Mais 12 vagas de dese",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_02NzQrCMBCE3yXQnrR__tQWguhB8Cq-QNzEJk2blDQ5SOm7uxURYQ-z3zAzEwmkJtL7YazTdBQQnEiU4ULwBGyfMgAbjE872yhzBGu8MkHQTyDanKLigvdwfxH846ezPW1ZDJaeb7Hs6ODJivSknsi38MpxNt9lRZlVVZXlaEOnQN-ls6GRaHoXxI--BoFoVI1ZK4N0GUDQMtReL1V6vy2VBK05Zwfsm-c3GDrh0tsAAAA/9Q1XpWihjUxyhcliC6WN6w9pec1cnmwy98rl8p6inDA",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige nível pleno, o que é incompatível com o perfil júnior do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor Full Stack - Pleno",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=b8fe8ddbc37d1064&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38WFMYlV1MJA6tBKoB3tK66FPHWl7ysnyEgmHMcjruLlg&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k647hri3g4u3803&alid=69de485faffb823f5e8e3e9b&bb=FuZPEF-UUFAWHQlSqB2gUu1sqq-_9A5i4uTA0_-un_Bh_XQxmAIsjNNagB1bxAvGnGpf02kotUtMkARCMdhks9OrHtkLqSii05m-uFvJVQ-2UxxD-TMz0ukKBDG2EiQfC_CHmbsXV1V8Tr_yerWER6DC3qFdZPj3Pvb6w8RXZMBfnryjooWjV0J_yktARRZ_&tmtk=1k647hri3g4u3803",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga e para nivel pleno no titulo, o que e incompativel com o perfil junior do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor Fullstack - Flutter Pleno",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=7b279f01945d75f4&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38WFMYlV1MJA6tBKoB3tK66FPHWl7ysnyEgmHMcjruLlg&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k647hri3g4u3803&alid=69de485faffb823f5e8e3e9b&bb=Luv36vscDeILOAMiR5WSFNMcCPhiFqrIZNS5POWabbc4CJAZ8mrt3HcCfbgelo1tKMiNwMvu6akFhU-awTfpDFuTtHbp-0yemSBGc_iph3bQ9cWK2eRD327Tk1vwrNpn0GcgyRtHmuaGU-gnKQIDmgfMy-32_RdOhicCKRli5aDLVPqiulYgwv4a5xc6EuBz&tmtk=1k647hri3g4u3803",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade plena e foco em Flutter, que não fazem parte do perfil do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor React-native - Sênior",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=dc330257725578ab&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38WFMYlV1MJA6tBKoB3tK66FPHWl7ysnyEgmHMcjruLlg&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k647hri3g4u3803&alid=69de485faffb823f5e8e3e9b&bb=u_yRIPsX0SNgisrXLAjt6Kz0MYXcmQKtcOOSs3d6Pt_8jWfCJVcQXcyIjVbilhdXM1UmDA0L3FpFePY0m_nKfo53lAZwGtAqt5kiMBEoYlv1UcVBkr7sIn1l2giJFx9sCFCMJWNRDQcuSvfzk31Yx64yBCdB7VoTmrxCzgybsRusk91QOlgd4jmEunX0GnMo&tmtk=1k647hri3g4u3803",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade sênior, o que é incompatível com o perfil júnior do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor Java Backend Sênior",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=31785ce77a21683e&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38WFMYlV1MJA6tBKoB3tK66FPHWl7ysnyEgmHMcjruLlg&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k647hri3g4u3803&alid=69de485faffb823f5e8e3e9b&bb=qfyQmbi8oYOkQl2osDK4QcYxmob6ycDcJuhGm4ooAcSiRmI52WzgryyU7d1EeoQm6giFm6xddy2lu-vPokRd3aT2hx7f8_xyGq37-pKI_RUG0gcNiDPymO6Z2jd4nqaXoUgREQ7z-SuwAfbU9wcO-sCcyPM3yvQJJXuQfy2stGXftuyWWJl_iYY7BjOD82Gc&tmtk=1k647hri3g4u3803",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga é para Desenvolvedor Java Backend Sênior, o que é incompatível com a senioridade júnior do candidato e exige tecnologia fora de seu stack central.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Cientista de Dados - Corporativo em Expresso São Miguel. Mais 1 vaga de estagiário de ti e",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://clk.indeed.com/hp?co=BR&utm_campaign=job_alerts&utm_medium=email&utm_source=jobseeker_emails&from=ja&tk=1k647a3bega56800",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga principal e de Cientista de Dados, focada em modelos estatisticos e Machine Learning, incompativel com o perfil de desenvolvedor full stack junior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Cientista de Dados - Corporativo em Expresso São Miguel. Mais 1 vaga de estagiário de ti e",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_02NzQ6CMBCE36UJnJQCigpJY_Rg4tX4ArVUWgot9OdgCO_uYowx2cPsN5mZCQVUIeH94CqMHWfB8kTqmvM6YabHlDETtMedaaQ-MqO91IGTTyDanKL8AvewfxH446c1PWlpzAw532LRkcGjFepRNaFv4bWG2axI831almWagc06ydRdWBMaAaa3gf_oa-CAnGz0WmqgywCAloL2aqlSu-2eKtfKYhwP0DfPb1VcvaPbAAAA/DBFEG2CYvYbsAvPool13weR1xLS4OVWUxOPIOdf4FGs",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga principal e para Cientista de Dados, focada em modelos estatisticos e Machine Learning, incompativel com o perfil de Desenvolvedor Full Stack do candidat",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Cientista de Dados - Corporativo em Expresso São Miguel. Mais 1 vaga de estagiário de ti e",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://support.indeed.com/hc/pt-br",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga principal e para Cientista de Dados, focada em modelos estatisticos e Machine Learning, incompativel com o perfil de desenvolvedor full stack junior.",
       "ia_ok": true
      }
     ]
