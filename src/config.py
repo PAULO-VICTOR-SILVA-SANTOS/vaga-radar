@@ -19,7 +19,7 @@ NOTA_MINIMA = int(os.getenv("NOTA_MINIMA", "6"))
 # Corta vaga publicada ha mais dias que isso. Se a fonte nao informar a
 # data de publicacao, a vaga passa (nao penaliza fonte sem essa info).
 # ---------------------------------------------------------------------------
-DIAS_MAX_VAGA = int(os.getenv("DIAS_MAX_VAGA", "30"))
+DIAS_MAX_VAGA = int(os.getenv("DIAS_MAX_VAGA", "7"))
 
 # ---------------------------------------------------------------------------
 # SEU PERFIL - usado apenas pela camada de IA

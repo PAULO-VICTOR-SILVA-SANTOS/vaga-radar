@@ -124,12 +124,18 @@ def enviar_lote(vagas, aviso=None):
     Envia varias vagas com pausa, para nao bater no rate limit do Telegram.
     `aviso` (alerta de saude) vai no topo da primeira mensagem entregue: se
     essa falhar, ele acompanha a seguinte, ate chegar.
+
+    Retorna a LISTA das vagas que realmente foram enviadas com sucesso (nao
+    so a contagem): se uma vaga no meio do lote falhar, as de indice maior
+    que ainda forem enviadas precisam ser identificadas corretamente, senao
+    o historico marca a vaga errada como "vista" e a que foi enviada de
+    verdade volta a ser notificada nas proximas execucoes.
     """
-    enviadas = 0
+    enviadas = []
     pendente = aviso
     for vaga in vagas:
         if enviar_vaga(vaga, pendente):
-            enviadas += 1
+            enviadas.append(vaga)
             pendente = None
         time.sleep(1.2)
     return enviadas

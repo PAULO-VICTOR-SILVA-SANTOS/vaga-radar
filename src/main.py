@@ -57,18 +57,18 @@ def _encerrar(dados, execucao, inicio, vagas=None):
     if aviso:
         print("\n" + aviso)
 
-    enviadas = 0
+    enviadas = []
     aviso_entregue = False
     if vagas:
         print(f"\n[6/6] Enviando {len(vagas)} vaga(s) no Telegram...")
         enviadas = telegram.enviar_lote(vagas, aviso)
-        print(f"  enviadas: {enviadas}")
-        aviso_entregue = enviadas > 0
+        print(f"  enviadas: {len(enviadas)}")
+        aviso_entregue = len(enviadas) > 0
     if aviso and not aviso_entregue:
         # Nada foi enviado (ou o envio falhou): o alerta sai sozinho.
         aviso_entregue = telegram.enviar_aviso(aviso)
 
-    execucao["camadas"]["enviadas"] = enviadas
+    execucao["camadas"]["enviadas"] = len(enviadas)
     execucao["avisos"] = [texto for _, texto in alertas]
     try:
         if aviso_entregue:
@@ -146,9 +146,11 @@ def _executar(dados, execucao, inicio):
 
     enviadas = _encerrar(dados, execucao, inicio, vagas)
 
-    # So marca como vista o que realmente foi enviado com sucesso.
-    if enviadas > 0:
-        visto = historico.marcar(vagas[:enviadas], visto)
+    # So marca como vista o que realmente foi enviado com sucesso (a lista
+    # exata devolvida por enviar_lote, nao as N primeiras da lista original -
+    # senao uma vaga que falhou no meio do lote marca a vaga errada).
+    if enviadas:
+        visto = historico.marcar(enviadas, visto)
         historico.salvar(visto)
         print(f"  historico atualizado: {len(visto)} vagas registradas")
 

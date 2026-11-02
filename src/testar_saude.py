@@ -194,7 +194,7 @@ def _rodar_main(pasta, fontes_relatorio, resultados_ia, vagas=None):
 
     def lote(v, aviso=None):
         enviados["lotes"].append((list(v), aviso))
-        return len(v)
+        return list(v)
 
     def aviso(texto):
         enviados["avisos"].append(texto)
