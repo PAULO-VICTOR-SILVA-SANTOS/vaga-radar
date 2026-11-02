@@ -36,7 +36,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USE_AI: ${{ vars.USE_AI || 'false' }}
           NOTA_MINIMA: ${{ vars.NOTA_MINIMA || '6' }}
-          DIAS_MAX_VAGA: ${{ vars.DIAS_MAX_VAGA || '30' }}
+          DIAS_MAX_VAGA: ${{ vars.DIAS_MAX_VAGA || '7' }}
           EMAIL_ATIVO: ${{ secrets.EMAIL_ATIVO }}
           EMAIL_USUARIO: ${{ secrets.EMAIL_USUARIO }}
           EMAIL_SENHA_APP: ${{ secrets.EMAIL_SENHA_APP }}
