@@ -5,37 +5,37 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-03T23:52:18.410631+00:00"
+    "ultimo_ok": "2026-11-04T07:18:29.712991+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-03T23:52:18.410631+00:00"
+    "ultimo_ok": "2026-11-04T07:18:29.712991+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-03T23:52:18.410631+00:00"
+    "ultimo_ok": "2026-11-04T07:18:29.712991+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-03T23:52:18.410631+00:00"
+    "ultimo_ok": "2026-11-04T07:18:29.712991+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-03T23:52:18.410631+00:00"
+    "ultimo_ok": "2026-11-04T07:18:29.712991+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-03T23:52:18.410631+00:00"
+    "ultimo_ok": "2026-11-04T07:18:29.712991+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-03T23:52:18.410631+00:00"
+    "ultimo_ok": "2026-11-04T07:18:29.712991+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 11,
@@ -45,12 +45,12 @@
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-03T23:52:18.410631+00:00"
+    "ultimo_ok": "2026-11-04T07:18:29.712991+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-03T23:52:18.410631+00:00"
+    "ultimo_ok": "2026-11-04T07:18:29.712991+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
@@ -58,9 +58,9 @@
     "ultimo_ok": null
    },
    "E-mail": {
-    "zeros_seguidos": 2,
+    "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-03T02:47:35.932156+00:00"
+    "ultimo_ok": "2026-11-04T07:18:29.712991+00:00"
    }
   },
   "ia": {
@@ -12461,6 +12461,182 @@
     "erros_429": 0,
     "ultimo_erro": null,
     "avaliacoes": []
+   },
+   "avisos": [],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-11-04T07:17:32.047873+00:00",
+   "duracao_s": 74.8,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 99,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 10,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 10,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 8,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 4,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 3,
+     "erro": null
+    },
+    "E-mail": {
+     "vagas": 12,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 221,
+    "camada0_data": 56,
+    "novas": 54,
+    "camada1_keyword": 11,
+    "camada2_ia_avaliadas": 11,
+    "camada2_ia_aprovadas": 11,
+    "enviadas": 10
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 11,
+    "falhas": 0,
+    "erros_429": 0,
+    "ultimo_erro": null,
+    "avaliacoes": [
+     {
+      "titulo": "&emsp;&#8203; Ver vaga &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_42Ry26jMBRA_wVpWA2NgUDiSGgUSCePyYMAagIbZIzDG4NjUpKq_16qkbroqqsrnaOrK93zJnTCTEg5b66z0ShiT1kdExI_YVqNGB7hsviTF4YCwRRexnGENQUokIgXRisjp1GmoHAYFeI4lRhBmGc3xDNaSw2XTCckFcpKkReGXOiZivDl1iR6PgWyGEVGG6je9tye6AuZ6L5cU6am5l9S7UqfSVIe9PPVnNZo78i9rDw2rj-1yoAcTyGYbl82Pduce4Uh6_lR7_Hag9wJrNsxWO-4_bCOazd3F054Vsr5iXdhh8HWPs3TZa322MxXk0MS6wECW38JTrKfloFj6fVh1UKzvwQO4qYXruPl_dhCqz9ru-vxLLXB6j72x6jqn8Mal_JyryV29ep7yfWXuhD7AkeGSxeZPtkp2D1UbqP-80xwiB5FbMW2LbK8-XpFlPNKS_kUaMJvoRJmbwLCmHY1X8dDEFkDygRACIE8aJQkGxr9F0AFKlQglPVB4DLDhZcy2iXpIDnryBe9N2RAt4y8DoEG-plsAD-NNmzw4vPgt3DC-_sHi9sG6zQCAAA/-k_5jfqfHUOMPdVYQNj1h1tDgbqUc5UDKoLHsZVnWuE",
+      "nota": 8,
+      "aprovada": true,
+      "motivo": "A vaga e de Desenvolvedor Front-End Junior com otima aderencia a stack de React e Next.js do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "&emsp;&#8203; Não é uma boa correspondência &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12RW2-jMBSE_4ul3aelMbBAiFStkibk2mbDJSX7UhnbYHOxCTbpRlX_e2kq7cOelyPNp9FIM2-gBxPAtG7VZDRqkMbsjgtCKbnDshlxceEaaS6FGgmpDS407ajSlPzS1b1ZudxGOL-0hVuOofmdi1zeTz8vVZsQsu3PTqmt54cW-ZOc4zFdu41vlm4aiIPXe_F0VRMcWEdez53X5Pc-DxY7nbxujt6zcuzVQ9S3j2k5bp6iqN7EdWmVyFrMbHZ2jP3UlUuP78K6dO3sVJ5TZ5Yah6JZZ-1u5rNTaFwPuY6SU0TMMV4UCm3_oqVHrCTbBatlpA5NcCnjOUvaOC0EfNJ742gn6CG-CkgctzBhwJ7z6ps9Bz9AAyZvAGEse6HXZKjMdKDlQd_3oTlgVBQbmX0BaEPbt3zfdAeAa46rmHWyL9gAddfTf-q1pYOUIWLceh_0vJNDEChlxi30MrwbMDqKsOaX2w5Gq41Z-EIbxOvBoavPyP92AO_vHwplOdHYAQAA/sz62tddJ42KZNgpxP0IC_SHJ7XYx8OLa8j3XxOW8sUM",
+      "nota": 8,
+      "aprovada": true,
+      "motivo": "Vaga de Desenvolvedor Front-End Júnior, alinhada com a stack e senioridade do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "&emsp;&#8203; Não &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12QWW-CQBSF_wtJ-1RkK5uJadxwo1o2xb4NwzIDzIAwaI3xvxfTpGl63u75cs_Dd-M6bsghxup2KAgEMIgGmMZJEg9gRQRMz5gBhiva_kC-6S-aCdIbK0ZSoWEFwPRcZ1puiNIzpmk1Gj8StmtXRJvXpm03uunK8Wdw8o1kpRFTyrXQoo7e6f54WcbQkve4nKmX4GOXWnObBZf1Xj-0qrKcel39HuYG2XpeufbLXM6BPJ8o6KTyu7FWLXRsu2WuKdExP4XqJOSdjKyi2p6Y6OjyVydlXnD0YsmA86wFmy-w0GM5iGxrufBah1jn3J-hoPbDjIpbtuP3SgCm_pWKsaplkmihQ1o8KbPntKnICMuATwjAJZ_2eiIAC-6FI9zwxgEIq46yVdyrlFRR1kXTNEWpx7DEsPBRU3UZ6iFruuS3vdZJX_3ZYsXj_59T7n7_Bkur2BekAQAA/u7uykyE_oIEw6fVhFHhWdKTyUPZKfJt3c_FG1wPzMCE",
+      "nota": 8,
+      "aprovada": true,
+      "motivo": "A vaga é para Desenvolvedor Front-End Júnior, alinhada com a senioridade, stack de React e o perfil do candidato no Brasil.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "&emsp;&#8203; Sim &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12QWW-CQBSF_wtJ-1RkK5uJadxwo1o2xb4NwzIDzIAwaI3xvxfTpGl63u75cs_Dd-M6bsghxup2KAgEMIgGmMZJEg9gRQRMz5gBhiva_kC-6S-aCeobK0ZSoWEFwPRcZ1puiNIzpmk1Gj8StmtXRJvXpm03uunK8Wdw8o1kpRFTyrXQoo7e6f54WcbQkve4nKmX4GOXWnObBZf1Xj-0qrKcel39HuYG2XpeufbLXM6BPJ8o6KTyu7FWLXRsu2WuKdExP4XqJOSdjKyi2p6Y6OjyVydlXnD0YsmA86wFmy-w0GM5iGxrufBah1jn3J-hoPbDjIpbtuP3SgCm_pWKsaplkmihQ1o8KbPntKnICMuATwjAJZ_2eiIAC-6FI9zwxgEIq46yVdyrlFRR1kXTNEWpx7DEsPBRU3UZ6iFruuS3vdZJX_3ZYsXj_59T7n7_Bl5EKIekAQAA/mfWt2p7PM13rsZO3pjHbX_ASao0juT2nL480l2gyrKg",
+      "nota": 8,
+      "aprovada": true,
+      "motivo": "A vaga e de Desenvolvedor Front-End Junior com boa aderencia ao perfil do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Editar perfil",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2OzQrCMBCE3yWHnoxWxZ8WitCb1-JdtpvUbNs0Id0URHx3I4ingW-GmXmJKEphmP1cbjY-uI5GvaZJaa3W6OylC85WvWtpB_ckFhiNDBqQaQEmN0nPsm7u2gKNGbqqbjIzVp7FSlhRvgQgujjxVaWd7SHfnfKiKPJtsnEkHG4muPgwyeQQ9Z8-vU5othBYdulLCzhIrYjl72NK8vCtHI60B-wW_zj259T7fn8AlUPeNtQAAAA/mgLvTvC0KObl75U3QLmJiX8IDDdgonIPHf41YEQs4QE",
+      "nota": 8,
+      "aprovada": true,
+      "motivo": "A vaga é para Desenvolvedor Front-End Júnior com boa aderência ao perfil e stack.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "DESENVOLVEDOR FRONT-END JÚNIOR (Serendipe Instituto de Ciência e Tecnologia) na empresa Jo",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_0WOwWrDMBAF_0UHn6rESWhaG0wht15D72GzXkWKLa2QVyEl5N-7vbSnB_NgmIeppjdeJC_9ep0LuzDTKqSRaFwhR0XkqFBCWj5c4Thc-Ry2cNKJIOhtIUAJN5DAyWaxh-OJIoS5QR4Ox8bPQ5aGM6VBdbEKmRcTTf8wgMg1yeeoAZvXdvvWdl3XbvTGOeD05QvXi9dTSqU_-p1J0RKhiHUaeQacbIS7_bfL9Guc9mEH6G75sr--q_b5_AGK-pJP7AAAAA/Un-qwsFEC7PZjBDHADNLH6OXXPmGYQSPwx2TEWKHK6g",
+      "nota": 8,
+      "aprovada": true,
+      "motivo": "Vaga junior compativel com o perfil frontend e stack do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Pausar estes e-mails",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12QSXOCMABG_wsz7anUAGVzxum44Ua1bIq9xQRIWAKaoHUc_3uxhx76Hd-b7_JuUiv1JSJEw_u9XgUFIq-U4STBr6iuepSdqYCC1oz3Gtjy5F0UA6UwqAZRem4yI7eA8kxZWg-Gj8V86QOyejtxvjJtX8Vf0TG0koVR2UpuxA7zzNYMh_MSI0fd0nKiX6LPTepMXRFdlltzx3VtPg7a5iPOrWodBOUyLHM1h-p0pJGjLm-GRj0zqeuXuaEd9vkx1kex7GXV4tC4I5vsffnqpSKI9gFWLDTNOFx9w5mJ1ejgOvNZwL3KOefhhERNGGcMrMVG3moRHIdXBrBuZApwyC4tnrSJ9CJVUv8mQYTqlokF7kopOlBNYNs2UDqNSoqKkJzqNiOdFKc2-aPXJunQb7SOieJx_hdOut9_AMFkuoSAAQAA/3qLZ2_akEVVgiEUS_FVWzRLDAMTZ37u_7pGC_CdA8Q8",
+      "nota": 8,
+      "aprovada": true,
+      "motivo": "Vaga de Desenvolvedor Front-End Júnior, alinhada à stack de React e TypeScript do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Central de Ajuda",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2NQQrCMBBF7zJrbVLFagLi2r0XqJPY1LTNkE4EKb27I4jb93j_L1DAQmCm2So1F6KUueon572rMI0qoCLe3vMlDGdi2MAIdoEWMZWJr07i-qB3R22M0bVoHHqMt5BT6YJIzsX_6Zu8oN-JUI7fPDb9vsXHi7rmeZKNdf0AMvxi-JUAAAA/WYvA8oUkWYsk4obZI00jbH3VCam8mOe-1GxwNKkqM18",
+      "nota": 7,
+      "aprovada": true,
+      "motivo": "Vaga de Desenvolvedor Front-End Júnior com boa aderência ao perfil e senioridade compatível.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "DESENVOLVEDOR FRONT-END JÚNIOR (Serendipe Instituto de Ciência e Tecnologia) na empresa Jo",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2MQQ7CIBBF7zJrU6imVbiB-14ABwRECsHBpGl6d2Hj9r3_3w4VJDii_JGMPcrgV22MHjBFBieIIHdQiKmudNdtOU78fOVCCD42jW-PYXElVeuapFLNn27Z9HKKJivbMYX-D7O_KHx-s51ftxY5jh8dhm-IgwAAAA/TZHmz1e9O1NkeJulHPIbjcoJwm_S2r0B8v0w0vVLgvc",
+      "nota": 8,
+      "aprovada": true,
+      "motivo": "Vaga junior compativel com o perfil, focada em front-end com tecnologias dominadas pelo candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Política de Privacidade",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2Myw6CMBBF_2XcqgWNKCTGtXt_oEwrrTw6KVMSQvh3x4S4Pefes0CCChwzjZVSLrJFR9FPGucjhl4RqzrqwYxK1yHxwQ_GWvNw3Z14tw0pdB5n2EMP1QIaMaSBn0a6-SU7XbOyLLNcNMqsfbkYUuNEckz2T2eygragUG5_97bwZ43viZric5PGun4BR8Oi-7AAAAA/ffdHdKrB-h57RO08PVjkodwVf6PHFTvViwS6fyfc7fI",
+      "nota": 8,
+      "aprovada": true,
+      "motivo": "Vaga de Desenvolvedor Front-End Júnior na stack principal de React do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "DESENVOLVEDOR FRONT-END JÚNIOR (Serendipe Instituto de Ciência e Tecnologia) na empresa Jo",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2MQQ7CIBAA_7JeTaEaq5AYz979AAICAoXQxcQ0_btw8TqTmRUqcLCIeeGEPMvgZqW1GmSKJGgjws2Ga8YdpgX2EIGvIKRMdca7auF4ooczZYzRsWkZnPQPW1I1tkksVf_pN-uOdIl9hL7HfnJHIV-fbKb3pR227QcL2yZVjwAAAA/jzaMEBPXx1K-_jvsi1rTgJ_9jm1KLh7H-9jse_9HO88",
+      "nota": 8,
+      "aprovada": true,
+      "motivo": "Vaga junior compativel com o perfil front-end, stack atende e senioridade correta.",
+      "ia_ok": true
+     }
+    ]
    },
    "avisos": [],
    "erro_fatal": null
