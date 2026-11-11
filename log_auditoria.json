@@ -5,37 +5,37 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-11T07:31:41.465469+00:00"
+    "ultimo_ok": "2026-11-11T18:25:43.318850+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-11T07:31:41.465469+00:00"
+    "ultimo_ok": "2026-11-11T18:25:43.318850+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-11T07:31:41.465469+00:00"
+    "ultimo_ok": "2026-11-11T18:25:43.318850+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-11T07:31:41.465469+00:00"
+    "ultimo_ok": "2026-11-11T18:25:43.318850+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-11T07:31:41.465469+00:00"
+    "ultimo_ok": "2026-11-11T18:25:43.318850+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-11T07:31:41.465469+00:00"
+    "ultimo_ok": "2026-11-11T18:25:43.318850+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-11T07:31:41.465469+00:00"
+    "ultimo_ok": "2026-11-11T18:25:43.318850+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 11,
@@ -45,12 +45,12 @@
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-11T07:31:41.465469+00:00"
+    "ultimo_ok": "2026-11-11T18:25:43.318850+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-11T07:31:41.465469+00:00"
+    "ultimo_ok": "2026-11-11T18:25:43.318850+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
@@ -60,11 +60,11 @@
    "E-mail": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-11T07:31:41.465469+00:00"
+    "ultimo_ok": "2026-11-11T18:25:43.318850+00:00"
    }
   },
   "ia": {
-   "falhas_seguidas": 0
+   "falhas_seguidas": 1
   },
   "alertas": {}
  },
@@ -9890,98 +9890,7 @@
     "falhas": 7,
     "erros_429": 0,
     "ultimo_erro": "http_503",
-    "avaliacoes": [
-     {
-      "titulo": "Desenvolvedor(a) Full Stack Sênior (C# / React) | PDV",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=d557228e2459ff20&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38WFMYlV1MJA6tBKoB3tK66FiZG2iW3VQCRriBZwW5RfQ&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k6buqnj6g4u3800&alid=69de485faffb823f5e8e3e9b&bb=sk2RXt01XxsbmVh2ZDgC1SGsakN-J_vt-BV3u-B3uqIBHFarUqoGlZIgl0S8MhXNZMfKYbKfUGDXEO99ojuPHCBlT-sl1ZG2OFjMAlKD8z_zvxEjqDDs32GBe4P8CFJqCQlx6LsuYI9RfqPB5BZcmH8351MTSW6pdFrXDl6KnNiaXVw7AGN4SQ%3D%3D&tmtk=1k6buqnj6g4u3800",
-      "nota": 10,
-      "aprovada": true,
-      "motivo": "IA indisponivel (HTTPError), vaga liberada",
-      "ia_ok": false
-     },
-     {
-      "titulo": "Engenharia de Software Fullsatck Pleno - Python e React | RD Station (Remoto)",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=b057c2a880d26507&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38WFMYlV1MJA6tBKoB3tK66FiZG2iW3VQCRriBZwW5RfQ&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k6buqnj6g4u3800&alid=69de485faffb823f5e8e3e9b&bb=yrEMEutw6VjNrHlt70h0yYiWd-7AHGYyn8-FoWbtuen5wBlQ6nCc3rVlaUvTBHSwJY-h18nCBlSKV_zbp3hPykizfVBAum9j8B7TQjHLsgRw1gWjTTZpTnm-8GYqnJ8ND2YJ8ZTf6Ij2q8NbbH5I8_oivoJ5Q7mx70CmUg9Z8Li5TT6UEaBf4cdFwsC-fAEe&tmtk=1k6buqnj6g4u3800",
-      "nota": 10,
-      "aprovada": true,
-      "motivo": "IA indisponivel (HTTPError), vaga liberada",
-      "ia_ok": false
-     },
-     {
-      "titulo": "Fullstack Developer (AEM | Vue.js | Java) | Pleno (Remoto)",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=9950d1568b39e1b2&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38WFMYlV1MJA6tBKoB3tK66FiZG2iW3VQCRriBZwW5RfQ&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k6buqnj6g4u3800&alid=69de485faffb823f5e8e3e9b&bb=corWs-YTZ0veNhc8vFbHIhAayCOF_88drJbFJozvWCKHzfhfJDWR3YN2Xq56d-zKEm3nt5UXtb4b-lY_p6HVDvR1e-Zpxk8GbR9gf3H_zOHKGB1MFBTmtRM9MJnXcMRPu1e1twCrtXqItHLIkFV05eQaSU7394KOteDBEe1pQygkBd4GGbHz9A%3D%3D&tmtk=1k6buqnj6g4u3800",
-      "nota": 10,
-      "aprovada": true,
-      "motivo": "IA indisponivel (HTTPError), vaga liberada",
-      "ia_ok": false
-     },
-     {
-      "titulo": "Desenvolvedor(a) de Software Typescript / Elixir | Pleno | Remoto | Mobilidade Elétrica",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=672a5c06b8896f4d&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38WFMYlV1MJA6tBKoB3tK66FiZG2iW3VQCRriBZwW5RfQ&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k6buqnj6g4u3800&alid=69de485faffb823f5e8e3e9b&bb=f3Ss-r3yr1ZXOho402HVxQ0Wq9x3Yo_S-7HbuizH_zJliHZjS1i4q4cKTObxI3JHCwBSkmDzpxkkN1MAJvHB3FsIUrUFXXC5CV6e8oO6H2BieNSi6HvwSxzsN2M9ooOJctfyMYBV5_hZsD3jYXOv4m_gfeZIqVOzZYTo4AsvkTc_YkiTcJcZcw1tLkvmuKHY&tmtk=1k6buqnj6g4u3800",
-      "nota": 10,
-      "aprovada": true,
-      "motivo": "IA indisponivel (ReadTimeout), vaga liberada",
-      "ia_ok": false
-     },
-     {
-      "titulo": "Desenvolvedor Full Stack - Pleno",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=b8fe8ddbc37d1064&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38GMtql3xgCly8W0V-8v4s8VRxPaXkwCpTz8fAdBxBMuo&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k69bsnj2g4u3800&alid=69de485faffb823f5e8e3e9b&bb=DkDoNX3cj1HvhYle5gUgjJTGW5FFGJNoBMDWfmndaF8WlfA2i__vrkZBPsOjgeFUNKC6_E8a_fGSeITCk9tTnTTsKvKYgi-HVzw7UkOuYbzNXalzV2f5M0e-BkexY-zHqyS-0_75qLIH5Pmr05Q9aTGP5YRoeTdP8SnnZRG4irCUA93Un1tNr_Goqsj_QbUK&tmtk=1k69bsnj2g4u3800",
-      "nota": 10,
-      "aprovada": true,
-      "motivo": "IA indisponivel (ReadTimeout), vaga liberada",
-      "ia_ok": false
-     },
-     {
-      "titulo": "Desenvolvedor(a) Full Stack Sênior (C# / React) | PDV",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=d557228e2459ff20&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38GMtql3xgCly8W0V-8v4s8VRxPaXkwCpTz8fAdBxBMuo&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k69bsnj2g4u3800&alid=69de485faffb823f5e8e3e9b&bb=w8EGqZhp86ekXrbNngTSted6vCmrP8CXNB4LdC0Nz2UwhqFRuZGpNQVl27vsA4XFNOOe2JGQ3kmZ2X7XjI6omZ8p3nI6wFV-0LExunqva79W9aa_JxC_1Di_2wx4fyR0DwoqCa7gj-rxUKSq46daRtGryWfaRyGWxcYnUaCKqvv3d9PDkZxrbw%3D%3D&tmtk=1k69bsnj2g4u3800",
-      "nota": 0,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade Sênior e conhecimento em C# (.NET), o que é incompatível com o perfil júnior.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Engenharia de Software Fullsatck Pleno - Python e React | RD Station (Remoto)",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=b057c2a880d26507&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38GMtql3xgCly8W0V-8v4s8VRxPaXkwCpTz8fAdBxBMuo&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k69bsnj2g4u3800&alid=69de485faffb823f5e8e3e9b&bb=ROMktXkjMK4eLV9LiBY3w4G0oRA27lYuEnNngzCCKIO7k_nmZh_eMNkHcFkA1MeBhV2L-yX5j7A5G0SlQCtVEABdcKItVmI6AOMRYjS9xfic7H_3IFaTIAKEBWy0NhBAfnlLxFJsaJUcfcEsdk5MjxZiPnx24UclOy-93js0Vp44e21IoU0DozcGGgeRh3J5&tmtk=1k69bsnj2g4u3800",
-      "nota": 10,
-      "aprovada": true,
-      "motivo": "IA indisponivel (ReadTimeout), vaga liberada",
-      "ia_ok": false
-     },
-     {
-      "titulo": "Fullstack Developer (AEM | Vue.js | Java) | Pleno (Remoto)",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=9950d1568b39e1b2&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38GMtql3xgCly8W0V-8v4s8VRxPaXkwCpTz8fAdBxBMuo&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k69bsnj2g4u3800&alid=69de485faffb823f5e8e3e9b&bb=-j9OEBIQezQyP95if2YmG8UteFD10HGq9eLVuDTNd4O6Xm6k2ourZjtDUMwqQqD919o5Sf4gmiVhbc4kGJSLEpvRGfhsBe57aHVqoK3ik704Jo3xwMzfmhEc6OK7q97TeqMOhQdwe1qUW0gtZDmRXY-ncdLp4hX9F0tnbHScgpNDXBx5ZoVwKQ%3D%3D&tmtk=1k69bsnj2g4u3800",
-      "nota": 10,
-      "aprovada": true,
-      "motivo": "IA indisponivel (HTTPError), vaga liberada",
-      "ia_ok": false
-     },
-     {
-      "titulo": "Desenvolvedor(a) de Software Typescript / Elixir | Pleno | Remoto | Mobilidade Elétrica",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=672a5c06b8896f4d&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38GMtql3xgCly8W0V-8v4s8VRxPaXkwCpTz8fAdBxBMuo&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k69bsnj2g4u3800&alid=69de485faffb823f5e8e3e9b&bb=LN9K5_N2G9ltsX8VOxL_xmT_MYAa42YJcCn0yTe44CHleMx9O-koUzJKvR5U5AFQj3WDUa73_0cLT1Vr_sfdwRjeF0U1XzeWWFISUKoQXqUskPs18Elwv5IFEKO4oQ7O2oMMW9-jR5javaXZws6VbIKF32bBe9eUidwRdffM_5rXTKS_LlhqxTctIWOnpZUl&tmtk=1k69bsnj2g4u3800",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige nível pleno e utiliza Elixir, o que é incompatível com o perfil júnior do candidato.",
-      "ia_ok": true
-     }
-    ]
+    "avaliacoes": []
    },
    "avisos": [],
    "erro_fatal": null
@@ -13336,6 +13245,102 @@
     "erros_429": 0,
     "ultimo_erro": null,
     "avaliacoes": []
+   },
+   "avisos": [],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-11-11T18:24:42.557342+00:00",
+   "duracao_s": 62.4,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 99,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 13,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 8,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 6,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 4,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 1,
+     "erro": null
+    },
+    "E-mail": {
+     "vagas": 24,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 230,
+    "camada0_data": 75,
+    "novas": 73,
+    "camada1_keyword": 3,
+    "camada2_ia_avaliadas": 3,
+    "camada2_ia_aprovadas": 1,
+    "enviadas": 1
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 3,
+    "falhas": 1,
+    "erros_429": 0,
+    "ultimo_erro": "erro_ReadTimeout",
+    "avaliacoes": [
+     {
+      "titulo": "[Tecnologia] Desenvolvedor(a) Back end Pleno",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=eac0f5b5e7a1f026&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzvzpPjRYIRFWVclYgZ2qLQKo&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k75r3p87218d000&alid=69de485faffb823f5e8e3e9b&bb=Uyl7ZiSIItq_gF-bDwNCNDPs3et954xWStPAVAQn5eLRhQyzxAoD66z69E8ZvFAa-zxrDZOykKqqF5df2E_bxOSuhwVd53oeBE-XsuwbQfngfIWj2A3AFLA7BJLrJ_-PDenhX49PcSM5dlunbJugy9YHYixb7BlH0KfXZO-4Ky0NafF29Zsg6Mv3n2RmGGyV&tmtk=1k75r3p87218d000",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade plenaexplicitamente no titulo e nivel da posicao.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "[Job-32584] Mid-Level Java/React Developer, Brazil",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=086001550863020a&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzvzpPjRYIRFWVclYgZ2qLQKo&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k75r3p87218d000&alid=69de485faffb823f5e8e3e9b&bb=AuNnCYiDIy56C2I35rhivhOQ3_B2I37TCYyyV00Vnhr8VZZLcWsTEoAo0eWEAFR4sqnDdgQk1XmkatgQCiJOG9Hg4JtXB62NjTaAnZfiNYUdL9ttJ6sOCDsDbHFujAaZnV4ClaLu15IdF_JyEj2-5_wa1Jb6RHeR26UmhdIF_X-jlkjhnwPzLQ%3D%3D&tmtk=1k75r3p87218d000",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga é para nível Mid-Level (Pleno) e exige experiência com Java, o que é incompatível com o perfil júnior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Pessoa Desenvolvedora Full Stack Pleno | Remoto",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=23d666665085ee94&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzvzpPjRYIRFWVclYgZ2qLQKo&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k75r3p87218d000&alid=69de485faffb823f5e8e3e9b&bb=jSvwhVckAHws5kqobtU6qetLRBzh3-WXSj3R1zBLhl8VTvlGNDzjD6l6e0a9S3e-LHVEA3IZw5vjAHtkCP6B-QYbECYfnxyQA8Blo5XuulAcYZO0UP492q9botxTYdbuy1sDBHkhW4QFdxsWDqIqcyeeP91Uowl6aLtNnZKL8kGlBYV9lcEeTvCvjbSxOWRc&tmtk=1k75r3p87218d000",
+      "nota": 10,
+      "aprovada": true,
+      "motivo": "IA indisponivel (ReadTimeout), vaga liberada",
+      "ia_ok": false
+     }
+    ]
    },
    "avisos": [],
    "erro_fatal": null
