@@ -5,37 +5,37 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-13T18:25:11.921151+00:00"
+    "ultimo_ok": "2026-11-14T00:13:11.788040+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-13T18:25:11.921151+00:00"
+    "ultimo_ok": "2026-11-14T00:13:11.788040+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-13T18:25:11.921151+00:00"
+    "ultimo_ok": "2026-11-14T00:13:11.788040+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-13T18:25:11.921151+00:00"
+    "ultimo_ok": "2026-11-14T00:13:11.788040+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-13T18:25:11.921151+00:00"
+    "ultimo_ok": "2026-11-14T00:13:11.788040+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-13T18:25:11.921151+00:00"
+    "ultimo_ok": "2026-11-14T00:13:11.788040+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-13T18:25:11.921151+00:00"
+    "ultimo_ok": "2026-11-14T00:13:11.788040+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 11,
@@ -45,12 +45,12 @@
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-13T18:25:11.921151+00:00"
+    "ultimo_ok": "2026-11-14T00:13:11.788040+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-13T18:25:11.921151+00:00"
+    "ultimo_ok": "2026-11-14T00:13:11.788040+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
@@ -60,7 +60,7 @@
    "E-mail": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-13T18:25:11.921151+00:00"
+    "ultimo_ok": "2026-11-14T00:13:11.788040+00:00"
    }
   },
   "ia": {
@@ -13534,6 +13534,82 @@
       "nota": 2,
       "aprovada": false,
       "motivo": "A vaga exige nível pleno (Mid-Level) e a stack central é Java/React, sendo incompatível com a senioridade e o perfil do candidato.",
+      "ia_ok": true
+     }
+    ]
+   },
+   "avisos": [],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-11-14T00:12:53.084186+00:00",
+   "duracao_s": 18.7,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 97,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 16,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 8,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 5,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 4,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 1,
+     "erro": null
+    },
+    "E-mail": {
+     "vagas": 12,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 218,
+    "camada0_data": 60,
+    "novas": 58,
+    "camada1_keyword": 1,
+    "camada2_ia_avaliadas": 1,
+    "camada2_ia_aprovadas": 0,
+    "enviadas": 0
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 1,
+    "falhas": 0,
+    "erros_429": 0,
+    "ultimo_erro": null,
+    "avaliacoes": [
+     {
+      "titulo": "Desenvolvedor(a) Full-Stack PL.(Java/React) – Remoto",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=3d23acb8582fe8e7&from=ja&qd=RnZhMybXSk4M3QtTVGXWoYSS59_jmai_wNMYqEp82RukapMh_x0yOxfesmoL7B1JHURU82HSX5LQVaL5h1LeQz8wPgNNwBksJ-hAN4oARnA&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k7b4fg3eg4vb800&alid=69e4e296eb2a0d6bbf8328a0&bb=CeZiGZ-D5Ksn8N2Hxv0qe36goXnPk6cdUc44YOWhDCNVo9JNBy3RjDYtRbyZPbcchQYFD5ea7dZq3v5LObscZNYiT30qLKJtPCpx-T8_1kAmxJbw-dq8ZHsHIDoJ9D39AAywyacA3zdQAJskG-wK46E0peoSY8PgZw5ZQEegJZDnXvh2421mpdjU20oOM4py&tmtk=1k7b4fg3eg4vb800",
+      "nota": 1,
+      "aprovada": false,
+      "motivo": "A vaga é para Desenvolvedor Pleno e exige Java, o que é incompatível com a senioridade e stack do candidato.",
       "ia_ok": true
      }
     ]
