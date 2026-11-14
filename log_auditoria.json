@@ -5,37 +5,37 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-14T16:51:44.921023+00:00"
+    "ultimo_ok": "2026-11-14T21:09:30.221364+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-14T16:51:44.921023+00:00"
+    "ultimo_ok": "2026-11-14T21:09:30.221364+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-14T16:51:44.921023+00:00"
+    "ultimo_ok": "2026-11-14T21:09:30.221364+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-14T16:51:44.921023+00:00"
+    "ultimo_ok": "2026-11-14T21:09:30.221364+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-14T16:51:44.921023+00:00"
+    "ultimo_ok": "2026-11-14T21:09:30.221364+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-14T16:51:44.921023+00:00"
+    "ultimo_ok": "2026-11-14T21:09:30.221364+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-14T16:51:44.921023+00:00"
+    "ultimo_ok": "2026-11-14T21:09:30.221364+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 11,
@@ -45,12 +45,12 @@
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-14T16:51:44.921023+00:00"
+    "ultimo_ok": "2026-11-14T21:09:30.221364+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-14T16:51:44.921023+00:00"
+    "ultimo_ok": "2026-11-14T21:09:30.221364+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
@@ -58,9 +58,9 @@
     "ultimo_ok": null
    },
    "E-mail": {
-    "zeros_seguidos": 2,
+    "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-14T00:13:11.788040+00:00"
+    "ultimo_ok": "2026-11-14T21:09:30.221364+00:00"
    }
   },
   "ia": {
@@ -10475,58 +10475,7 @@
     "falhas": 0,
     "erros_429": 0,
     "ultimo_erro": null,
-    "avaliacoes": [
-     {
-      "titulo": "Desenvolvedor Full Stack - Pleno",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=b8fe8ddbc37d1064&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38K4zxanz2J_L6viogv91SpJ87oEKustZM0sW0Xg8qhko&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k6jvh0i4jelp800&alid=69de485faffb823f5e8e3e9b&bb=Wau9m1jweX8t4sSPPFTGU005UzDdJqs6qLh65ofkL_L1zTlXRoIyrmHnZZuDAoSj7Tk8zCwuCH84Tvm8unmRKhpKicUcYtqDDza69kgDSLMsq8v09zCh1YvRZSOaswgm7OuK-dKZFhal_JwQ9ZA7fuAZPAk7cUv62knNM6gNZH7DkfYp4kSG3X460yYx8SqR&tmtk=1k6jvh0i4jelp800",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade plena, o que e incompativel com o perfil junior do candidato.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Desenvolvedor(a) de Software Typescript / Elixir | Pleno | Remoto | Mobilidade Elétrica",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=672a5c06b8896f4d&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38K4zxanz2J_L6viogv91SpJ87oEKustZM0sW0Xg8qhko&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k6jvh0i4jelp800&alid=69de485faffb823f5e8e3e9b&bb=NCY_0Vog4dnyOAl9metQ-DKKM4o1At2MWJQXp0SVkd7eMXOMWndFSHuK4LaOqKDUElixIhzwzsMeVsSSx96LHeL1BAhE7QD6RYViuAkNV2x87KTY-heSzlJEAAIGj7SO45XyN0izNZ5VUMg8XSdG8RBJgequ2tdmr5LR2Z6RMx0teHqITG6TQDxrb3B36zrq&tmtk=1k6jvh0i4jelp800",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade Pleno, o que e incompativel com o perfil junior do candidato.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Pessoa Desenvolvedora de Software Backend Pleno",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=ae82d44389fd0f17&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38K4zxanz2J_L6viogv91SpJ87oEKustZM0sW0Xg8qhko&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k6jvh0i4jelp800&alid=69de485faffb823f5e8e3e9b&bb=TPc_Qe0UO8rt16aw0swv2DQjM4V3IPj0aR1t6uup79EiwoD8JyPIY4UPb5EBxlv2zdksJBGM6r1l4yOcXx7oq1Zs3lT73OytYbpL7PAdkRier-D8ITW7Xxk_P50-mlZ7L4_tVAV7TK4lm00lA3HBhe2ekej3_J2Ocn30bPjgM5bE3_8NcHhXiXt-h0PsJgPH&tmtk=1k6jvh0i4jelp800",
-      "nota": 0,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade Pleno, o que e inequivocamente incompativel com o perfil junior.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Engenheiro de software & Event Streaming (GPlan).",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=3361e918abe422bb&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38K4zxanz2J_L6viogv91SpJ87oEKustZM0sW0Xg8qhko&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k6jvh0i4jelp800&alid=69de485faffb823f5e8e3e9b&bb=XRm4fjN8_SCzz6UW31NIV4JnUG69PGdnqwmKy5laUnnZvR_NlMaL0h9RnQTvx7tCYjD9Ed0ptVhJFC34y2vXZM8aM7xwVll5QjgakVNE7xb2uI31AwkfOWqKCnWX0DX0b1WUN8GvDvPFPzliKXPHT3Mq9PAg1LU9ldNpgnsSOx8Gpflj0jt2ng%3D%3D&tmtk=1k6jvh0i4jelp800",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade incompativel e stack focada em event streaming sem nivel junior.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Fullstack Developer (AEM | Vue.js | Java) | Pleno (Remoto)",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=9950d1568b39e1b2&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38K4zxanz2J_L6viogv91SpJ87oEKustZM0sW0Xg8qhko&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k6jvh0i4jelp800&alid=69de485faffb823f5e8e3e9b&bb=U-C925po6LK5bFqP08pBZdt1CJrMGGFCTaTKeBA4kcxIIJCH-p4rxKwH1yICr0yti6oQPNUG00ge9pwu3Avlrp-Hn6e6bikpoX52FXtemHq3m0Cpw8P_1DBROIO02TUBJ1pu7TmI8JfFEfvfRAELp01MS9DlJizZ7wjtBm0qI3R0888Io-9XeQ%3D%3D&tmtk=1k6jvh0i4jelp800",
-      "nota": 0,
-      "aprovada": false,
-      "motivo": "A vaga e para nivel pleno e exige tecnologias incompativeis como AEM, Vue.js e Java.",
-      "ia_ok": true
-     }
-    ]
+    "avaliacoes": []
    },
    "avisos": [],
    "erro_fatal": null
@@ -13632,6 +13581,262 @@
     "erros_429": 0,
     "ultimo_erro": null,
     "avaliacoes": []
+   },
+   "avisos": [],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-11-14T21:07:57.877559+00:00",
+   "duracao_s": 92.3,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 97,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 16,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 7,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 5,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 4,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 1,
+     "erro": null
+    },
+    "E-mail": {
+     "vagas": 34,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 239,
+    "camada0_data": 82,
+    "novas": 81,
+    "camada1_keyword": 19,
+    "camada2_ia_avaliadas": 19,
+    "camada2_ia_aprovadas": 0,
+    "enviadas": 0
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 19,
+    "falhas": 0,
+    "erros_429": 0,
+    "ultimo_erro": null,
+    "avaliacoes": [
+     {
+      "titulo": "Especialista em Engenharia de Software Fullstack | Java e React | Vaga Afirmativa para Pes",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/?co=BR&utm_campaign=job_alerts&utm_medium=email&utm_source=jobseeker_emails&from=jobi2a_multijob-pt-BR_email&tk=1k7dq5uf4lsv3801",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade de Especialista e stack de Java, sendo totalmente incompatível com o perfil júnior do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Achar vagas",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade de Especialista e stack com Java, o que é incompatível com o perfil júnior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Especialista em Engenharia de Software Fullstack | Java e React | Vaga Afirmativa para Pes",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://secure.indeed.com/account/login?continue=https%3A%2F%2Fbr.indeed.com%2F&from=jobi2a_multijob-pt-BR_email&tk=1k7dq5uf4lsv3801&co=BR&hl=pt",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade de Especialista e Java, sendo totalmente incompatível com o perfil júnior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Especialista em Engenharia de Software Fullstack | Java e React | Vaga Afirmativa para Pes",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/pagead/clk/dl?from=jobi2a_multijob-pt-BR_email&jrtk=5-cmh1-1-1k7dq5tlnmm67800-46026907d96874fe&mo=r&ad=-6NYlbfkN0CqO4DI2Mb0vi3Ds6csulgFEMAaRCZT6Sgnshqrb9YiN--8YUuz6ilac7GIUeL1G6HoelbKKAEtXwoe76J0hln34C1eo5z0xO4RSX_WDAFVsghCHnzz7KMKT1SA5Ncl3XIXtwl63pzA6Kgfo_goCe6FUxTw1uBdVrCaVjVkQ0CVes_1kUF4zXaymH2-mirJioi_OejczKOU1JSPJ2YoTHaiV_swf1TfyfMygDMglvQlAouf9atusTXYUNBPA7Jd6-umSijCXDrPJsOkoRUNSG0EsYIAxt9RI16qDITH8SmYF_0AoyTQtwCNyyfn7gtuK5qpmUswtEQm1uEFSgL7Y7u_CououFkTbP-NA5v4f9l5ojLyk2z4kmVXxO7vC_CCiFe7D4AsZ0MCp6FBHEzQZ1GTFUhaoXALHfVK5gqhxUE-YwDZC6R3YvNZtGQ75dboyjZma82DdIv7p0KJwHw2_LhGFeZzCcqzCErmUsM2qLi_YLk_f2ifwZzyI8d26DCC--x2_jxf4Fq_fKSqZpGwoY9n8ge_UF-Sx8H74YTgn_pJiMG9paobFGspiE39Hwuz4BTcw3S_vLZgo8fL2UzksggXEL2qt0a1qlxPCkRtukJSkCwQCIwXOidziu-JAF-ZXQhyOUM_ua27SBCiyXbpU7YECAfpe5CUUfiQQOq266KQb1Zdy1cuJrEIfdysMwLS3nDGHPm7aaOj-2BOiFCxhugRFTaPLLNQ6xiS009sotILLyuwXz9kMC-ZnoRihvkbfssbIrleG0VxffRCZBNJ1sOWzEGySVGjXOtjrxvgBQjuSxE2EZxs5kAMcHooQHoifiuspTvJwiHIwT5_7tuTrhA7OdwHNpZy48oWcqIkc8KwSFbVggpUkPDlSE7KheKKbNQwkos1VBMFK3Pa1yO6Ytfp16HUSiBs4n1oFrM5BSxOV_psyCpi_H5lQMEk2JR97h6QCvt5iY1uK7Jdv6RlKbow79_VlbqyBinDTHAo3qHtvyyJ5xrqouZh&rm=2&xkcb=SoA26_M2ct8YCsW7ZZ0EbzkdCdPP&jsa=3618&camk=C3EPSzFlQw-Fe6rO7r1gGw%3D%3D",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade de Especialista e stack principal em Java, o que é incompatível com o perfil.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Engenheiro(a) de Software Fullstack Sênior | Java e React | Vaga Afirmativa para Pessoas N",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/pagead/clk/dl?from=jobi2a_multijob-pt-BR_email&jrtk=5-cmh1-1-1k7dq5tlnmm67800-ec1190079531a0cf&mo=r&ad=-6NYlbfkN0CqO4DI2Mb0vi3Ds6csulgFEMAaRCZT6Sgnshqrb9YiN--8YUuz6ilac7GIUeL1G6HoelbKKAEtXyYw4frjwZFGOPuNyeJoLiTZfiCBltStZuHXJpR-W0dF1M19EDG-6xxnPcP6s6vkULH3rztAHAlRaTY4ehU2iAZ4tLzPVDV1X5Q4VxPd8YLw6jmgl3St85NHGK5F90K0ef-iNzFWIZQDGUX9Aj32VCFIVNCASYWPUKGzCecShDw_D7Fx6tyef5hTr2NFe3TXmH5V8lbJ64ggT1Feq9A7b-0q_g6ug2gDrFLdI3OnN0FoTd_HW_oIQ8Jfw-IGo3Pizirnk4uU2YfO-IicKfJ3jn6CQOsBD5xyqhgHsD6Pxg4a8sZpuZx1IiVMtZFKiV5HVrhUavxujKWdlm16ncEx7b3P8kabmSGIub7oiK8hfvSss3_6GEDNySQX9vwdplvAXStI6lCTJ1yJyrGYAQkzD0iDRtZXdqOS1h6ndcZSthVE1IVUJqHiBCmDiu4iLRP63Eb0nsG6p0yjqQqweiZ-ch4BBj6hFNkUVICkFlDJsNIe7drmRDWBzDW8wIb_0RxU0ZWPufOw4iY9eKqp3ptOU6mEAjL2tCveiE0O-jo2yZe9-GRFaZAwEFXzLiV4Wfv27UeUfX4hbTN3ZE3b_VqiJkYjbMVZ67GooB9uyLV2biCbAFc5Kj-SPVTqZ77We99Vi6Tb94lPeTsbQ2HhUZS_Nqp5w9R-j0iPuEVUBTlkinwABqg5NfggGON3YDQJ1bPYoPTEkPPqaP9u7Wbr8pJ-V8bkycZ170NSokhgp_Us0aRkkqjBaSW905H0j5XrYM8TNVYhXe1dEGr9Yylq88h8fuUtBhmnXvXBqj3VcXe1620ONBjedG9YdD19mdiI3d90hD7CbmZDVyj_t4Jk4mWsu90gtaPcRLJCgBBCa9bl_N_foBMxxlNuYicA4aMcx54A0TsoN04aabceG8aAEse9lrQii0ah6nPi6A%3D%3D&rm=2&xkcb=SoBp6_M2ct8YCr27ZZ0LbzkdCdPP&jsa=3629&camk=C3EPSzFlQw-Fe6rO7r1gGw%3D%3D",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga é para nível Sênior/Especialista e exige Java, o que é incompatível com o perfil júnior e a stack principal do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Pausar estes e-mails",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://match.indeed.com/invitations/pause?tk=1k7dq5uf4lsv3801&info=AAAAAS4tDm1-JHYqrVh1DmhzUGNd8OABiC_H6-j9D28-_cgUpWgfRb8zkTEGRdQ_QjzmWcMC0hNFV6cxvHCBklDSdSk_Vab7wKetsxI-_DdfPFbUuS0M6sGNsINV8M0e1U9kw34fQ3mFnCpb0PPETw9Kt33cEsm0tx4fpVhWHsgurxcZoMrCa7NZ8Q-yjzv105T9jPnBkCWFxGc%3D",
+      "nota": 1,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade de Especialista e stack com Java, sendo incompativel com o perfil junior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Central de Ajuda",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://support.indeed.com/hc/pt-br?hl=pt",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga exige o nivel de especialista e a stack central inclui Java, o que e incompativel com o perfil junior e os gaps do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Especialista em Engenharia de Software Fullstack | Java e React | Vaga Afirmativa para Pes",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://go.onelink.me/3430878774?af_xp=custom&pid=email&c=i2a&af_adset=multi-job",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade de Especialista e stack de Java, o que é incompatível com o perfil júnior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Especialista em Engenharia de Software Fullstack | Java e React | Vaga Afirmativa para Pes",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/legal?hl=pt#tos",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "Incompativel por exigir senioridade de especialista e stack central em Java.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Especialista em Engenharia de Software Fullstack | Java e React | Vaga Afirmativa para Pes",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://subscriptions.indeed.com?token=CkAEXfSx-mE4xKK-GPuw73RLBQ4QdV3-mFonVBZU6BZdPQf28c6TT78u_Lvdq-uvjyIMbiQm2JkUFOCLQzHxlH8REiDDqjrf0fRcQyClsIhK3965tAR0g4mVtWdNTf0cBl8qhxoQn6DQyNtiZHC70_sj08x1xw%3D%3D&co=BR&hl=pt&tmtk=1k7dq5uf4lsv3801&from=jaf",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade de Especialista e stack de Java, sendo totalmente incompatível.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor(a) Full-Stack PL.(Java/React) – Remoto",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=3d23acb8582fe8e7&from=ja&qd=RnZhMybXSk4M3QtTVGXWoYSS59_jmai_wNMYqEp82RukapMh_x0yOxfesmoL7B1JS7nspZir1-a_PfytHAgDWx5pKEBo4udwPsmOrfNyV48&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k7dljhenkfua802&alid=69e4e296eb2a0d6bbf8328a0&bb=mj2pzcCJHKAQTxKCok0tEVta8PBfbow5uMJMFfiYdsyYp4sMWnNC-Z7HQv0jG_v9Nb-tFOO7MDiELQjwd2vsx5D6Nixd-2EUZdE-DZtG7--tXLtOsqzmZdP9lTKL9F7GQFYAI4DVkahetFPRf2dYzQApgHjqa8CItg2HduQHODqc50hjESpcb_NNHRtvQbXB&tmtk=1k7dljhenkfua802",
+      "nota": 1,
+      "aprovada": false,
+      "motivo": "A vaga e para nivel pleno (PL) e exige stack em Java/React, sendo incompativel com o perfil junior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor Full Stack em Multilog. Mais 13 vagas de desenvolvedor pleno em Remoto",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/?co=BR&utm_campaign=job_alerts&utm_medium=email&utm_source=jobseeker_emails&from=ja&tk=1k7dje3ut218d001",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige nível pleno, o que é incompatível com o perfil júnior do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor Full Stack em Multilog. Mais 13 vagas de desenvolvedor pleno em Remoto",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_02N2wrCMBBE_yXQPmnTC6UXCKIPgq_iD9Tt2qaXpKSJIKX_7lZEhH2YPcPMLMyxkrXWTnPJ-YzgDAZS1Yh1AHrkFYB2yvJBN1IdQCsrlUPxCXjJ0YvPdHfzF6Hffxg9iq7yQYvT1W8HMVm2YyMrF_YtvNQ0G6VhnIVFUYQR2TBI6G-t0a5pybTG4Y--JiQ0y0btpSK6DRDoKtK236r6rO4wx3SYn0lOfev6BpagqqnbAAAA/umMLEptAC8oJP1VdJ0KRYM6H72QmKafoOFzHUQxgees",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige nível pleno, o que é incompatível com o perfil júnior do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor Full Stack",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=a7bdc18253d45710&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv5DMQGiKDo3a0iriqQUI0MU&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k7dje3ut218d001&alid=69de485faffb823f5e8e3e9b&bb=H90d0EaK0tJ0NYyc9Z_483R-8TLEMrHsT7zxMVOvaRba1aqTBUK7wYnM_S24PZOG2qxta7cuZ4RKHlidrwXAlRyLN_kofqxJ8vu2D1pZoNN7xz2tuPbzNJk_CCt4A_inPXbRPz7vgmu_UXf_SgHli426AmUN_i4l2wn0AIyt7GQaBNFvkOhj2N_l0EyHFILb&tmtk=1k7dje3ut218d001",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A descricao da vaga esta incompleta e truncada, e o salario oferecido sugere senioridade superior a junior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor Backend - Golang | PHP PL",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=3015b78fba59ebf5&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv5DMQGiKDo3a0iriqQUI0MU&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k7dje3ut218d001&alid=69de485faffb823f5e8e3e9b&bb=aTBQkCYAt5BOxggvUTahd2LOOhp33ptraxLfLih5gDwawOh4fWKc5bbe_ZUTggvpsSzQd96VO9pjTWLRxuRvzRrEP8gKbyyX6AtICV5zeltepHWQRspx2Tr9kY4UVmt_QX81BkdeAf9mo6E1ldoWRJSbUWMguN0nNj0NKsVp8ICBUIFPmSHPS647j707t7Tb&tmtk=1k7dje3ut218d001",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade plena (PL) e stack em Golang/PHP, que sao incompativeis com o perfil do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvimento Backend Java Pleno",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=8c276a8b01845fe6&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv5DMQGiKDo3a0iriqQUI0MU&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k7dje3ut218d001&alid=69de485faffb823f5e8e3e9b&bb=VL52QzrPBN1gA_3SnHeoddnM0a_B-ZJKXV-lZSTtAHmNHQ8suvsoj18iWxmPQsVvi0cQabbG4ZVOfJR3_3ZFGhZqIVLnE9FKU6FJw6vkIS-Z7K-Gw71Bh-NijO2ByZwiCBjBLChWUdJOtk880Pbbz1EAfMcacvEVSD9xCHBY6q_WxGZuiZzetU15GMsrvPTR&tmtk=1k7dje3ut218d001",
+      "nota": 1,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade Pleno e tecnologia Java, incompatíveis com o perfil do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor(a) Full-Stack PL.(Java/React) – Remoto",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=3d23acb8582fe8e7&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv5DMQGiKDo3a0iriqQUI0MU&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k7dje3ut218d001&alid=69de485faffb823f5e8e3e9b&bb=5To57GuVZduPjnUbtecqCp0iTZXvOua6_80DfzllIZkbA0rg6hm6nwqUAOIJYLMtfBLn92zYAQdACxE9_zFsLJ3yBXgOBzsDA4JrHzgMmVrbw1kLl24YmYC7Jmx8Li0qzfboGHCi2gp_042ggOEhcY4ZI-AQ6nYEgEBEDoif7SECQxS3QDFhxXvnRZgqjLXV&tmtk=1k7dje3ut218d001",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "A vaga exige nível pleno e stack principal em Java, sendo incompatível com o perfil júnior.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Java Backend Developer Sênior - REMOTO",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=05d06071cb4822df&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv5DMQGiKDo3a0iriqQUI0MU&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k7dje3ut218d001&alid=69de485faffb823f5e8e3e9b&bb=8N-afboDy17qC-Zod9m4mJMuT2K3DND79yGOsjbcDsF_yTuJwhA9AX_ZysvRd4KOpC84uzx5Z7YlearHjbcumurkj4cg0Dgsqc3PD4V95sLOyPu60rVGV8AhFwbQgcTUMSfHlIs8kHEDkyu8rMkezOQLK3d9T0SCiZpB7gfmVa3YYt-AQhUO4A%3D%3D&tmtk=1k7dje3ut218d001",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade Sênior e stack em Java, o que é incompatível com o perfil júnior e gap do candidato.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Desenvolvedor FullStack .Net/React Sênior",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=75454a91bb78b3c4&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzv5DMQGiKDo3a0iriqQUI0MU&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k7dje3ut218d001&alid=69de485faffb823f5e8e3e9b&bb=9j0qSNPKV8u1HPpoQMFRth8yE2qtAOal9FNzyGWsoc6W5rk6zAlfaGUEnbMkLrMKzbiHo10BwMd2_0Gb_cB8ni2fe_-9VdFGiUW0cFGeLU7bmLVZS8FkerNcBd4ig5inmBKqBTvUvHlJWq7I983iV0TFHzsSzPa4VGLMTb0K9zf4UktlluOsXIWcRqBIRax4&tmtk=1k7dje3ut218d001",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga exige senioridade sênior e tecnologia .NET, sendo incompatível com o perfil júnior.",
+      "ia_ok": true
+     }
+    ]
    },
    "avisos": [],
    "erro_fatal": null
