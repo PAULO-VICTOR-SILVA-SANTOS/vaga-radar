@@ -5,37 +5,37 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-23T00:00:24.640673+00:00"
+    "ultimo_ok": "2026-11-23T08:39:19.647023+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-23T00:00:24.640673+00:00"
+    "ultimo_ok": "2026-11-23T08:39:19.647023+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-23T00:00:24.640673+00:00"
+    "ultimo_ok": "2026-11-23T08:39:19.647023+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-23T00:00:24.640673+00:00"
+    "ultimo_ok": "2026-11-23T08:39:19.647023+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-23T00:00:24.640673+00:00"
+    "ultimo_ok": "2026-11-23T08:39:19.647023+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-23T00:00:24.640673+00:00"
+    "ultimo_ok": "2026-11-23T08:39:19.647023+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-23T00:00:24.640673+00:00"
+    "ultimo_ok": "2026-11-23T08:39:19.647023+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 11,
@@ -45,12 +45,12 @@
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-23T00:00:24.640673+00:00"
+    "ultimo_ok": "2026-11-23T08:39:19.647023+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-23T00:00:24.640673+00:00"
+    "ultimo_ok": "2026-11-23T08:39:19.647023+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
@@ -60,7 +60,7 @@
    "E-mail": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-23T00:00:24.640673+00:00"
+    "ultimo_ok": "2026-11-23T08:39:19.647023+00:00"
    }
   },
   "ia": {
@@ -69,79 +69,6 @@
   "alertas": {}
  },
  "execucoes": [
-  {
-   "inicio": "2026-09-23T05:33:59.338015+00:00",
-   "duracao_s": 47.4,
-   "fontes": {
-    "RemoteOK": {
-     "vagas": 99,
-     "erro": null
-    },
-    "Remotive": {
-     "vagas": 18,
-     "erro": null
-    },
-    "WeWorkRemotely": {
-     "vagas": 25,
-     "erro": null
-    },
-    "Himalayas": {
-     "vagas": 20,
-     "erro": null
-    },
-    "GitHub (frontendbr/vagas)": {
-     "vagas": 29,
-     "erro": null
-    },
-    "GitHub (react-brasil/vagas)": {
-     "vagas": 12,
-     "erro": null
-    },
-    "GitHub (backend-br/vagas)": {
-     "vagas": 30,
-     "erro": null
-    },
-    "GitHub (vuejs-br/vagas)": {
-     "vagas": 2,
-     "erro": null
-    },
-    "GitHub (androiddevbr/vagas)": {
-     "vagas": 6,
-     "erro": null
-    },
-    "GitHub (nodejsdevbr/vagas)": {
-     "vagas": 11,
-     "erro": null
-    },
-    "Programathor": {
-     "vagas": 0,
-     "erro": "HTTPError"
-    },
-    "E-mail": {
-     "vagas": 45,
-     "erro": null
-    }
-   },
-   "camadas": {
-    "brutas": 297,
-    "camada0_data": 198,
-    "novas": 172,
-    "camada1_keyword": 8,
-    "camada2_ia_avaliadas": 8,
-    "camada2_ia_aprovadas": 0,
-    "enviadas": 0
-   },
-   "ia": {
-    "ativa": true,
-    "chamadas": 8,
-    "falhas": 0,
-    "erros_429": 0,
-    "ultimo_erro": null,
-    "avaliacoes": []
-   },
-   "avisos": [],
-   "erro_fatal": null
-  },
   {
    "inicio": "2026-09-23T15:20:43.055732+00:00",
    "duracao_s": 291.6,
@@ -11327,38 +11254,7 @@
     "falhas": 1,
     "erros_429": 0,
     "ultimo_erro": "erro_ReadTimeout",
-    "avaliacoes": [
-     {
-      "titulo": "[Tecnologia] Desenvolvedor(a) Back end Pleno",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=eac0f5b5e7a1f026&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzvzpPjRYIRFWVclYgZ2qLQKo&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k75r3p87218d000&alid=69de485faffb823f5e8e3e9b&bb=Uyl7ZiSIItq_gF-bDwNCNDPs3et954xWStPAVAQn5eLRhQyzxAoD66z69E8ZvFAa-zxrDZOykKqqF5df2E_bxOSuhwVd53oeBE-XsuwbQfngfIWj2A3AFLA7BJLrJ_-PDenhX49PcSM5dlunbJugy9YHYixb7BlH0KfXZO-4Ky0NafF29Zsg6Mv3n2RmGGyV&tmtk=1k75r3p87218d000",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga exige senioridade plenaexplicitamente no titulo e nivel da posicao.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "[Job-32584] Mid-Level Java/React Developer, Brazil",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=086001550863020a&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzvzpPjRYIRFWVclYgZ2qLQKo&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k75r3p87218d000&alid=69de485faffb823f5e8e3e9b&bb=AuNnCYiDIy56C2I35rhivhOQ3_B2I37TCYyyV00Vnhr8VZZLcWsTEoAo0eWEAFR4sqnDdgQk1XmkatgQCiJOG9Hg4JtXB62NjTaAnZfiNYUdL9ttJ6sOCDsDbHFujAaZnV4ClaLu15IdF_JyEj2-5_wa1Jb6RHeR26UmhdIF_X-jlkjhnwPzLQ%3D%3D&tmtk=1k75r3p87218d000",
-      "nota": 2,
-      "aprovada": false,
-      "motivo": "A vaga é para nível Mid-Level (Pleno) e exige experiência com Java, o que é incompatível com o perfil júnior.",
-      "ia_ok": true
-     },
-     {
-      "titulo": "Pessoa Desenvolvedora Full Stack Pleno | Remoto",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=23d666665085ee94&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik386pOTe0BfjbsWwT7EeyRzvzpPjRYIRFWVclYgZ2qLQKo&rd=cv__WBhDSvE4qmpjGmxYvJXef5NkBUPQ3HkIyXCDpdM&tk=1k75r3p87218d000&alid=69de485faffb823f5e8e3e9b&bb=jSvwhVckAHws5kqobtU6qetLRBzh3-WXSj3R1zBLhl8VTvlGNDzjD6l6e0a9S3e-LHVEA3IZw5vjAHtkCP6B-QYbECYfnxyQA8Blo5XuulAcYZO0UP492q9botxTYdbuy1sDBHkhW4QFdxsWDqIqcyeeP91Uowl6aLtNnZKL8kGlBYV9lcEeTvCvjbSxOWRc&tmtk=1k75r3p87218d000",
-      "nota": 10,
-      "aprovada": true,
-      "motivo": "IA indisponivel (ReadTimeout), vaga liberada",
-      "ia_ok": false
-     }
-    ]
+    "avaliacoes": []
    },
    "avisos": [],
    "erro_fatal": null
@@ -14348,6 +14244,182 @@
       "nota": 2,
       "aprovada": false,
       "motivo": "A vaga é para Desenvolvedor NodeJS Pleno/Sênior (PL/SR), o que é incompatível com a senioridade júnior do candidato.",
+      "ia_ok": true
+     }
+    ]
+   },
+   "avisos": [],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-11-23T08:38:24.194616+00:00",
+   "duracao_s": 64.5,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 100,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 16,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 9,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 6,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 4,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 1,
+     "erro": null
+    },
+    "E-mail": {
+     "vagas": 12,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 223,
+    "camada0_data": 141,
+    "novas": 140,
+    "camada1_keyword": 11,
+    "camada2_ia_avaliadas": 11,
+    "camada2_ia_aprovadas": 5,
+    "enviadas": 5
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 11,
+    "falhas": 0,
+    "erros_429": 0,
+    "ultimo_erro": null,
+    "avaliacoes": [
+     {
+      "titulo": "&emsp;&#8203; Ver vaga &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_42RXYviMBRA_0thfdqOSb_SCrL4haOro1aF6oskaaZN25ga09o6zH_fDgu7sE_7dOEcLhfu-TAqY2CkWpf3Qb9P1Au_xozFL1SKvqJ9WuQ_snyIAHB8BGLXcS1mEdh7V1IMM0m4hS_dEFjT1FQMU81rrLm8mqU2x-GFCcyLns6HMPetWgfKKhLo-wD2CBly_xCzefqGKyHqymlDPX5EpwamuXd8rGrzYhcbd3NU9nVxVOtbZV71qG5ROLlEs9Vrye4SbyN8Cc_yuS5u-OhEMJk-0_C0PQWUVnuwmIN25AsYcYSFDMc3e9R4beCBFXO95Q2OqOBgJ_aktDbxev_eHLw0C53mHKCs-TmO09kki8P27FQHrGboHgmTTMYJX66e0wR4uw1v52JLX5vRN3vaa3JKhns5hR5aW2Rie27hPvdLsCPPPJ7E221PZeXfV_hpiYjwATK-G8IYfBiYUlld9SLugkAXWAgEQQBgp3GSLCX5LYANfNcLkG11ghac5odUySpJO6lVxf7QtmQdqjl7dIE6-pWsA_8brdvQ-dfBf8IZn5-_ACUWie00AgAA/XJkzBDR5yY3QHJu2bz_LO_fhUn-YmH1A3qyjqqrX2xQ",
+      "nota": 5,
+      "aprovada": false,
+      "motivo": "A descrição da vaga é extremamente vaga e incompleta, dificultando a avaliação precisa da stack e requisitos.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "&emsp;&#8203; Não é uma boa correspondência &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12RW2-jMBSE_wtS92lpwK43OFK1gpLNZXNpSMiFl8gYAw4Bg2NISdX_XppK-7Dn5UjzaTTSzLtWawMtVaq8DHq9nCiaPvIiYix6pCLv8aLhiiguikuvEErnhWKSXRSLfqvs2cws0CgswTkxLcswf_AiFs_21-0qVEEH9OPdztsEdVtt2_0c28PNuNnmwxkdz4OVifESXfbe6o8zg66TtGbqW_wVnfY70upIbkERjWl53Zz9W8iw79GnlW4bHs-nQV0P0cymi4XnCt-Hy2MUu0mQpTiW2xEaHybqNkXti4BLYaxb7xDPLStdg9ttdJocrqEDF8BshqO_ZePab3vSwnISULquJKrUW5grsejP_eNrEl0foKv91HJt8K4RSkVdqEnUVWYiA_QNjLFhdpgkyVSE38CAhoV-4T4EHaBnTrNNKkWdpB1Usmb_1LZknRSSSL_33umxFF2QdhIhB-TYvTvQJSNU8ea-g14q3fGOLCf83DlU9hX53w7ax8cnYFdQ5NgBAAA/PVqYTLLXVzBeL2OwiXMpeJ_PzTtgcQz5a-XbK3vDNhI",
+      "nota": 5,
+      "aprovada": false,
+      "motivo": "A descrição da vaga é extremamente vaga e curta, sem detalhar requisitos de stack ou senioridade, exigindo cautela.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "&emsp;&#8203; Não &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12Q226CQBRF_4WkPhVloBMZE9NgsV4qqCigvBgcbiPCAA4oGP-9mCZN0_129srZD-vOldyAixjLLoNeL3EZjrok9Xzf62Ka9EhaEeYyQtPLD-SL9krDHnhn8RDEslgxVIjnEMiyADokDehQecbOYS6NxH5g28bWKevcqncaUsbbaWUl4wWeas4aILSEl52x_hwtJHUU1iAyZbKCp53t1jwsLDH1pji7bs9mc_SRaeC3Na8IBknmTlmO4ULBum6o1DSl5cEL1NCJIxQU1gRO9zPWzGH9QaUlFTa1sQ80WY42YtNMTrP99TiSdBFU48lXVqnKbefWUjZzMN7kBczZ7Zgwqvc187AKveuLpHaCgiZDIrq8n7jkzAetnqOLY-6VS7jBnXMxpmXKZl6rEkBB7AsIIQG0GJ8JjrdRQcswaiErSv-3rTO_rf5ssfj5_88p93h8A5Udo0qkAQAA/v9Wzt2-ctYYKRI4dwKtv3IsuTXwuLhD7PmFfRkHjd6M",
+      "nota": 6,
+      "aprovada": true,
+      "motivo": "A descricao da vaga esta incompleta no anuncio da Indeed, mas o titulo 'Desenvolvedor Web' indica aderencia geral ao perfil sem senioridade avancada explicita.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "&emsp;&#8203; Sim &emsp;&#8203;",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12Q226CQBRF_4WkPhXl0omMiWmwWMUKKgooLwaH28hlAAcUjP9eTJOm6X47e-Xsh3VnKmbERJTml9FgkLoURX2ceb7v9RFJBzirMXUpJtnlB7Jld2XhALzTeMzHklBTWApJyEsSx_dwFpCx_IxdgEKcCMPAto2dUzWF1ew1KE9389pKp0s015wND-EKXPbG5nOyFJVJ2PCRKeE1OO9tt2FBaQmZN0f5dZeY7cmHpoHeNqzMGThdOFU1BUsZ6bqhENMUV0cvUEInjmBQWjMwP6i0XYDmg4grwm0b4xBokhRthbadndXD9TQRdYGvp7OvvFbk295txFx1ENoWJSjo7ZRSog8187gOveuLqPSCkqRjLLisn7o4YYNOz8lFMfPKpMzozrgIkSqjqtep5AEnDDkIIcd3GCUYxbuoJFUYdZCWlf_bNrnfVX-2aPz8_-eUeTy-AYDyU9qkAQAA/6oZsJj64IzlIVSCVPq0xiTcduNq1ZWvFmnsJQYmegeo",
+      "nota": 6,
+      "aprovada": true,
+      "motivo": "Vaga de Desenvolvedor Web sem senioridade explicitada e sem detalhes claros da stack ou localizacao.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Editar perfil",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2OywqDMBRE_yULV40vKFVBCu66le4l3kSTmpgQb4Qi_ntTKF0NnBlm5iCBNEQiuq3JMuftpLRI1cqF4ClYc5-8Ne3LjqpkQxTDECT1ggGqnaGyK3VIu34QhimdgG27PpG6dUguxJDmIAzAhhUfPO4U17y85XVd50W0QStYntLbMMtoog_iT99ORLQZ5pFO8cvIYKGCK6S_jzGJy7dyqcoda1_quaiq2HueH3WyUifUAAAA/EM8aMqr1z2e__FWXFcVrPDcMUrIaZS5lgOB69uIhAo4",
+      "nota": 6,
+      "aprovada": true,
+      "motivo": "Vaga de Desenvolvedor Web sem senioridade explícita, mas faltam detalhes sobre a stack e localização exata.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Pausar estes e-mails",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12Qy26CQABF_2WSdlWFgU5kTEyDxfqo-EAeysbg8BoRBnBA0fjvxS666F2ek7s5d1CBPog5z899QUg9TuIuzfwg8LuEpQLNaso9Tll2FnKvOgcfPBnARJFqjkvpFEFFEeErzUI2UJ9zClTIQ6kXOo5hulVT2M1Wx-rInNR2OpqTie6uIcZLdN4a66_hXNaGUQNjS6ErdNw6XtNBpS1l_oTkF_Nk3Q4Btgzyvu6ookHTmVtVIzRXyWJhaMyy5OXeD7XITWIclvYYTXZTfpuh5pPJSyZuGmMX6ooSb6TbbXyc7i6HobyQYD0af-e1pl63XiPnU5eQTVGigl8PKWeLnm7tV5F_eZE18AZS0L8DjxBWZXzqt6UgEqWeiDEWYavJiZLEjEtWRXEreVkFf7TJgxb9RmsZT57nf-HA4_ED-AwcuIABAAA/ha3TBgpyfc_mXGb9_O7OzA9gbq9-9QPQF-BapjGJHRc",
+      "nota": 5,
+      "aprovada": false,
+      "motivo": "A descrição da vaga está incompleta e não traz detalhes claros sobre requisitos e tecnologia.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Central de Ajuda",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2NywrCMBBF_2XW2jxATALi2r0_oJPQlKTNkE4EKf13I4jbczj3btDAQWSm1QmxNqJSeZgWH4IfsMwioiA-Pus15gsxHGAGt8EDsbSFb77H6iT1WVprpeoa84TpHmtpY-ySawt_-qbQ0e-kU07fPBn9Ylt1HpUxfWPfP9IN7umVAAAA/a7kChCQM11lecApJ80QiAvrcV9gdigrAdloyyVAzVpM",
+      "nota": 5,
+      "aprovada": false,
+      "motivo": "A descricao da vaga esta incompleta e oculta no Indeed, impedindo avaliar requisitos especificos de stack e localizacao.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "DESENVOLVEDOR WEB (Fortes Tecnologia) na empresa Jobbol",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2MSwrDIBRF9_LGJX6gRN1B591Aqg8Nxij2GSghe69OMj3n3nNCAwOBqHwNY586rbtDdJPNicEDEpgTFmtz2-nl-lI8uZy51pqLru222vgONTcfuqTa8Ka_gqOcE5bFD0xx_KOSB-kqNy-U6pHr-gP9d-OZgwAAAA/t3swBaZ9DE5H9V4OwYU6-2CNkDLztedp393EkT9LA_M",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "Descricao da vaga incompleta e vaga agregada por robo (Jobbol/Indeed) sem informacoes claras de stack e localizacao.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Política de Privacidade",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2MywqDMBBF_2W6bRsjlCZCcd19fyBOggk-EuJEEPHfOwXp9px7zw4FGvBEaWmE8Jkc-pTDanC7Y5xEItFlM9tFmC4WuoXZOmdbP74SXc5himPADa4wQbODQYxlprflrnxU9bPSWleSNfJs-PgcS-9ZUi7uT7fkGJ1BpjT87oOqV9K5HnupFDeO4wunMi7qsAAAAA/WulpLHYkI2EqRj7GqUxPxECP2NmDALtQdb7hSHb1hZQ",
+      "nota": 6,
+      "aprovada": true,
+      "motivo": "A vaga de Desenvolvedor Web e recomendada pelo Indeed e nao especifica senioridade ou requisitos restritivos, porem faltam detalhes na descricao para uma avalia",
+      "ia_ok": true
+     },
+     {
+      "titulo": "DESENVOLVEDOR WEB (Fortes Tecnologia) na empresa Jobbol",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_z2MSwrDIBQA7_K6LfEDpSqUrrPvBVIVDWoU8yyUkLtXN93OMHNAAwUeseyKkHed1s1YayadE4nWLfHp46PgBfMOV0igDli0zm3D2fSQ3Si_UyklZV3ruOrw8jU357vE2uyffosdyNY0RhhGHAT_oKw8OiZEP5znD-sqqkSPAAAA/8G7SpsH2aKopQ3Jr2uRmgdIribujNIaeU0f01uojBfc",
+      "nota": 2,
+      "aprovada": false,
+      "motivo": "Descricao da vaga incompleta e vaga agregada por site de terceiros sem informacoes claras de requisitos.",
+      "ia_ok": true
+     },
+     {
+      "titulo": "Cancelar recebimento",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://cts.indeed.com/v3/H4sIAAAAAAAA_12RW2ujQACF_4uwedo2mkyjBqTorDUTm8RUGzQvYrzNOMbxMpOsLf3va2HZh4XzdD44HPg-JSGtJcx5O6zn80FchrQnLSesGR5Jk-V59piy65y1nAn-nDLDepvh2mj5jFNDodrixvV-UZeKpsnKLOXcgARqjWzfojO5IbVedK2ORPB29F7VbTYkw8GmuMFLTqMMYguVVHVTDpwqFA9W9-FuRv1Olp0Yblbl369HWjLwcvJL4A9aYqPfLN75qKpOLcBbJw7NKIbox_LXjDOaNwakpghWTvJ-qUQL-JOwC3jQXah-lFdfxGpGPBcpblBvdsV-DIMXbx-dnfcYhNzdWlVbIBGOK11m2SHewZ2H2SkvgLOxiXmPYTyoCMmNj_ViCFxWuaaiWR1Ix2OytyOySc5bD7gKZscOWhwss0vXF1dZXtlWeKqAOf2cIv2UrtL6U0rSlImGo2wSoDzJC1XWdV1WJpzWJKUB7pko8QR5L_J_7djmUyWav6ou34TT74n_ZEhfX38ADh5i5t0BAAA/dde1zN89P06bUcT8pBObtZXWAh66RbW6DoSYlqpwhl4",
+      "nota": 6,
+      "aprovada": true,
+      "motivo": "Vaga genérica de desenvolvedor web sem maiores detalhes na descrição, mas compatível com o perfil júnior.",
       "ia_ok": true
      }
     ]
