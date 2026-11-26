@@ -5,37 +5,37 @@
    "RemoteOK": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-25T20:23:26.113571+00:00"
+    "ultimo_ok": "2026-11-26T03:23:06.972934+00:00"
    },
    "Remotive": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-25T20:23:26.113571+00:00"
+    "ultimo_ok": "2026-11-26T03:23:06.972934+00:00"
    },
    "WeWorkRemotely": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-25T20:23:26.113571+00:00"
+    "ultimo_ok": "2026-11-26T03:23:06.972934+00:00"
    },
    "Himalayas": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-25T20:23:26.113571+00:00"
+    "ultimo_ok": "2026-11-26T03:23:06.972934+00:00"
    },
    "GitHub (frontendbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-25T20:23:26.113571+00:00"
+    "ultimo_ok": "2026-11-26T03:23:06.972934+00:00"
    },
    "GitHub (react-brasil/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-25T20:23:26.113571+00:00"
+    "ultimo_ok": "2026-11-26T03:23:06.972934+00:00"
    },
    "GitHub (backend-br/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-25T20:23:26.113571+00:00"
+    "ultimo_ok": "2026-11-26T03:23:06.972934+00:00"
    },
    "GitHub (vuejs-br/vagas)": {
     "zeros_seguidos": 11,
@@ -45,12 +45,12 @@
    "GitHub (androiddevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-25T20:23:26.113571+00:00"
+    "ultimo_ok": "2026-11-26T03:23:06.972934+00:00"
    },
    "GitHub (nodejsdevbr/vagas)": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-25T20:23:26.113571+00:00"
+    "ultimo_ok": "2026-11-26T03:23:06.972934+00:00"
    },
    "Programathor": {
     "zeros_seguidos": 0,
@@ -60,7 +60,7 @@
    "E-mail": {
     "zeros_seguidos": 0,
     "erros_seguidos": 0,
-    "ultimo_ok": "2026-11-25T20:23:26.113571+00:00"
+    "ultimo_ok": "2026-11-26T03:23:06.972934+00:00"
    }
   },
   "ia": {
@@ -69,79 +69,6 @@
   "alertas": {}
  },
  "execucoes": [
-  {
-   "inicio": "2026-09-24T20:16:52.077240+00:00",
-   "duracao_s": 84.0,
-   "fontes": {
-    "RemoteOK": {
-     "vagas": 99,
-     "erro": null
-    },
-    "Remotive": {
-     "vagas": 19,
-     "erro": null
-    },
-    "WeWorkRemotely": {
-     "vagas": 25,
-     "erro": null
-    },
-    "Himalayas": {
-     "vagas": 20,
-     "erro": null
-    },
-    "GitHub (frontendbr/vagas)": {
-     "vagas": 30,
-     "erro": null
-    },
-    "GitHub (react-brasil/vagas)": {
-     "vagas": 12,
-     "erro": null
-    },
-    "GitHub (backend-br/vagas)": {
-     "vagas": 30,
-     "erro": null
-    },
-    "GitHub (vuejs-br/vagas)": {
-     "vagas": 2,
-     "erro": null
-    },
-    "GitHub (androiddevbr/vagas)": {
-     "vagas": 6,
-     "erro": null
-    },
-    "GitHub (nodejsdevbr/vagas)": {
-     "vagas": 11,
-     "erro": null
-    },
-    "Programathor": {
-     "vagas": 0,
-     "erro": "HTTPError"
-    },
-    "E-mail": {
-     "vagas": 75,
-     "erro": null
-    }
-   },
-   "camadas": {
-    "brutas": 321,
-    "camada0_data": 225,
-    "novas": 204,
-    "camada1_keyword": 13,
-    "camada2_ia_avaliadas": 13,
-    "camada2_ia_aprovadas": 0,
-    "enviadas": 0
-   },
-   "ia": {
-    "ativa": true,
-    "chamadas": 13,
-    "falhas": 0,
-    "erros_429": 0,
-    "ultimo_erro": null,
-    "avaliacoes": []
-   },
-   "avisos": [],
-   "erro_fatal": null
-  },
   {
    "inicio": "2026-09-24T23:46:33.948232+00:00",
    "duracao_s": 74.5,
@@ -11277,18 +11204,7 @@
     "falhas": 0,
     "erros_429": 0,
     "ultimo_erro": null,
-    "avaliacoes": [
-     {
-      "titulo": "Desenvolvedor(a) Full-Stack PL.(Java/React) – Remoto",
-      "empresa": "Indeed",
-      "fonte": "E-mail (Indeed)",
-      "url": "https://br.indeed.com/rc/clk/dl?jk=3d23acb8582fe8e7&from=ja&qd=RnZhMybXSk4M3QtTVGXWoYSS59_jmai_wNMYqEp82RukapMh_x0yOxfesmoL7B1JHURU82HSX5LQVaL5h1LeQz8wPgNNwBksJ-hAN4oARnA&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k7b4fg3eg4vb800&alid=69e4e296eb2a0d6bbf8328a0&bb=CeZiGZ-D5Ksn8N2Hxv0qe36goXnPk6cdUc44YOWhDCNVo9JNBy3RjDYtRbyZPbcchQYFD5ea7dZq3v5LObscZNYiT30qLKJtPCpx-T8_1kAmxJbw-dq8ZHsHIDoJ9D39AAywyacA3zdQAJskG-wK46E0peoSY8PgZw5ZQEegJZDnXvh2421mpdjU20oOM4py&tmtk=1k7b4fg3eg4vb800",
-      "nota": 1,
-      "aprovada": false,
-      "motivo": "A vaga é para Desenvolvedor Pleno e exige Java, o que é incompatível com a senioridade e stack do candidato.",
-      "ia_ok": true
-     }
-    ]
+    "avaliacoes": []
    },
    "avisos": [],
    "erro_fatal": null
@@ -14276,6 +14192,82 @@
       "nota": 0,
       "aprovada": false,
       "motivo": "A vaga exige senioridade Pleno e linguagem Golang, sendo incompatível com o perfil.",
+      "ia_ok": true
+     }
+    ]
+   },
+   "avisos": [],
+   "erro_fatal": null
+  },
+  {
+   "inicio": "2026-11-26T03:22:54.330066+00:00",
+   "duracao_s": 12.6,
+   "fontes": {
+    "RemoteOK": {
+     "vagas": 100,
+     "erro": null
+    },
+    "Remotive": {
+     "vagas": 16,
+     "erro": null
+    },
+    "WeWorkRemotely": {
+     "vagas": 25,
+     "erro": null
+    },
+    "Himalayas": {
+     "vagas": 20,
+     "erro": null
+    },
+    "GitHub (frontendbr/vagas)": {
+     "vagas": 8,
+     "erro": null
+    },
+    "GitHub (react-brasil/vagas)": {
+     "vagas": 6,
+     "erro": null
+    },
+    "GitHub (backend-br/vagas)": {
+     "vagas": 30,
+     "erro": null
+    },
+    "GitHub (androiddevbr/vagas)": {
+     "vagas": 4,
+     "erro": null
+    },
+    "GitHub (nodejsdevbr/vagas)": {
+     "vagas": 1,
+     "erro": null
+    },
+    "E-mail": {
+     "vagas": 32,
+     "erro": null
+    }
+   },
+   "camadas": {
+    "brutas": 242,
+    "camada0_data": 160,
+    "novas": 158,
+    "camada1_keyword": 1,
+    "camada2_ia_avaliadas": 1,
+    "camada2_ia_aprovadas": 0,
+    "enviadas": 0
+   },
+   "ia": {
+    "ativa": true,
+    "chamadas": 1,
+    "falhas": 0,
+    "erros_429": 0,
+    "ultimo_erro": null,
+    "avaliacoes": [
+     {
+      "titulo": "Profissional Backend (Golang) Pleno - Remoto",
+      "empresa": "Indeed",
+      "fonte": "E-mail (Indeed)",
+      "url": "https://br.indeed.com/rc/clk/dl?jk=9ce4dd2823527d85&from=ja&qd=RnZhMybXSk4M3QtTVGXWoVP3QgH3Amd5lVe_pDDEVY5R8jLs8vK_QQOEyhR3ik38kMoX36mz3dXRigYC8iCXcChDzllO1e7FgczCETlGtOE&rd=Ahaf72ZDihptgqsdvrpp6ZXef5NkBUPQ3HkIyXCDpdM&tk=1k87hpai9gr93800&alid=69de485faffb823f5e8e3e9b&bb=vFT0Gh9lWHtAYjlEQ1Hw-crxQcm-BlI__abZuWwp9VDl8lL2CqDLoE0zwfcZAuvRQfsAehXjXpBfE-PHfO35W-W9RQl2a8Gv9ZgKWcSiJ9FSKRo38eek0Y6DJN83xTTcM7dcdm6LDuIfXoq5aw8zEIb9K_qr9N9-DM15--IPnKCwrY5K5_u1TfTnYPUbKMFt&tmtk=1k87hpai9gr93800",
+      "nota": 0,
+      "aprovada": false,
+      "motivo": "A vaga é para nível pleno e exige a linguagem Golang, o que é incompatível com o perfil júnior.",
       "ia_ok": true
      }
     ]
